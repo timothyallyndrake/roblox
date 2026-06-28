@@ -33,6 +33,7 @@
 | D15 | **Release-please:** per-game tags (`<game-name>-v<semver>`), each `games/<name>/` has own version + CHANGELOG | Grilling Q15 |
 | D16 | **Local path:** `/Users/tim/Repositories/timothyallyndrake/roblox/` | Grilling Q16 |
 | D17 | **Phase 01 creative grilling** deferred to Phase 01 session | Grilling Q17 |
+| D18 | **Studio Loop Engine** — reusable R&D loops, max autonomy, Discord notify, grill-me integration, game_slug aware, one loop per SDLC step → GitHub issues | Loop grilling LQ1–LQ2 |
 
 ## Open Questions
 
@@ -74,6 +75,7 @@
 | Agent roster | [docs/company/roster.md](docs/company/roster.md) | Draft |
 | Phase index | [docs/company/phase-index.md](docs/company/phase-index.md) | Draft |
 | Grilling log | [docs/discovery/grilling-log.md](docs/discovery/grilling-log.md) | Seeded |
+| Loop engine | [loops/README.md](loops/README.md) | Active |
 | Compliance | [docs/compliance/roblox-policy-summary.md](docs/compliance/roblox-policy-summary.md) | Draft |
 | GDD | `docs/game-design/gdd.md` | TBD (Phase 03) |
 | Architecture | `docs/technical/architecture.md` | TBD (Phase 05) |
