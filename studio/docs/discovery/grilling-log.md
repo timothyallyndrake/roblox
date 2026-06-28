@@ -28,6 +28,10 @@ Append-only record of all Q&A from grill sessions. Source of truth for EP decisi
 
 ---
 
-## Session 2 — Phase 01 creative grilling
+## Session 2 — Phase 01 creative grilling (2026-06-28)
 
-_Not started._
+_Creative Director leads. One question at a time._
+
+| # | Question | Answer |
+|---|----------|--------|
+| Q18 | _(pending)_ | |
