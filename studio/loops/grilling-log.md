@@ -13,5 +13,5 @@
 
 | # | Topic |
 |---|-------|
-| LQ3 | Discord webhook setup — EP provides URL locally |
 | LQ4 | GitHub issue creation — fully automated `gh` vs draft-for-approval |
+| LQ3 | Discord setup | **Full bidirectional Discord.** Webhook notify + bot listener for EP replies in channel. Convo AI bot. Credentials in `local.json` (gitignored). **Rotate bot token** — was exposed in chat. |

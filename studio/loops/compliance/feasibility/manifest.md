@@ -52,5 +52,5 @@ _Stub — expand when Phase 02 begins. Requires `game_slug` from discovery hando
 1. **compliance-officer** — screen chosen pitch against Roblox policy; research current rules via web
 2. **technical-director** — feasibility for agent-only implementation scope
 3. **economy-monetization-designer** — monetization model recommendation
-4. **security-specialor** — risk assessment for planned features
+4. **security-specialist** — risk assessment for planned features
 5. **producer** — finalize checklist; Discord `finished` or `waiting_on_ep`

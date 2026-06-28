@@ -72,17 +72,59 @@ studio/loops/
 └── runs/<run-id>/         ← per-run artifacts (gitignored except README)
 ```
 
-## Discord notifications
+## Discord notifications (bidirectional)
 
-Set webhook in `studio/loops/config/local.json` (gitignored):
+### Outbound (webhook)
 
-```json
-{ "discord_webhook_url": "https://discord.com/api/webhooks/..." }
+Loop steps post embeds via:
+
+```bash
+python3 scripts/studio-discord-bridge.py notify \
+  --event waiting_on_ep --run-id "$RUN_ID" --loop discovery.game-ideas \
+  --message "Creative Director Q1: ..."
 ```
 
-Or env var `STUDIO_DISCORD_WEBHOOK_URL`.
+Or `./scripts/studio-notify-discord.sh` (webhook-only wrapper).
 
-Run: `./scripts/studio-notify-discord.sh --event step_complete --run-id <id> --message "..."`
+### Inbound (bot — EP replies in channel)
+
+Webhooks are **one-way**. For EP to **answer grill questions in Discord**, run the bridge listener:
+
+```bash
+python3 scripts/studio-discord-bridge.py listen
+```
+
+When a run is `WAITING_ON_EP`:
+
+1. Bot posts question embed (footer contains `run:<run-id>`)
+2. EP replies in channel (include `run:<run-id>` or reply when only one run is waiting)
+3. Listener writes answer to `runs/<run-id>/grilling-log.md`, sets status → `RUNNING`
+4. Loop Runner resumes on next agent session
+
+### Config (gitignored)
+
+Copy `config.example.json` → `config/local.json`:
+
+```json
+{
+  "discord_webhook_url": "https://discord.com/api/webhooks/...",
+  "discord_bot_token": "BOT_TOKEN",
+  "discord_channel_id": "CHANNEL_ID",
+  "discord_bot_name": "Convo AI"
+}
+```
+
+**Never commit `local.json`.** Regenerate bot token if exposed.
+
+### Discord events
+
+| Event | When |
+|-------|------|
+| `step_complete` | After each loop step |
+| `waiting_on_ep` | Grill question posted — **reply in channel** |
+| `finished` | Stop criteria met |
+| `blocked` | Compliance block |
+| `error` | Loop failure |
 
 ## Starting the game-ideas discovery loop
 
