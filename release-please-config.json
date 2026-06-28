@@ -1,0 +1,5 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "packages": {},
+  "_comment": "Per-game components added at Phase 06. Example: \"games/my-game\": { \"release-type\": \"simple\", \"component\": \"my-game\", \"changelog-path\": \"games/my-game/CHANGELOG.md\", \"tag-separator\": \"-v\" }"
+}

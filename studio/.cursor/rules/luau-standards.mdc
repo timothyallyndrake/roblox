@@ -1,0 +1,13 @@
+---
+description: Luau and Roblox coding standards for games in the roblox monorepo
+alwaysApply: true
+---
+
+# Luau standards
+
+- Use `--!strict` on all new modules
+- Server is authoritative — validate all client requests on the server
+- Never trust the client for loot, damage, inventory, or shared state
+- Run `selene src` and `stylua --check src` before opening PRs (from `games/<name>/`)
+- Edit code in Cursor under `games/<name>/src/` — not in Studio for Rojo-managed scripts
+- Read `studio/CONTEXT.md` before making architectural decisions

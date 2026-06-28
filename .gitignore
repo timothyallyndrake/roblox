@@ -1,0 +1,15 @@
+# Wally packages (per-game, installed at games/<name>/Packages/)
+**/Packages/
+
+# Rojo build output
+**/out/
+
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Aftman local
+.aftman/

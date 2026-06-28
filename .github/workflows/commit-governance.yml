@@ -1,0 +1,97 @@
+name: Commit Governance
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - edited
+    branches:
+      - dev
+      - prod
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: commit-governance-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  commit-messages:
+    name: Conventional Commit Messages
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Validate PR commits include conventional message
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const commits = await github.paginate(github.rest.pulls.listCommits, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: pr.number,
+              per_page: 100,
+            });
+
+            const conventional = /^(feat|fix|docs|refactor|test|chore|ci|build|perf|style|revert)(\([^)]+\))?!?:\s.+/;
+            const commitSubjects = commits.map((commit) =>
+              commit.commit.message.split("\n")[0].trim()
+            );
+            const nonMergeSubjects = commitSubjects.filter(
+              (subject) => !subject.startsWith("Merge ")
+            );
+            const matching = nonMergeSubjects.filter((subject) =>
+              conventional.test(subject)
+            );
+
+            if (matching.length === 0) {
+              const examples =
+                nonMergeSubjects.length > 0
+                  ? nonMergeSubjects.slice(0, 5).map((s) => `- ${s}`).join("\n")
+                  : "- (no non-merge commits found)";
+              core.setFailed(
+                [
+                  "At least one commit in this PR must use Conventional Commit format.",
+                  "Expected pattern: <type>(optional-scope): <description>",
+                  "Allowed types: feat, fix, docs, refactor, test, chore, ci, build, perf, style, revert.",
+                  "Observed commit subjects:",
+                  examples,
+                ].join("\n")
+              );
+              return;
+            }
+
+            core.notice(
+              `Conventional commit requirement satisfied (${matching.length} matching commit subject(s)).`
+            );
+
+  pr-title:
+    name: PR Title Conventional
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Validate PR title uses conventional format
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const title = (pr.title ?? "").trim();
+            const conventional = /^(feat|fix|docs|refactor|test|chore|ci|build|perf|style|revert)(\([^)]+\))?!?:\s.+/;
+
+            if (!conventional.test(title)) {
+              core.setFailed(
+                [
+                  "PR title must use Conventional Commit format (squash merge uses this as the commit subject).",
+                  "Expected pattern: <type>(optional-scope): <description>",
+                  `Observed title: ${title}`,
+                  "Example: feat(studio): add agent roster",
+                ].join("\n")
+              );
+              return;
+            }
+
+            core.notice("PR title satisfies conventional commit format.");

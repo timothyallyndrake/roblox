@@ -1,0 +1,105 @@
+name: CI Required Checks
+
+on:
+  pull_request:
+    branches:
+      - dev
+      - prod
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-required-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  studio-validation:
+    name: Studio Docs Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate studio skeleton
+        run: |
+          test -f studio/CONTEXT.md
+          test -f studio/AGENTS.md
+          test -f studio/docs/company/sdlc.md
+          test -f studio/docs/compliance/roblox-policy-summary.md
+          echo "Studio skeleton OK"
+
+  detect-games:
+    name: Detect Games
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+      has_games: ${{ steps.set-matrix.outputs.has_games }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build game matrix
+        id: set-matrix
+        run: |
+          games=()
+          for dir in games/*/; do
+            [ -d "$dir" ] || continue
+            name=$(basename "$dir")
+            [ "$name" = "README.md" ] && continue
+            if [ -f "${dir}default.project.json" ]; then
+              games+=("$name")
+            fi
+          done
+          if [ ${#games[@]} -eq 0 ]; then
+            echo "has_games=false" >> "$GITHUB_OUTPUT"
+            echo 'matrix={"game":[]}' >> "$GITHUB_OUTPUT"
+          else
+            json=$(printf '%s\n' "${games[@]}" | jq -R . | jq -s -c '{game: .}')
+            echo "has_games=true" >> "$GITHUB_OUTPUT"
+            echo "matrix=$json" >> "$GITHUB_OUTPUT"
+          fi
+
+  game-quality-gate:
+    name: Lint, Format, Build
+    needs: detect-games
+    if: needs.detect-games.outputs.has_games == 'true'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.detect-games.outputs.matrix) }}
+    env:
+      GAME: ${{ matrix.game }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Aftman
+        run: |
+          curl -fsSL -o /tmp/aftman.zip "https://github.com/LPGhatguy/aftman/releases/download/v0.3.0/aftman-0.3.0-linux-x86_64.zip"
+          python3 -c "import zipfile; zipfile.ZipFile('/tmp/aftman.zip').extractall('/tmp/aftman-bin')"
+          chmod +x /tmp/aftman-bin/aftman
+          sudo mv /tmp/aftman-bin/aftman /usr/local/bin/aftman
+
+      - name: Install toolchain
+        working-directory: games/${{ matrix.game }}
+        run: aftman install --no-trust-check
+
+      - name: Add Aftman to PATH
+        run: echo "$HOME/.aftman/bin" >> "$GITHUB_PATH"
+
+      - name: Install Wally packages
+        working-directory: games/${{ matrix.game }}
+        run: wally install
+
+      - name: Run Selene
+        working-directory: games/${{ matrix.game }}
+        run: selene src
+
+      - name: Run StyLua check
+        working-directory: games/${{ matrix.game }}
+        run: stylua --check src
+
+      - name: Run Rojo build
+        working-directory: games/${{ matrix.game }}
+        run: mkdir -p out && rojo build default.project.json -o "out/${{ matrix.game }}.rbxl"

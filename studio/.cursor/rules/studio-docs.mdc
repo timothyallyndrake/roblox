@@ -1,0 +1,13 @@
+---
+description: Studio documentation standards — CONTEXT.md, ADRs, phase gates
+alwaysApply: true
+---
+
+# Studio documentation standards
+
+- Read `studio/CONTEXT.md` first every session
+- No phase gate passes without CONTEXT.md update + relevant docs committed
+- Every locked decision gets an ADR in `studio/docs/decisions/`
+- Grilling Q&A append to `studio/docs/discovery/grilling-log.md` only
+- Track all work in GitHub Issues; Producer maintains Project board
+- Playtest feedback uses templates in `studio/docs/playtesting/checklists/`

@@ -1,0 +1,75 @@
+name: Merge Method Acknowledgement
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - reopened
+    branches:
+      - dev
+      - prod
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: merge-method-ack-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  merge-method-acknowledgement:
+    name: Merge Method Acknowledgement
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Validate merge-method acknowledgement in PR body
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const base = pr.base.ref;
+            const head = pr.head.ref;
+            const body = pr.body ?? "";
+
+            const squashChecked = /- \[[xX]\] I will use Squash and merge/.test(body);
+            const mergeChecked = /- \[[xX]\] I will use Create a merge commit/.test(body);
+
+            let expected = "squash";
+            if (head.startsWith("release-please--")) {
+              expected = "squash";
+            } else if (base === "prod" && head === "dev") {
+              expected = "merge";
+            } else if (base === "dev" && head === "prod") {
+              expected = "merge";
+            } else if (base === "dev") {
+              expected = "squash";
+            }
+
+            if (!squashChecked && !mergeChecked) {
+              core.setFailed(
+                `Select one merge-method acknowledgement checkbox in the PR body. Expected "${expected}" for ${head} -> ${base}.`
+              );
+              return;
+            }
+
+            if (squashChecked && mergeChecked) {
+              core.setFailed(
+                "Select exactly one merge-method acknowledgement checkbox in the PR body."
+              );
+              return;
+            }
+
+            const selected = squashChecked ? "squash" : "merge";
+            if (selected !== expected) {
+              core.setFailed(
+                `Merge-method acknowledgement mismatch for ${head} -> ${base}. Expected "${expected}" but selected "${selected}".`
+              );
+              return;
+            }
+
+            core.notice(
+              `Merge-method acknowledgement valid for ${head} -> ${base}: ${selected}.`
+            );

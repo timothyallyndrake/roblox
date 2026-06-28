@@ -1,0 +1,40 @@
+---
+description: Creating GitHub pull requests for timothyallyndrake/roblox — always include merge acknowledgement footer
+alwaysApply: false
+---
+
+# Pull request creation
+
+GitHub **does not** auto-apply `.github/pull_request_template.md` when you pass `--body` to `gh pr create`. You must include the full template footer manually or use `./scripts/create-pr.sh`.
+
+## Required PR body sections
+
+1. Summary
+2. Test plan
+3. Pre-merge checklist
+4. Waivers (or "None")
+5. **Merge Method Acknowledgement** — exact table + **exactly one** checked box
+
+CI regex requires the literal checkbox lines from the PR template. Informal tables **fail** Merge Method Acknowledgement check.
+
+## Which box to check
+
+| Head → base | Check |
+|-------------|-------|
+| `feat/*` → `dev` | Squash and merge |
+| `dev` → `prod` | Create a merge commit |
+| `release-please--*` → `prod` | Squash and merge |
+| `prod` → `dev` | Create a merge commit |
+
+## Scope
+
+- `feat(studio):` — company docs, agents, SDLC
+- `feat(<game-name>):` — game code under `games/<game-name>/`
+
+## Preferred workflow
+
+```bash
+./scripts/create-pr.sh --base dev --title "feat(studio): description"
+```
+
+Never use `gh pr create --body` with a partial body.
