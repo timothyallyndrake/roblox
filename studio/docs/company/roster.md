@@ -1,6 +1,6 @@
 # Agent Roster
 
-22 virtual studio roles. Each has a Cursor skill at `studio/.cursor/skills/<slug>/SKILL.md`.
+22 virtual studio roles. Each has a Cursor skill at `.cursor/skills/<slug>/SKILL.md` (repo root — Cursor discovers rules/skills here when the monorepo is the workspace).
 
 **Executive Producer (human):** Final approval on scope, time, and ship at every phase gate.
 

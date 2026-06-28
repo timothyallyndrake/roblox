@@ -3,7 +3,7 @@
 ## Bootstrap (every session)
 
 1. Read [`CONTEXT.md`](CONTEXT.md) — current phase, locked decisions, open questions
-2. Read your role skill: `studio/.cursor/skills/<role>/SKILL.md`
+2. Read your role skill: `.cursor/skills/<role>/SKILL.md`
 3. Check GitHub Issues / Project board for assigned work
 4. Produce deliverables; update docs; never contradict locked decisions without an ADR
 

@@ -58,7 +58,7 @@
 
 - [x] `timothyallyndrake/roblox` published on GitHub
 - [x] `studio/` skeleton with docs tree + templates
-- [x] 25 agent skills in `studio/.cursor/skills/`
+- [x] 25 agent skills in `.cursor/skills/` (repo root)
 - [x] `.github/` workflows, templates, release-please scaffold
 - [x] GitHub labels + branch rulesets configured
 - [x] `studio/docs/compliance/roblox-policy-summary.md` written
