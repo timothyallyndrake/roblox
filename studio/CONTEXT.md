@@ -7,9 +7,9 @@
 
 | Field | Value |
 |-------|-------|
-| **Active phase** | Phase 00 — Studio Framework |
+| **Active phase** | Phase 00 — Studio Framework (awaiting EP sign-off) |
 | **Active game** | TBD (no `games/<name>/` yet) |
-| **GitHub repo** | [timothyallyndrake/roblox](https://github.com/timothyallyndrake/roblox) |
+| **GitHub repo** | [timothyallyndrake/roblox](https://github.com/timothyallyndrake/roblox) ✅ Live |
 | **Last gate passed** | — (initial setup) |
 
 ## Locked Decisions
@@ -56,13 +56,14 @@
 
 ## Phase 00 Gate Checklist
 
-- [ ] `timothyallyndrake/roblox` published on GitHub
-- [ ] `studio/` skeleton with docs tree + templates
-- [ ] 22+ agent skills in `studio/.cursor/skills/`
-- [ ] `.github/` workflows, templates, release-please scaffold
-- [ ] GitHub Projects board + labels configured
-- [ ] `studio/docs/compliance/roblox-policy-summary.md` written
-- [ ] EP sign-off on Phase 00
+- [x] `timothyallyndrake/roblox` published on GitHub
+- [x] `studio/` skeleton with docs tree + templates
+- [x] 25 agent skills in `studio/.cursor/skills/`
+- [x] `.github/` workflows, templates, release-please scaffold
+- [x] GitHub labels + branch rulesets configured
+- [x] `studio/docs/compliance/roblox-policy-summary.md` written
+- [ ] GitHub Projects board created (manual — see github-projects.md)
+- [ ] EP sign-off on Phase 00 → begin Phase 01
 
 ## Pointers
 

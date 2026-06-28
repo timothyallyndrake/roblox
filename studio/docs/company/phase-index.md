@@ -2,7 +2,7 @@
 
 | Phase | Plan | Status | Gate |
 |-------|------|--------|------|
-| 00 | [phase-00-framework.md](../phases/phase-00-framework.md) | In progress | EP sign-off pending |
+| 00 | [phase-00-framework.md](../phases/phase-00-framework.md) | Awaiting EP sign-off | EP sign-off pending |
 | 01 | [phase-01-discovery.md](../phases/phase-01-discovery.md) | Not started | — |
 | 02 | phase-02-compliance.md | Not started | TBD |
 | 03 | phase-03-gdd.md | Not started | TBD |

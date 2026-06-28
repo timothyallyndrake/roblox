@@ -10,13 +10,14 @@ Publish `timothyallyndrake/roblox` monorepo with full virtual game studio skelet
 ## Deliverables
 
 - [x] Monorepo structure (`studio/`, `games/`)
-- [ ] `studio/CONTEXT.md` seeded
-- [ ] Full `studio/docs/` tree with templates
-- [ ] 22+ agent skills
-- [ ] `.github/` workflows, templates, release-please scaffold
-- [ ] GitHub Projects + labels
-- [ ] Compliance baseline
-- [ ] Git init + publish to GitHub
+- [x] `studio/CONTEXT.md` seeded
+- [x] Full `studio/docs/` tree with templates
+- [x] 25 agent skills
+- [x] `.github/` workflows, templates, release-please scaffold
+- [x] GitHub labels + branch rulesets
+- [ ] GitHub Projects board (EP manual step — see github-projects.md)
+- [x] Compliance baseline
+- [x] Git init + publish to GitHub
 
 ## Agents (RACI)
 
