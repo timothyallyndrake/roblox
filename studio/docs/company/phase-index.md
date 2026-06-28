@@ -2,8 +2,8 @@
 
 | Phase | Plan | Status | Gate |
 |-------|------|--------|------|
-| 00 | [phase-00-framework.md](../phases/phase-00-framework.md) | Awaiting EP sign-off | EP sign-off pending |
-| 01 | [phase-01-discovery.md](../phases/phase-01-discovery.md) | Not started | — |
+| 00 | [phase-00-framework.md](../phases/phase-00-framework.md) | Complete | Passed 2026-06-28 |
+| 01 | [phase-01-discovery.md](../phases/phase-01-discovery.md) | In progress | Game pitch + title |
 | 02 | phase-02-compliance.md | Not started | TBD |
 | 03 | phase-03-gdd.md | Not started | TBD |
 | 04 | phase-04-creative-bible.md | Not started | TBD |
