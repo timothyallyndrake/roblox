@@ -1,16 +1,16 @@
 # Studio Context
 
 > **Agents: read this file first every session.**  
-> Updated by the Technical Writer after every phase gate. Last updated: 2026-06-27.
+> Updated by the Technical Writer after every phase gate. Last updated: 2026-06-28.
 
 ## Current State
 
 | Field | Value |
 |-------|-------|
-| **Active phase** | Phase 00 — Studio Framework (awaiting EP sign-off) |
+| **Active phase** | Phase 01 — Discovery & Vision |
 | **Active game** | TBD (no `games/<name>/` yet) |
 | **GitHub repo** | [timothyallyndrake/roblox](https://github.com/timothyallyndrake/roblox) ✅ Live |
-| **Last gate passed** | — (initial setup) |
+| **Last gate passed** | Phase 00 — Studio Framework (2026-06-28) |
 
 ## Locked Decisions
 
@@ -42,29 +42,30 @@
 - [ ] Monetization model? (Phase 03)
 - [ ] Game working title and folder name? (Phase 01)
 
-## Active Agents (Phase 00)
+## Active Agents (Phase 01)
 
 | Role | Status |
 |------|--------|
-| Producer | Active — Phase 00 setup |
-| Technical Director | Active — monorepo + CI scaffold |
-| Technical Writer | Active — docs + this file |
+| Creative Director | Lead — creative grilling |
+| Game Designer | Active — core loop exploration |
+| Market Research Analyst | Active — genre scorecard (after grilling) |
+| Narrative Designer | Consulted — player fantasy |
+| Producer | Active — issues + phase tracking |
+| Compliance Officer | Consulted — pitch review |
 
 ## Grilling Status
 
 - **Plan-level grilling (Q1–Q17):** Complete
-- **Phase 01 creative grilling:** Not started — deferred to Phase 01 session
+- **Phase 01 creative grilling (Session 2):** In progress — see [grilling-log.md](docs/discovery/grilling-log.md)
 
-## Phase 00 Gate Checklist
+## Phase 01 Gate Checklist
 
-- [x] `timothyallyndrake/roblox` published on GitHub
-- [x] `studio/` skeleton with docs tree + templates
-- [x] 25 agent skills in `.cursor/skills/` (repo root)
-- [x] `.github/` workflows, templates, release-please scaffold
-- [x] GitHub labels + branch rulesets configured
-- [x] `studio/docs/compliance/roblox-policy-summary.md` written
-- [ ] GitHub Projects board created (manual — see github-projects.md)
-- [ ] EP sign-off on Phase 00 → begin Phase 01
+- [ ] Creative grilling complete (Session 2)
+- [ ] `genre-scorecard.md` — scored genre matrix
+- [ ] `concept-pitches.md` — top 3 concepts
+- [ ] Working title + one-line pitch locked
+- [ ] ADR for chosen direction
+- [ ] EP sign-off → begin Phase 02
 
 ## Pointers
 
