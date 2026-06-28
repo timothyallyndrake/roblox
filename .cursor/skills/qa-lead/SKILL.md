@@ -11,8 +11,8 @@ Acceptance criteria, playtest checklists, bug triage
 
 ## Before you start
 
-1. Read [`studio/CONTEXT.md`](../../studio/CONTEXT.md)
-2. Read [`studio/docs/company/roster.md`](../../studio/docs/company/roster.md)
+1. Read [`studio/CONTEXT.md`](../../../studio/CONTEXT.md)
+2. Read [`studio/docs/company/roster.md`](../../../studio/docs/company/roster.md)
 3. Check assigned GitHub Issues labeled `agent:qa-lead`
 
 ## Key questions you ask

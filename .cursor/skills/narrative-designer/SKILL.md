@@ -11,8 +11,8 @@ World, lore, player fantasy
 
 ## Before you start
 
-1. Read [`studio/CONTEXT.md`](../../studio/CONTEXT.md)
-2. Read [`studio/docs/company/roster.md`](../../studio/docs/company/roster.md)
+1. Read [`studio/CONTEXT.md`](../../../studio/CONTEXT.md)
+2. Read [`studio/docs/company/roster.md`](../../../studio/docs/company/roster.md)
 3. Check assigned GitHub Issues labeled `agent:narrative-designer`
 
 ## Key questions you ask
