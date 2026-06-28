@@ -43,4 +43,6 @@ _Creative Director leads. One question at a time._
 | Q24 | Refined pitches D/E/F — pick one? | **Keep grilling.** Starlit Conservatory explicitly stays on the potential options list. |
 | Q25 | What does "not lonely" look like? | **Live co-op** — wants to play alongside others in real time |
 | Q26 | Solo vs co-op model? | **Solo works fully + co-op optional bonus** |
-| Q27 | _(pending)_ | |
+| Q27 | Visual vibe? | **Cozy pastel** — soft, warm, Ghibli / Animal Crossing energy |
+| Q28 | Ready to name front-runner? | **Not yet.** Starlit stays on list. EP pitched **treasure hunt + storefront** idea. Wants **final list of 3** to discuss: Starlit + elaborated treasure shop + one more agent pitch. |
+| Q29 | _(pending — EP picks from Final 3)_ | |

@@ -1,125 +1,134 @@
-# Concept Pitches — Phase 01 Draft
+# Concept Pitches — Phase 01
 
-**Status:** Draft — EP review in progress  
-**Criteria from grilling:** novel, cozy, relaxing, addicting/rewarding loops, solo-playable, hybrid commercial + learnable, agent-implementable, EP asset skills (Blender/marketplace)
-
----
-
-## Pitch A: **Starlit Conservatory** (cozy collector / light sim)
-
-**One-liner:** Tend a personal floating greenhouse under the stars — breed cosmic plants, complete constellations, unlock rare biomes.
-
-**Core loop (solo):**
-1. Plant → nurture (water, light, time) → harvest
-2. Cross-breed discoveries → fill a Codex
-3. Spend harvest on greenhouse expansions + decor
-4. Optional: "meteor showers" as timed events with rare seeds
-
-**Why it fits:**
-- Proven Roblox appetite (Grow a Garden trajectory) with a **novel cosmic/observatory skin**
-- Deeply solo, cozy, relaxing; unlocking = new plants/biomes/decor
-- EP Blender skills shine on plants, pots, greenhouse parts
-- Agent-friendly: server-authoritative inventory, well-understood sim patterns
-
-**Risks:** Crowded genre — differentiation must be strong visual identity + one novel mechanic (constellations? lunar cycles?)
+**Status:** Final 3 for EP discussion  
+**Gate:** EP selects front-runner → working title → Phase 02
 
 ---
 
-## Pitch B: **The Fixery** (cozy repair / tinker sim)
+## EP design constraints (locked from grilling)
 
-**One-liner:** Run a whimsical repair shop — broken curios arrive, you diagnose, tinker, and restore them for rewards and reputation.
-
-**Core loop (solo):**
-1. Accept a broken item (clock, toy robot, music box)
-2. Mini-diagnosis (find what's wrong — visual puzzle)
-3. Repair mini-game (simple interactions, not reflex-heavy)
-4. Earn currency + unlock better tools, shop upgrades, weirder items
-
-**Why it fits:**
-- **Novel on Roblox** — Unpacking / PowerWash Simulator satisfaction without being a clone
-- Cozy, solo, addictive "one more job" loop
-- EP assets: every item is a Blender showcase
-- Agent-friendly: discrete jobs, no real-time PvP
-
-**Risks:** Needs strong art direction to feel premium; job content pipeline (new items over time)
+| Constraint | Detail |
+|------------|--------|
+| Genre anchor | Simulators / collectors |
+| Feel | Cozy, relaxing, addicting, rewarding |
+| Visual | Cozy pastel — soft, warm, Ghibli / Animal Crossing |
+| Progression | Never "beat the sim" — endless or rotating content |
+| Monetization | 100% earnable; Robux = currency / grind-skip only |
+| Social | Solo fully playable + **optional live co-op** (2P ideal) |
+| Scope | Simple, elegant — one clear loop |
+| EP skills | Blender assets, marketplace, Studio world-building |
+| Avoid | Hacker sim (compliance), live PvP siege as v1 core |
 
 ---
 
-## Pitch C: **Sandcastle Siege** (solo base-build + destruction — kid idea, solo-fixed)
+## The Final 3
 
-**One-liner:** Build a base from parts and traps, then **watch AI siege engines attack it** — launch counter-projectiles Angry-Birds-style to protect your creation.
+### 1. Starlit Conservatory *(on EP shortlist)*
 
-**Core loop (solo):**
-1. Build phase: place walls, traps, supports (unlock new pieces over time)
-2. Siege phase: AI attackers launch projectiles; you fire back with limited shots
-3. Score by % base surviving + style bonuses
-4. Earn currency → unlock projectiles, building parts, biomes
-5. *Later (optional):* async "ghost raids" on other players' saved base layouts — not live PvP
+**One-liner:** Tend a personal floating greenhouse under the stars — breed cosmic plants, fill a codex, expand your conservatory.
 
-**Why it fits:**
-- Honors kids' excitement (building, destruction, **unlocking**)
-- **Solo-first** — fixes EP's concern about base siege needing other players
-- Spectacle + satisfaction; less compliance risk than hacker sim
-- Async PvP optional later without blocking solo launch
+**Core loop (solo or 2P co-op):**
+```
+Plant → nurture → harvest → cross-breed → codex discovery → sell extras → expand greenhouse
+```
 
-**Risks:** Physics/destruction harder for agents; needs tight vertical slice scope
-
----
-
-## Running shortlist (EP — not final)
-
-| Pitch | Status |
-|-------|--------|
-| **Starlit Conservatory** | On list ✅ |
-| The Curio Loop | On list |
-| Sandcastle Siege | On list |
-| The Fixery | On list |
-| Hacker sim | Deprioritized (compliance) |
-| Live PvP base siege | Deprioritized (solo requirement) |
-
----
-
-- **Endless or renewable progression** — never "beat the sim"
-- **Fair monetization** — 100% earnable; Robux = optional currency/grind-skip only
-- **Solo-rich** — not lonely without requiring live multiplayer
-- **Simple, elegant** — one clear loop, not feature soup
-
----
-
-## Pitch Set 2 — refined for EP frustrations
-
-### Pitch D: **Starlit Conservatory** _(updated)_
-
-Same cosmic garden core, plus:
-- **Endless cross-breeding codex** (thousands of combos) + **seasonal constellations** (rotating rare seeds so there's always a chase)
+**Why it fits everything you said:**
+- Pure simulator/collector DNA — proven Roblox commercial path
+- **Endless:** cross-breeding matrix + seasonal constellation events (always a new chase)
+- **Cozy pastel:** glowing plants, glass domes, soft night sky — perfect Blender showcase
+- **Not lonely:** NPC astronomers visit; 2P co-op tends adjacent plots; async seed gifts
 - **Fair F2P:** all plants earnable; Robux buys starlight currency only
-- **Solo social:** NPC astronomers visit; async "gift a seed" to friends' plots
+- **Agent-friendly:** well-understood inventory/progression patterns
 
-### Pitch E: **The Curio Loop** _(new — simple/elegant)_
+**Novel twist:** Plants map to constellations — discovering a rare breed "completes" a star pattern and unlocks a biome.
 
-**One-liner:** One cozy workbench. Solo micro-expeditions bring back parts. Combine → discover curios. Display them. Repeat forever.
-
-**Loop:** Expedition (3 min solo) → parts → combine at bench → codex discovery → display shelf → unlock new expedition biomes
-
-- Endless: procedural part combos + rotating weekly biomes
-- Fair F2P: Robux = expedition currency packs only
-- Solo social: NPC collectors visit; async "curio trading post" (leave/request without live chat)
-
-### Pitch F: **Sandcastle Siege** _(updated — if kids' hook matters)_
-
-Weekly **solo siege trials** with rotating modifiers + endless unlock tree for parts/projectiles. Async ghost-layout raids optional. Same fair monetization.
+**Risks:** Crowded genre; must nail visual identity day one.
 
 ---
 
-## Deprioritized (for now)
+### 2. Hearth & Haul *(EP idea — elaborated)*
 
-| Idea | Why held back |
-|------|----------------|
-| Hacker simulator | Son's instinct + Compliance: real-world illegal hacking themes are high moderation risk even if clones exist |
-| Live PvP base siege | Fails solo-playable requirement; matchmaking + balance heavy for agent-only v1 |
+**One-liner:** Explore pastel wilds with friends to find treasures — haul them back to your cozy storefront where NPCs (and players) buy them, funding better maps, tools, and shop upgrades.
+
+**Core loop (solo or 2P co-op):**
+```
+Equip for run → explore biome (treasure spawns / simple puzzles) → fill haul bag →
+return to shop → stock shelves → NPCs/customers buy → earn coin →
+upgrade map, shovel, bag, shop decor → harder biomes unlock
+```
+
+**Shop layer (the part you described):**
+- Your **storefront is your home base** — arrange finds on shelves, set prices (within bands), decorate
+- **NPC customers** arrive on a schedule with wishlists ("looking for mossy teapot")
+- **Player customers (async first):** browse saved shop layouts, buy listings from a global board — no live shopkeeping required for v1
+- **Live co-op runs:** friend joins your expedition; split haul or share one big cart; both return to *your* or *their* shop
+
+**Why it fits everything you said:**
+- **Exploration + collecting** — not just numbers going up; you find *things*
+- **Endless:** rotating biome events, procedural spawn tables, rare "legendary" weekly treasures
+- **Cozy pastel:** mushroom trails, cottage shop, wicker baskets, soft fog — Ghibli adventure
+- **Not lonely:** co-op hunts + shop visitors + async player marketplace
+- **Fair F2P:** all tools/biomes earnable; Robux = coin packs
+- **Kid-friendly:** adventure together without PvP stress
+
+**Novel twist:** Treasures have **stories** (short flavor text you discover once) — completionist codex + shopkeeper reputation ("known for fossils").
+
+**Risks:** Two systems (expedition + shop) — must keep v1 vertical slice tight: **one biome + one shop room** first.
+
+**v1 scope discipline:** Ship explore→shop→upgrade loop in one pastel forest biome before adding ocean/volcano.
+
+---
+
+### 3. Glider's Rest *(agent pitch #3)*
+
+**One-liner:** Run a cozy waystation at the crossroads of pastel floating islands — solo or with a friend, glide out to gather curiosities, then restock your shelves before travelers arrive.
+
+**Core loop (solo or 2P co-op):**
+```
+Prep shelf requests → glide to nearby island (short expedition) → gather / solve micro-puzzles →
+return before "train" arrives → stock shelves → travelers (NPCs) buy →
+upgrade glider + rest station + new island routes
+```
+
+**Why it's a distinct third option:**
+- **Simpler than Hearth & Haul** — one hub (rest station), short glider runs, timed "train arrival" creates gentle urgency without stress
+- Same cozy pastel + shop fantasy, but **elegant time rhythm**: prep → run → serve → upgrade
+- **2P co-op:** one glides, one preps shop; or race two gliders on same island
+- **Endless:** new island routes, traveler types, shelf requests rotate weekly
+- Less combat/zero destruction — pure cozy logistics + discovery
+- Strong Blender fit: glider, station, island dioramas, traveler NPCs
+
+**Novel twist:** "Rest" matters — overworking your character reduces glide stamina; sitting at the station with tea restores bonuses (cozy mechanic, not punishing).
+
+**Risks:** Timed train mechanic must feel cozy not stressful; needs playtesting.
+
+---
+
+## Comparison at a glance
+
+| | Starlit Conservatory | Hearth & Haul | Glider's Rest |
+|---|---------------------|---------------|---------------|
+| **Primary verb** | Grow | Explore & sell | Gather & serve |
+| **Complexity** | Medium | Higher (2 systems) | Medium-low |
+| **Co-op shine** | Tend plots together | Treasure runs together | Glide + shop split roles |
+| **Commercial precedent** | Grow a Garden | Less direct (novel) | Less direct (novel) |
+| **EP Blender showcase** | Plants, greenhouse | Treasures, cottage shop | Islands, glider, station |
+| **Kids' excitement** | Moderate | High (adventure) | Moderate-high |
+| **Agent v1 difficulty** | Lower | Medium | Medium |
+
+---
+
+## Deprioritized
+
+| Idea | Why |
+|------|-----|
+| Hacker simulator | Compliance / moderation risk |
+| Live PvP base siege | Solo requirement + scope |
+| Sandcastle Siege | Fights cozy pastel unless heavily toy-box |
+| The Fixery / Curio Loop | Merged into Glider's Rest / Hearth DNA — can revisit |
 
 ---
 
 ## Next step
 
-EP picks 1–2 pitches to deep-dive in genre scorecard, or requests hybrid/combination.
+EP discusses all 3 → pick front-runner → Market Research scores → Compliance pre-screen → working title → Phase 02.
