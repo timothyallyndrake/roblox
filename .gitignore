@@ -13,3 +13,4 @@
 
 # Aftman local
 .aftman/
+__pycache__/

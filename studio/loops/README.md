@@ -128,14 +128,9 @@ Copy `config.example.json` → `config/local.json`:
 
 ## Starting the game-ideas discovery loop
 
-See [discovery/game-ideas/manifest.md](discovery/game-ideas/manifest.md).
+**EP command:** `/rgs-loop-discovery <your goals in plain English>`
 
-```bash
-RUN_ID="2026-06-28-discovery-game-ideas"
-mkdir -p studio/loops/runs/$RUN_ID
-cp studio/loops/templates/run-brief.template.md studio/loops/runs/$RUN_ID/brief.md
-# Edit brief.md in plain English, then invoke Loop Runner skill
-```
+Agent runs RGS — no manual mkdir/cp. See [rgs-commands.md](../docs/company/rgs-commands.md) and [discovery/game-ideas/manifest.md](discovery/game-ideas/manifest.md).
 
 ## Implementation reality (EP + agent pairing)
 
