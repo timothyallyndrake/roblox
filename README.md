@@ -4,6 +4,8 @@ Monorepo for the **Roblox Virtual Game Studio** — a reusable game development 
 
 **GitHub:** [timothyallyndrake/roblox](https://github.com/timothyallyndrake/roblox)
 
+**Studio commands:** `/rgs-orchestrator` — see [studio/docs/company/rgs-commands.md](studio/docs/company/rgs-commands.md)
+
 ## Structure
 
 ```

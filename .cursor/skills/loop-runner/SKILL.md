@@ -18,13 +18,20 @@ Execute studio loops defined in `studio/loops/**/manifest.md`. Maximum autonomy 
 
 ## Starting a new run
 
-```bash
-RUN_ID="$(date +%Y-%m-%d)-discovery-game-ideas"
-mkdir -p "studio/loops/runs/$RUN_ID/research"
-cp studio/loops/templates/run-brief.template.md "studio/loops/runs/$RUN_ID/brief.md"
-cp studio/loops/templates/run-state.template.md "studio/loops/runs/$RUN_ID/state.md"
-# EP edits brief.md, then tell Loop Runner: "Start run $RUN_ID on discovery.game-ideas"
+**Use RGS — EP never runs mkdir/cp manually:**
+
 ```
+/rgs-loop-discovery <optional brief in plain English>
+```
+
+Agent executes:
+```bash
+python3 scripts/rgs.py loop start discovery [--brief "..."]
+```
+
+Then `/rgs-loop-continue` to execute manifest steps.
+
+See [rgs-commands.md](../../../studio/docs/company/rgs-commands.md).
 
 ## Execution protocol
 
