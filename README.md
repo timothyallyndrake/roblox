@@ -9,6 +9,7 @@ Monorepo for the **Roblox Virtual Game Studio** — a reusable game development 
 ```
 roblox/
 ├── studio/          # Game development company — agents, SDLC, docs, CONTEXT.md
+├── .cursor/         # Cursor rules + agent skills (repo root — required for discovery)
 └── games/           # One folder per game (bootstrapped from the-laboratory)
     └── <game-name>/
 ```
