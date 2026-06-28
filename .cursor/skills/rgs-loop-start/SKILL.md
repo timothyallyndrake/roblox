@@ -14,11 +14,12 @@ python3 scripts/rgs.py loop start <type> [--game SLUG] [--brief "plain english g
 
 ## Then immediately
 
-1. Read manifest from `studio/loops/`
-2. Follow `.cursor/skills/loop-runner/SKILL.md` execution protocol
-3. Use WebSearch on research steps
-4. Discord notify: `python3 scripts/studio-discord-bridge.py notify ...`
-5. On grill: `/rgs-grill` one question → Discord `waiting_on_ep`
+```bash
+python3 scripts/rgs.py loop continue
+```
+
+Dispatches **Cursor `agent` CLI** to execute the loop (not inline in this chat).
 
 If EP provided brief text in the command, pass via `--brief`.
 
+See [agent-providers.md](../../../studio/docs/company/agent-providers.md).

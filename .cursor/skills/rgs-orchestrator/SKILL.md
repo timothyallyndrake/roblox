@@ -22,12 +22,14 @@ You are the **Roblox Game Studio (RGS) orchestrator**. EP never runs manual loop
 | `/rgs-list-runs` | `python3 scripts/rgs.py runs list` |
 | `/rgs-loop-start <type>` | `/rgs-loop-start` skill |
 | `/rgs-loop-discovery` | start discovery loop |
-| `/rgs-loop-continue [run]` | `/rgs-loop-continue` skill |
+| `/rgs-loop-continue [run]` | `python3 scripts/rgs.py loop continue [run]` — dispatches Cursor `agent` CLI |
 | `/rgs-phase-status` | `python3 scripts/rgs.py phase status` |
 | `/rgs-grill` | `/rgs-grill` skill (one question) |
 | `/rgs-discord-listen` | background discord bridge listen |
+| (agent health) | `python3 scripts/rgs.py agent status` |
 
-Full catalog: [studio/docs/company/rgs-commands.md](../../../studio/docs/company/rgs-commands.md)
+Full catalog: [studio/docs/company/rgs-commands.md](../../../studio/docs/company/rgs-commands.md)  
+Agent backends: [studio/docs/company/agent-providers.md](../../../studio/docs/company/agent-providers.md)
 
 ## Always first
 

@@ -157,13 +157,27 @@ See [registry.md](registry.md). Each SDLC phase 01–07+ has a loop; final steps
 
 Game slug attaches at Phase 06 bootstrap; earlier loops use `game_slug: null` until title locked in discovery.
 
-## 7. Security
+## 7. Agent execution (pluggable providers)
+
+Loop steps run via **headless agent dispatch**, not manual in-chat execution:
+
+```bash
+python3 scripts/rgs.py loop continue <run_id>
+```
+
+Default backend: Cursor `agent` CLI (`-p --trust --output-format json`). Session IDs persist in `state.json` for `--resume`.
+
+Swap backends in `studio/config/agent.local.json` (Ollama, OpenClaw stubs ready).
+
+See [agent-providers.md](../docs/company/agent-providers.md).
+
+## 8. Security
 
 - Discord webhook URL in `config/local.json` — **gitignored**
 - Never commit secrets; use `config.example.json` template
 - Research cites sources in `research/*.md` for audit trail
 
-## 8. Adding a new loop
+## 9. Adding a new loop
 
 1. Copy `templates/loop.manifest.template.md` → `studio/loops/<category>/<name>/manifest.md`
 2. Register in `registry.md`

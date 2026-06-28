@@ -49,7 +49,7 @@ Game slug locked in CONTEXT.md after discovery handoff.
 | `/rgs-list-loops` | `loops list` | All SDLC loops (registry) |
 | `/rgs-list-runs` | `runs list` | All loop run folders |
 | `/rgs-loop-start` | `loop start <type>` | **Create run** (auto brief/state/research/) |
-| `/rgs-loop-continue` | — | Execute next manifest step (loop-runner) |
+| `/rgs-loop-continue` | `loop continue [run_id]` | **Dispatch Cursor `agent` CLI** — execute next manifest step |
 | `/rgs-loop-status` | `loop status [run_id]` | One run or all |
 
 ### Loop shortcuts
@@ -73,9 +73,20 @@ Agent runs:
 ```bash
 python3 scripts/rgs.py loop start discovery --brief "cozy pastel sim, Bee Swarm reference, 3 finalists score 8+"
 ```
-Then `/rgs-loop-continue` to execute research steps.
+Then `/rgs-loop-continue` dispatches the Cursor `agent` CLI to execute research steps.
 
 ---
+
+## Agent providers (pluggable backends)
+
+| Skill | CLI | Purpose |
+|-------|-----|---------|
+| — | `agent status` | Check Cursor/Ollama/OpenClaw provider health |
+| — | `agent providers` | List available backends |
+
+Default: **Cursor `agent` CLI** (headless, `-p --trust`). Swap via `studio/config/agent.local.json`.
+
+See [agent-providers.md](agent-providers.md).
 
 ## Discord
 
@@ -114,7 +125,9 @@ Used inside loops when EP taste input required.
 
 ```
 EP → /rgs-* skills → scripts/rgs.py → studio/loops/ + CONTEXT.md
-                    → loop-runner skill → staff agents → WebSearch
+                    → agent_providers/ → Cursor `agent` CLI (default)
+                    → (future: Ollama, OpenClaw)
+                    → loop-runner protocol → staff skills → WebSearch
                     → Discord bridge → EP replies
                     → GitHub Issues (Producer, later loops)
 ```

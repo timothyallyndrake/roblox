@@ -1,0 +1,17 @@
+{
+  "default_provider": "cursor",
+  "providers": {
+    "cursor": {
+      "command": "agent",
+      "model": null,
+      "flags": ["-p", "--trust", "--force", "--output-format", "json"]
+    },
+    "ollama": {
+      "base_url": "http://localhost:11434",
+      "model": "llama3.2"
+    },
+    "openclaw": {
+      "config_path": "~/.openclaw/config"
+    }
+  }
+}

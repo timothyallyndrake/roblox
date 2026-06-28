@@ -35,6 +35,7 @@
 | D17 | **Phase 01 creative grilling** deferred to Phase 01 session | Grilling Q17 |
 | D18 | **Studio Loop Engine** — reusable R&D loops, max autonomy, Discord notify, grill-me integration, game_slug aware, one loop per SDLC step → GitHub issues | Loop grilling LQ1–LQ2 |
 | D19 | **RGS orchestrator** — `/rgs-*` skills + `scripts/rgs.py`; EP never manual loop setup | EP request 2026-06-28 |
+| D20 | **Pluggable agent providers** — loop execution via Cursor `agent` CLI; swappable to Ollama/OpenClaw | EP request 2026-06-28 |
 
 ## Open Questions
 
@@ -77,6 +78,7 @@
 | Grilling log | [docs/discovery/grilling-log.md](docs/discovery/grilling-log.md) | Seeded |
 | Loop engine | [loops/README.md](loops/README.md) | Active |
 | RGS commands | [docs/company/rgs-commands.md](docs/company/rgs-commands.md) | Active |
+| Agent providers | [docs/company/agent-providers.md](docs/company/agent-providers.md) | Active |
 | Compliance | [docs/compliance/roblox-policy-summary.md](docs/compliance/roblox-policy-summary.md) | Draft |
 | GDD | `docs/game-design/gdd.md` | TBD (Phase 03) |
 | Architecture | `docs/technical/architecture.md` | TBD (Phase 05) |

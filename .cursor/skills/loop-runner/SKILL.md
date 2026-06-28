@@ -29,9 +29,15 @@ Agent executes:
 python3 scripts/rgs.py loop start discovery [--brief "..."]
 ```
 
-Then `/rgs-loop-continue` to execute manifest steps.
+Then `/rgs-loop-continue` or:
 
-See [rgs-commands.md](../../../studio/docs/company/rgs-commands.md).
+```bash
+python3 scripts/rgs.py loop continue
+```
+
+This dispatches the **Cursor `agent` CLI** (pluggable — see agent-providers.md). Do not assume the interactive chat session executes loop steps unless dispatch fails.
+
+See [rgs-commands.md](../../../studio/docs/company/rgs-commands.md) and [agent-providers.md](../../../studio/docs/company/agent-providers.md).
 
 ## Execution protocol
 

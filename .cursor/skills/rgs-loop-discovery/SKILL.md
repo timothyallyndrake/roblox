@@ -4,6 +4,6 @@ description: Starts discovery.game-ideas loop. Use for /rgs-loop-discovery [opti
 disable-model-invocation: true
 ---
 
-Run `python3 scripts/rgs.py loop start discovery [--brief "..."]` then `/rgs-loop-continue`.
+Run `python3 scripts/rgs.py loop start discovery [--brief "..."]` then `python3 scripts/rgs.py loop continue`.
 
-This is Phase 01 — novel game ideas research loop.
+Dispatches Cursor `agent` CLI via pluggable provider. See [agent-providers.md](../../../studio/docs/company/agent-providers.md).

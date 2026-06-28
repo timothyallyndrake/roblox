@@ -9,7 +9,10 @@ Usage:
   python3 scripts/rgs.py games list
   python3 scripts/rgs.py loops list
   python3 scripts/rgs.py loop start discovery [--game SLUG] [--brief "plain english goals"]
+  python3 scripts/rgs.py loop continue [run_id] [--provider cursor] [--dry-run]
   python3 scripts/rgs.py loop status [run_id]
+  python3 scripts/rgs.py agent status
+  python3 scripts/rgs.py agent providers
   python3 scripts/rgs.py runs list
   python3 scripts/rgs.py phase status
   python3 scripts/rgs.py help
@@ -24,6 +27,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+from agent_providers import get_provider, list_providers  # noqa: E402
+import rgs_agent  # noqa: E402
+
 STUDIO = ROOT / "studio"
 SKILLS = ROOT / ".cursor" / "skills"
 LOOPS = STUDIO / "loops"
@@ -219,6 +227,10 @@ def cmd_loop_start(args: argparse.Namespace) -> None:
         "iteration": 0,
         "started": datetime.now(timezone.utc).isoformat(),
         "updated": datetime.now(timezone.utc).isoformat(),
+        "agent": {
+            "provider": None,
+            "session_id": None,
+        },
     }
     (run_dir / "state.json").write_text(json.dumps(state_json, indent=2))
     (run_dir / "log.md").write_text(f"# Run log — {run_id}\n\n")
@@ -230,8 +242,76 @@ def cmd_loop_start(args: argparse.Namespace) -> None:
     print(f"   Manifest: {manifest.relative_to(ROOT)}")
     print(f"   Brief:    {brief_path.relative_to(ROOT)}")
     print()
-    print("Next: agent runs /rgs-loop-continue or loop-runner skill on this run_id")
+    print("Next: /rgs-loop-continue or:")
     print(f"      python3 scripts/rgs.py loop continue {run_id}")
+
+
+def cmd_loop_continue(args: argparse.Namespace) -> None:
+    run_id = args.run_id
+    if not run_id:
+        if not RUNS.exists():
+            print("No runs found", file=sys.stderr)
+            sys.exit(1)
+        dirs = sorted(
+            (d for d in RUNS.iterdir() if d.is_dir()),
+            key=lambda p: p.stat().st_mtime,
+            reverse=True,
+        )
+        if not dirs:
+            print("No runs found", file=sys.stderr)
+            sys.exit(1)
+        run_id = dirs[0].name
+        print(f"Using latest run: {run_id}")
+
+    if args.dry_run:
+        prompt = rgs_agent.dispatch_loop_continue(run_id, dry_run=True)
+        print(prompt)
+        return
+
+    print(f"Dispatching loop continue via agent provider...")
+    result = rgs_agent.dispatch_loop_continue(run_id, provider_name=args.provider)
+    if isinstance(result, str):
+        print(result)
+        return
+
+    if result.ok:
+        print(f"✅ Agent turn complete ({result.provider})")
+        if result.session_id:
+            print(f"   Session: {result.session_id}")
+        print()
+        print(result.text[:4000])
+    else:
+        print(f"❌ Agent dispatch failed ({result.provider})", file=sys.stderr)
+        if result.error:
+            print(f"   {result.error}", file=sys.stderr)
+        if result.text:
+            print(result.text[:2000], file=sys.stderr)
+        sys.exit(1)
+
+
+def cmd_agent_status(_: argparse.Namespace) -> None:
+    print("=== RGS Agent Providers ===\n")
+    cfg_path = STUDIO / "config" / "agent.local.json"
+    example = STUDIO / "config" / "agent.example.json"
+    if cfg_path.exists():
+        print(f"Config: {cfg_path.relative_to(ROOT)}")
+    else:
+        print(f"Config: {example.relative_to(ROOT)} (default — copy to agent.local.json to customize)")
+    print()
+    for name in list_providers():
+        try:
+            provider = get_provider(name)
+            ok, msg = provider.health()
+            mark = "✓" if ok else "○"
+            print(f"  [{mark}] {name}: {msg}")
+        except Exception as exc:  # noqa: BLE001
+            print(f"  [✗] {name}: {exc}")
+
+
+def cmd_agent_providers(_: argparse.Namespace) -> None:
+    print("Available providers:", ", ".join(list_providers()))
+    print("Default: see studio/config/agent.example.json")
+    print("Swap: set default_provider in studio/config/agent.local.json")
 
 
 def cmd_loop_status(args: argparse.Namespace) -> None:
@@ -296,12 +376,19 @@ Loops:
   loops list             Loop registry
   loop start <id>        Create run (auto mkdir/brief/state)
            [--game SLUG] [--brief "text"] [--run-id ID]
+  loop continue [run_id] Dispatch Cursor `agent` CLI to execute next step
+           [--provider cursor|ollama|openclaw] [--dry-run]
   loop status [run_id]   Run or studio status
   runs list              All loop runs
 
-Skills (in Cursor): /rgs-orchestrator, /rgs-loop-start, /rgs-list-staff, ...
+Agent (pluggable backends):
+  agent status           Provider health check
+  agent providers        List swap-in backends
+
+Skills (in Cursor): /rgs-orchestrator, /rgs-loop-continue, /rgs-list-staff, ...
 
 See: studio/docs/company/rgs-commands.md
+See: studio/docs/company/agent-providers.md
 """)
 
 
@@ -344,9 +431,19 @@ def main() -> None:
     ls.add_argument("--brief", default=None)
     ls.add_argument("--run-id", default=None)
     ls.set_defaults(func=cmd_loop_start)
+    lc = lp_sub.add_parser("continue")
+    lc.add_argument("run_id", nargs="?", default=None)
+    lc.add_argument("--provider", default=None)
+    lc.add_argument("--dry-run", action="store_true")
+    lc.set_defaults(func=cmd_loop_continue)
     lst = lp_sub.add_parser("status")
     lst.add_argument("run_id", nargs="?", default=None)
     lst.set_defaults(func=cmd_loop_status)
+
+    ap = sub.add_parser("agent")
+    ap_sub = ap.add_subparsers(dest="agent_cmd")
+    ap_sub.add_parser("status").set_defaults(func=cmd_agent_status)
+    ap_sub.add_parser("providers").set_defaults(func=cmd_agent_providers)
 
     args = parser.parse_args()
     if not args.cmd:
@@ -379,10 +476,19 @@ def main() -> None:
     elif args.cmd == "loop":
         if args.loop_cmd == "start":
             cmd_loop_start(args)
+        elif args.loop_cmd == "continue":
+            cmd_loop_continue(args)
         elif args.loop_cmd == "status":
             cmd_loop_status(args)
         else:
             parser.error("loop subcommand required")
+    elif args.cmd == "agent":
+        if args.agent_cmd == "status":
+            cmd_agent_status(args)
+        elif args.agent_cmd == "providers":
+            cmd_agent_providers(args)
+        else:
+            parser.error("agent subcommand required")
     else:
         args.func(args)
 

@@ -4,7 +4,7 @@
 
 1. Read [`CONTEXT.md`](CONTEXT.md) — current phase, locked decisions, open questions
 2. EP uses **`/rgs-orchestrator`** or **`/rgs-status`** — never manual loop shell commands
-3. Loop work: **`/rgs-loop-start`** / **`/rgs-loop-continue`** (see [rgs-commands.md](docs/company/rgs-commands.md))
+3. Loop work: **`/rgs-loop-start`** / **`/rgs-loop-continue`** — continue dispatches Cursor `agent` CLI (see [rgs-commands.md](docs/company/rgs-commands.md), [agent-providers.md](docs/company/agent-providers.md))
 4. Read your role skill: `.cursor/skills/<role>/SKILL.md` when acting as staff
 5. Check GitHub Issues / Project board for assigned work
 6. Produce deliverables; update docs; never contradict locked decisions without an ADR
