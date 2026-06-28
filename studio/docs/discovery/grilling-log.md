@@ -46,3 +46,5 @@ _Creative Director leads. One question at a time._
 | Q27 | Visual vibe? | **Cozy pastel** — soft, warm, Ghibli / Animal Crossing energy |
 | Q28 | Ready to name front-runner? | **Not yet.** Starlit stays on list. EP pitched **treasure hunt + storefront** idea. Wants **final list of 3** to discuss: Starlit + elaborated treasure shop + one more agent pitch. |
 | Q29 | _(pending — EP picks from Final 3)_ | |
+| Q30 | Games you've really enjoyed? | **Bee Swarm Simulator, Pet Simulator, Wizard Tycoon, Plane Crazy, Rally Kart** |
+| Q31 | Which reference game hook kept you coming back? | **Bee Swarm Simulator** — field grinding, bees, quests, events |

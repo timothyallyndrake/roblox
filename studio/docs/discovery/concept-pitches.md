@@ -21,6 +21,47 @@
 
 ---
 
+## EP taste profile (reference games)
+
+Games EP has really enjoyed and what each contributes to our design:
+
+| Game | What you likely loved | Design DNA for us |
+|------|----------------------|-------------------|
+| **Bee Swarm Simulator** | Field grinding, bee/pet collection, upgrades, quests, events, "one more flower" | Incremental grind + collect + quest chains + rotating events |
+| **Pet Simulator** | Egg hatching, pet collection, zone progression, rebirth chase | Classic sim loop, endless unlock tiers, zone gates |
+| **Wizard Tycoon** | Build your plot, upgrade machines, spell unlock tree, passive income | **Tycoon building** + upgrade tree on *your* space |
+| **Plane Crazy** | Creative building, physics sandbox, test what you built | **Creative expression** — build/customize, not just numbers |
+| **Rally Kart** | Skill sessions, physics fun, short competitive loops | Break from grind — skill-based **moment-to-moment fun** |
+
+**Cross-cutting themes from your library:**
+1. **Collect + upgrade** (Bee Swarm, Pet Sim) — core sim addiction
+2. **Build your own space** (Wizard Tycoon, Plane Crazy) — not lonely, expressive
+3. **Short skill/physics joy** (Plane Crazy, Rally Kart) — variety between grinding
+4. **No pure social RP or hardcore PvP** in this list
+
+**How the Final 3 map to your taste:**
+
+| Pitch | Bee Swarm / Pet Sim | Wizard Tycoon | Plane Crazy | Rally Kart |
+|-------|---------------------|---------------|-------------|------------|
+| Starlit Conservatory | ★★★ field/collect/breed | ★ expand greenhouse | ★ plot layout | — |
+| Hearth & Haul | ★★ quests + collect | ★★ shop upgrades | ★★ shop layout + haul | ★★ co-op runs as "sessions" |
+| Glider's Rest | ★★ gather runs | ★★★ serve/upgrade station | ★ route building | ★ glide skill moments |
+
+**EP #1 reference game:** **Bee Swarm Simulator** — field grind, collection, upgrades, quests, events.
+
+**Front-runner signal:** **Starlit Conservatory** is the closest sim-collector match, but should explicitly borrow Bee Swarm patterns:
+- **Fields/biomes** to work (greenhouse plots = fields)
+- **Collectors** that multiply output (cosmic moths/fireflies instead of bees?)
+- **Quest chains** from NPCs (constellation keeper = bear equivalent)
+- **Rotating events** (meteor showers, rare bloom windows)
+- **Token/currency sinks** for upgrades (tools, plot size, breeder lab)
+
+Hearth & Haul remains strong if EP wants **more exploration between grinds** (Bee Swarm's blue quest fields energy). Glider's Rest is weakest Bee Swarm match.
+
+---
+
+---
+
 ## The Final 3
 
 ### 1. Starlit Conservatory *(on EP shortlist)*
