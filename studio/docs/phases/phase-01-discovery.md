@@ -1,6 +1,6 @@
 # Phase 01 — Discovery & Vision
 
-**Status:** Not started  
+**Status:** In progress (started 2026-06-28)  
 **Gate:** Game pitch + working title locked in CONTEXT.md
 
 ## Objective
@@ -21,7 +21,7 @@ Determine what game we are building through creative grilling, genre research, a
 
 ## Deliverables
 
-- [ ] Creative grilling session (deferred — runs at start of this phase)
+- [ ] Creative grilling session (Session 2 — in progress)
 - [ ] `docs/discovery/genre-scorecard.md` — scored genre matrix
 - [ ] `docs/discovery/concept-pitches.md` — top 3 concepts with pros/cons
 - [ ] Working title + one-line pitch locked in CONTEXT.md
