@@ -1,0 +1,17 @@
+{
+  "run_id": "2026-06-28-compliance-feasibility-starlit-conservatory",
+  "loop_id": "compliance.feasibility",
+  "game_slug": "cosmic-bloom",
+  "status": "FINISHED",
+  "iteration": 0,
+  "started": "2026-06-28T18:42:41.011052+00:00",
+  "updated": "2026-06-28T20:00:00.000000+00:00",
+  "agent": {
+    "provider": "cursor",
+    "session_id": "2bd1396c-bcfe-489a-85d3-c0ad3ec1ad55",
+    "last_dispatch": "2026-06-28T18:47:54.778454+00:00",
+    "last_ok": true
+  },
+  "ep_approval": true,
+  "ep_approval_note": "Phase 02 approved + Cosmic Bloom name locked (EP Q43)"
+}

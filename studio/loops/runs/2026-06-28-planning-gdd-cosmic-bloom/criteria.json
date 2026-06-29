@@ -1,0 +1,19 @@
+{
+  "goals_nl": "Write GDD for Cosmic Bloom. Vision: games/cosmic-bloom/docs/VISION.md. Pitch: studio/docs/discovery/pitch-sells-cosmic-bloom.md. Phase 02 locked: Minimal/all ages, Cozy Fair F2P, no paid random at launch. Include core loop, progression, Star Counter, constellation codex, co-op scope, achievements.",
+  "overrides": {},
+  "constraints": [
+    "minimal_all_ages",
+    "cozy_fair_f2p",
+    "no_paid_random_at_launch",
+    "everything_earnable",
+    "solo_plus_optional_2p_coop",
+    "no_pvp_steal"
+  ],
+  "stop_checklist": [
+    "core_loop",
+    "progression",
+    "monetization",
+    "achievements",
+    "co_op_model"
+  ]
+}

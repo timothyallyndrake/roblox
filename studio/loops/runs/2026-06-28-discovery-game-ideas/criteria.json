@@ -1,0 +1,59 @@
+{
+  "run_id": "2026-06-28-discovery-game-ideas",
+  "loop_id": "discovery.game-ideas",
+  "goals_nl": "A new, novel Roblox game — all ages, fun, happy, relaxing, satisfying, bright, cheery, and simple. Find 3 finalist pitches scoring 8+ on composite rubric. Prioritize fresh twists on simulator/collector genre.",
+  "overrides": {
+    "stop_criteria.pitch_count.min": 3,
+    "stop_criteria.pitch_quality.min": 8,
+    "stop_criteria.iteration_cap.value": 5
+  },
+  "constraints": [
+    "all_ages_family_friendly",
+    "cozy_pastel_visual_vibe",
+    "solo_fully_playable",
+    "optional_live_coop",
+    "everything_earnable_in_game",
+    "robux_currency_time_skip_only",
+    "simple_elegant_one_core_verb",
+    "novel_differentiation",
+    "bee_swarm_reference_hook"
+  ],
+  "nice_to_have": [
+    "starlit_conservatory_on_options_list",
+    "treasure_hunt_storefront_concept",
+    "unlocking_new_stuff_retention_driver"
+  ],
+  "exclude": [
+    "hacker_simulator",
+    "pvp_base_siege_primary_loop",
+    "high_maturity_edgy_themes",
+    "pay_to_win_monetization"
+  ],
+  "reference_games": [
+    "Bee Swarm Simulator",
+    "Pet Simulator",
+    "Wizard Tycoon",
+    "Plane Crazy",
+    "Rally Kart"
+  ],
+  "ep_taste_notes": [
+    "simulators_frustrate_when_content_runs_dry",
+    "too_p2w",
+    "feels_lonely_solo",
+    "one_core_verb_collect_upgrade_collect_faster"
+  ],
+  "iteration_1_override": {
+    "source": "EP Q33 Discord 2026-06-28",
+    "require_repo_clean_pitches": true,
+    "require_roblox_novelty": true,
+    "reject_iteration_0_finalists": true
+  },
+  "ep_shortlist": [
+    {
+      "name": "Chime Orchard",
+      "composite": 8.53,
+      "logged": "2026-06-28",
+      "source": "EP Q35 Discord"
+    }
+  ]
+}

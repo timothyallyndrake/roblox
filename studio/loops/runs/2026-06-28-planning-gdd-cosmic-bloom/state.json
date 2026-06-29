@@ -1,0 +1,15 @@
+{
+  "run_id": "2026-06-28-planning-gdd-cosmic-bloom",
+  "loop_id": "planning.gdd",
+  "game_slug": "cosmic-bloom",
+  "status": "RUNNING",
+  "iteration": 0,
+  "started": "2026-06-28T18:57:00.803956+00:00",
+  "updated": "2026-06-28T18:58:02.130437+00:00",
+  "agent": {
+    "provider": "cursor",
+    "session_id": "768d17f5-8898-4a05-b1fe-1bd749a0e68d",
+    "last_dispatch": "2026-06-28T18:58:02.129973+00:00",
+    "last_ok": true
+  }
+}

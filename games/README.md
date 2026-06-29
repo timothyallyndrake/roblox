@@ -4,7 +4,7 @@ Each Roblox game lives in its own folder under `games/`.
 
 ## Status
 
-No games bootstrapped yet. The first game folder is created in **Phase 06 (Game Bootstrap)** after the game name and concept are locked in Phase 01–02.
+No games bootstrapped yet (Rojo/Knit in **Phase 06**). **First game:** [cosmic-bloom/](cosmic-bloom/) — **Cosmic Bloom** (Phase 03 GDD, 2026-06-28).
 
 ## Future layout
 
