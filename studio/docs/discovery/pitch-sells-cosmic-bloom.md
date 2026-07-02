@@ -8,7 +8,7 @@
 
 ## One sentence
 
-You grow **magical space plants** in your own meadow, **mix new kinds** in your **Stellar Nursery**, fill your **Bloomdex**, **feed hungry planets** and **team up for Community Feed** at the **Orbital Outpost**, and chase **meteor showers** at night.
+You grow **magical space plants** in your own meadow, **mix new kinds** in your **Stellar Nursery**, fill your **Bloomdex**, **feed friendly planets** and **team up for Community Feed** at the **Orbital Outpost**, and chase **meteor showers** at night.
 
 ---
 
@@ -37,7 +37,7 @@ Some plants love **moonlight**, some **sunshine**, some **both**.
 
 ### 2. Your Stellar Nursery
 
-Your greenhouse. Mix **pollen** from two plants to invent **new plants** and chase **mutations** (special variants — at least **3 mutations per plant type**).
+Your nursery. Mix **pollen** from two plants to invent **new plants** and chase **mutations** (special variants — at least **3 mutations per plant type**).
 
 Upgrade:
 
@@ -59,9 +59,9 @@ Like a **Pokédex for plants** — but each collection is a **picture made of st
 
 - **Hover a star** → see what you need (*“Grow a Moon Melon”*, *“Find the Shimmer mutation”*)
 - Light up every star → **big reward**
-- Names sound like constellations but are **made up for our game** — if you notice Little Slipper feels like something from the real sky, that’s part of the fun lore
+- Names sound like constellations but are **made up for our game** — these are Cosmic Bloom’s own star shapes, not real-world constellations.
 
-**Later update:** when you finish a collection, those stars might show up in the **real night sky above your garden** — and friends can see them when they visit!
+**Later update:** when you finish a collection, those stars might show up in the **game sky above your garden** — and friends can see them when they visit!
 
 ---
 
@@ -71,7 +71,7 @@ Like a **Pokédex for plants** — but each collection is a **picture made of st
 |-------|-------------|
 | **Orbital Outpost** | **Personal orders** to feed planets + **Community Feed** (team up!) |
 | **Meteor Merchant** | Spend **Comet Shards** on rare seeds and decor |
-| **Seed Broker** | Buy seeds with **Cosmic Coins** |
+| **Seed Stand** | Buy seeds with **Cosmic Coins** |
 | **Cosmic Spin** | **One shared board** — spin anytime, watch others, fair legendary snapshots |
 | **Leaderboards** | Five rankings that **never max out** |
 
@@ -90,7 +90,7 @@ Like a **Pokédex for plants** — but each collection is a **picture made of st
 Orders are **shopping lists**, not one thing at a time:
 
 > *Round 2 — Lumina needs:*  
-> *20 Glow Berry · 15 Moon Melon · 5 Nebula Pod*
+> *15 Glow Berry · 8 Moon Melon*
 
 Rounds **never end** — round 10, 50, 100… harder lists, **better prizes**. Switch between **unlocked** planets anytime.
 
@@ -98,21 +98,21 @@ Rounds **never end** — round 10, 50, 100… harder lists, **better prizes**. S
 
 **Later:** **Launch Pad** auto-quests unlock at Glimmer **round 20** *(coming after launch)*.
 
-You earn **Cosmic Coins** and track **lifeforms fed** (a number that goes up forever).
+You earn **Cosmic Coins** and track **Planet Friends Fed** (a number that goes up forever).
 
 ---
 
 ## Community Feed (team up on the server!)
 
-**Required in v1.** Feeds **rotate themes** on a loop:
+At launch, feeds **rotate themes** on a loop:
 
 | Feed | What to bring |
 |------|----------------|
 | **Lumina Luncheon** | Moon fruits — **everyone** can join |
 | **Solara Supper** | Sun fruits — if you’ve bred them |
-| **Weaver Watch** | Twilight fruits — for advanced gardeners |
+| **Glimmer Gathering** | Twilight fruits — for advanced gardeners |
 
-Then it loops back to **Lumina Luncheon** — about every **90 minutes** — so you’re never stuck forever if you don’t have twilight seeds yet. A new themed feed starts roughly **every 30 minutes**.
+Then it loops back to **Lumina Luncheon** — about every **90 minutes** — so you’re never stuck forever if you don’t have twilight seeds yet. A new themed feed starts roughly **every 30 minutes**. If a table asks for fruit you do not grow yet, the game tells you what to bring next time.
 
 ---
 
@@ -126,7 +126,7 @@ Then it loops back to **Lumina Luncheon** — about every **90 minutes** — so 
 4. When someone **finishes claiming** a legendary, the board **switches to the next legendary** for **new** spins
 5. **Important (fairness):** if you **already started** spinning before that switch, you still chase the **same legendary** with the **same odds** you had when you began — even if someone else won it first!
 
-**Example:** Legendary is a **Nebula Moth Lantern**. You and a friend both start spinning. Friend wins it first — board updates to a **Comet Wind Chime**. Your spin still had a fair shot at the **Lantern** because you started before their win finished.
+**Example:** Legendary is a **Nebula Glow Lantern**. You and a friend both start spinning. Friend wins it first — board updates to a **Comet Wind Chime**. Your spin still had a fair shot at the **Lantern** because you started before their win finished.
 
 - **1 free spin per day** · extras need **Spin Tokens** (earned only)
 - **No buying spins** with Robux or Cosmic Coins
@@ -140,7 +140,7 @@ Like a **carnival wheel the whole server shares** — with fair rules so nobody 
 Every **~20 minutes at night**:
 
 1. Sky warning → streaks of light
-2. **Run** to a crash site — your own loot crate
+2. **Head** to a crash site — everyone gets their own loot crate
 3. **Meteor Merchant** opens at the hub for ~10 minutes
 
 Loot: rare seeds, Comet Shards, sometimes a **Spin Token**.
@@ -156,10 +156,10 @@ When **new plants** get added, the **first player on your server** to discover o
 ## Playing with friends
 
 - Same server, your own gardens
-- **Private meadow** *(optional)* — invite-only server for family & friends, no strangers
+- **Private meadow** *(optional)* — invite-only server for family & friends, no strangers. Same growth, rewards, gates, and spin odds; the shared Community Feed goal is cozier for small groups.
 - Read their **stats board**; **post-MVP:** look up at their **completed constellations** in the sky
-- **Swab pollen** from their plants — **you** tap to sample; **3 swabs per day** from others (doesn’t hurt them). No auto-collectors.
-- Race to meteors; pile fruit into **Community Feed** together
+- **Swab pollen** from their plants — **you** tap to sample; **3 friendly samples per day** from others. It does **not** take their fruit, pollen, or progress. No auto-collectors.
+- Head to meteors; pile fruit into **Community Feed** together
 
 ---
 
@@ -167,7 +167,7 @@ When **new plants** get added, the **first player on your server** to discover o
 
 Numbers that **keep growing** — nobody ties at “max” on day one:
 
-1. **Lifeforms Fed**
+1. **Planet Friends Fed**
 2. **Supply Runs** (capsules launched)
 3. **Highest Round** (deepest round on any planet)
 4. **Biggest Bloom**
@@ -191,7 +191,7 @@ Numbers that **keep growing** — nobody ties at “max” on day one:
 ## Questions for kid feedback
 
 1. Which collection shape is coolest — **slipper**, **lion**, or **weaver**?
-2. **Community Feed** — would you rush to the hub to help fill the bar?
+2. **Community Feed** — would you head to the hub to help fill the table?
 3. **Mutations** — want to hunt special versions of every plant?
 4. Which planet name — **Lumina**, **Solara**, or **Glimmer**?
 

@@ -1,5 +1,7 @@
 # Run log — 2026-06-28-planning-gdd-cosmic-bloom
 
+> **Superseded note (2026-07-01):** Early Step 1/dispatch log entries mention retired mechanics (`Star Counter`, `Constellation Codex`, collector tiers). They are historical only. The canonical current design is `games/cosmic-bloom/docs/gdd.md`.
+
 ## 2026-06-28 — Step 1 complete (game-designer)
 
 **Action:** Draft GDD core loop, progression, and achievements for Cosmic Bloom.

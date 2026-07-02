@@ -1,5 +1,7 @@
 # Research 004 — Security Risk Assessment
 
+> **Historical note (2026-07-01):** This security matrix references retired Starlit Conservatory mechanics. For Cosmic Bloom, replace Star Counter / moth risks with Orbital Outpost, Community Table, pollen swabs, Cosmic Spin sessions, Private Meadow scaling, and marketplace receipt idempotency.
+
 **Agent:** Security Specialist  
 **Date:** 2026-06-28  
 **Run:** `2026-06-28-compliance-feasibility-starlit-conservatory`

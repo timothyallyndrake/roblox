@@ -33,8 +33,9 @@ Phase 03 GDD foundation grill (Sessions 3–4, Q51–Q74) and planning run Steps
 - Release tags: `cosmic-bloom-v<semver>` per ADR-001.
 - Chime Orchard remains future wishlist only.
 - Rojo/Knit bootstrap still Phase 06.
-- Private **VIP meadows** at v1 launch (Cozy Fair — **social comfort**, not power). Feed contribution thresholds scale for small groups; **all other timers and earn rates identical** to public servers *(GDD §5.7)*.
+- Private **VIP meadows** at v1 launch (Cozy Fair — **social comfort**, not power). Only the shared Community Feed server goal scales for small groups; personal thresholds, timers, gates, odds, and earn rates are identical to public servers *(GDD §5.7)*.
 - Robux **Cosmic Coin** packs: **Cosmic Coin Pouch / Satchel / Vault** — deterministic coin shortcuts, not random gacha *(GDD §6.4)*.
+- Phase 03 naming cleanup: player-facing defaults are **Community Table**, **Seed Stand**, **Prize Bloom**, **Glimmer Gathering**, **Pollen Basin**, and **Extra Garden Beds (+2)**.
 
 ## References
 

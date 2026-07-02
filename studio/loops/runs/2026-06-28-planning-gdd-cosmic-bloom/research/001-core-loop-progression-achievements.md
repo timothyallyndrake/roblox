@@ -1,5 +1,7 @@
 # Research 001 — Core Loop, Progression & Achievements
 
+> **Superseded note (2026-07-01):** This early Step 1 research predates the EP foundation locks in GDD §1–§10. Do **not** implement references to Star Counter, glass domes, moth collectors, Constellation Codex, Little Dipper, or Astronomer Royal from this file. The canonical current design is `games/cosmic-bloom/docs/gdd.md`.
+
 **Agent:** Game Designer  
 **Date:** 2026-06-28  
 **Run:** `2026-06-28-planning-gdd-cosmic-bloom`

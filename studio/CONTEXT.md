@@ -25,16 +25,17 @@
 | D23 | **Phase 02 approved:** Minimal/all ages, Cozy Fair F2P, no paid random at launch | EP Q43 |
 | D24 | **Cosmic Coins** soft currency; **no glass domes**; **no Star Counter** | Foundation grill, GDD |
 | D25 | **Co-op v1:** Solo-first; **private VIP meadows** at launch; **no P2P trading**; no shared plots | Q74, GDD §1.9, §5.10 |
-| D26 | **Launch roster:** 10 base breeds + 12 cross-breds *(§1.2b)* | Q70 |
+| D26 | **Launch roster:** 10 base breeds + 12 cross-breds + signature mutations *(§1.2b)* | Q70 |
 | D27 | **Planet gates:** Lumina R10 → Solara; Solara R15 → Glimmer | Q69 |
 | D28 | **Robux coin packs:** **Cosmic Coin Pouch / Satchel / Vault** *(99 / 249 / 499 R$)* | EP alignment 2026-06-28, GDD §6.4 |
-| D29 | **Private server fairness:** VIP meadows scale **Community Feed thresholds only** — grow timers, payouts, gates, spin odds **unchanged** | EP alignment 2026-06-28, GDD §5.7 |
+| D29 | **Private server fairness:** VIP meadows scale **Community Feed server goal only** — grow timers, personal thresholds, payouts, gates, spin odds **unchanged** | EP alignment 2026-06-28, GDD §5.7 |
 
 ## Open Questions
 
 - [ ] **EP sign-off** on GDD draft → Phase 04 creative bible
 - [ ] Compliance checklist refresh (domes / retired mechanics stale language)
 - [ ] Shared-plot co-op — **deferred post-launch** (not v1)
+- [ ] EP confirm revised labels/defaults: Glimmer Gathering, Community Table, Seed Stand, Prize Bloom, private Feed server-goal-only scaling, Extra Garden Beds (+2)
 
 ## Active Agents (Phase 03)
 

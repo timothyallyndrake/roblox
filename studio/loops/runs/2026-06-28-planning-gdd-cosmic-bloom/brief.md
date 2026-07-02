@@ -1,5 +1,7 @@
 # Run Brief
 
+> **Superseded note (2026-07-01):** The line below is the original planning prompt and contains retired terms (`Star Counter`, `constellation codex`). Current implementation must follow `games/cosmic-bloom/docs/gdd.md`: Orbital Outpost, Bloomdex, open meadows, Community Table, no moth/firefly collectors.
+
 **Loop ID:** planning.gdd  
 **Run ID:** 2026-06-28-planning-gdd-cosmic-bloom  
 **Game slug:** cosmic-bloom

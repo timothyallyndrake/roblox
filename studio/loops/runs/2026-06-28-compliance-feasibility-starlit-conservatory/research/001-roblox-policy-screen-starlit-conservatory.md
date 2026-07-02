@@ -1,5 +1,7 @@
 # Research 001 — Roblox Policy Screen: Starlit Conservatory
 
+> **Historical note (2026-07-01):** This screened the earlier Starlit Conservatory concept. Cosmic Bloom supersedes floating domes, Star Counter, and old slug language. Use the current Cosmic Bloom GDD for launch questionnaire and policy answers.
+
 **Agent:** Compliance Officer  
 **Date:** 2026-06-28  
 **Run:** `2026-06-28-compliance-feasibility-starlit-conservatory`

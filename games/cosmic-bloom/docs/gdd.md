@@ -40,8 +40,8 @@
 | 12 | Decor | Meadow decor = **visual + plot buffs** (§1.8) |
 | 13 | Group feed | **Community Feed** at Outpost — **MVP required** (§1.7b) |
 | 14 | Planet unlock | Milestone on previous planet; switch freely (§1.7c) |
-| 15 | Specimens | Display cases **only** — no Outpost duplicate |
-| Q68 | Display cases | **3 cases, 1 specimen each** — unlock per planet milestone (§1.10) |
+| 15 | Prize Blooms | Display cases **only** — no Outpost duplicate |
+| Q68 | Display cases | **3 cases, 1 Prize Bloom each** — unlock per planet milestone (§1.10) |
 | Q69 | Planet unlock gates | **Lumina R10 → Solara; Solara R15 → Glimmer; Glimmer R20 → Launch Pad** *(§1.7c)* |
 | Q70 | Launch breed roster | **10 bases + 12 crosses + 10 sig. mutations** *(§1.2b)* |
 | Q71 | Keeper Rank + dailies | **Light** — Rank 1–5, 5 story beats, daily triad *(§3.1)* |
@@ -77,9 +77,9 @@ Breed cosmic plants under sun and moon in **open meadows**, fill the **Bloomdex*
 
 | Location | What’s there |
 |----------|----------------|
-| **Your garden** | Open meadow plots, soil upgrades, **display cases** for prized grows, visit stats board |
+| **Your garden** | Open meadow plots, soil upgrades, **display cases** for Prize Blooms, visit stats board |
 | **Your Stellar Nursery** | Cross-breed stations; upgrade **splice slots**, **speed**, **splice luck** |
-| **Central meadow hub** | Orbital Outpost, Meteor Merchant, Seed Broker, Cosmic Spin, Leaderboards |
+| **Central meadow hub** | Orbital Outpost, Meteor Merchant, Seed Stand, Cosmic Spin, Leaderboards |
 
 **No personal market stall.** All selling / planet-feeding happens at shared hub booths.
 
@@ -91,7 +91,7 @@ Breed cosmic plants under sun and moon in **open meadows**, fill the **Bloomdex*
 
 | Term | Source | Used for |
 |------|--------|----------|
-| **Seed** | Seed Broker *(common starters)*, cross-breed, meteors *(occasional)*, Community Feed *(top tier)*, quests | Plant in garden plot |
+| **Seed** | Seed Stand *(common starters)*, cross-breed, meteors *(occasional)*, Community Feed *(top tier)*, quests | Plant in garden plot |
 | **Pollen** | **Player harvest** from own mature plants; **player swab** from others’ mature plants (3/day) | Cross-breed input in nursery |
 
 #### Outputs (things you harvest)
@@ -100,7 +100,7 @@ Breed cosmic plants under sun and moon in **open meadows**, fill the **Bloomdex*
 |------|--------|----------|
 | **Bloom fruit** | Primary harvest — **one distinct type per plant breed** (Glow Berry, Moon Melon, Sun Peach…) | Orbital Outpost supply orders + Community Feed |
 | **Stardust** | Secondary byproduct on some harvests | Cross-breed catalyst, soil / nursery upgrades |
-| **Specimen** | Rare cross-breed or mutation trophy | **Display cases only** — not sold or duplicated |
+| **Prize Bloom** | Rare cross-breed or mutation trophy | **Display cases only** — not sold or duplicated |
 | **Spin Token** | Rare drops & events *(inventory item, not wallet)* | Extra turns on the **server Cosmic Spin board** beyond 1 free/day |
 
 *Each plant yields its **own** bloom fruit type. Planets never share a generic “fruit” bucket.*
@@ -125,7 +125,7 @@ Breed cosmic plants under sun and moon in **open meadows**, fill the **Bloomdex*
 | **Cross-bred breeds** | **12** discoverable at launch *(Q63 + Q70)* | Stellar Nursery outputs — tiered A→D cross matrix (§1.2b) |
 | **Mutations** | **≥3 per base** in full Bloomdex index | Variants; **~10 signature** mutations occupy star-map slots |
 
-**9 planet fruits ≠ 9 total plants.** The nine are the **Outpost delivery menu** — what hungry planets accept. Cross-breeding, meteors, and events add **many more breeds** whose fruits may feed Community Feed, future planets, or exist purely for pollen / specimens / breeding chains.
+**9 planet fruits ≠ 9 total plants.** The nine are the **Outpost delivery menu** — what hungry planets accept. Cross-breeding, meteors, and events add **many more breeds** whose fruits may feed Community Feed, future planets, or exist purely for pollen / Prize Blooms / breeding chains.
 
 **Example:** You discover **Starlace Vine** (C1 cross) — produces **Starlace Fruit** (not on any v1 planet menu). Use its **pollen** in Tier B splices toward sunbound breeds; fruit counts toward **Solara Supper** Community Feed when that theme is active — but **Lumina supply orders** still only take Glow Berry, Moon Melon, Nebula Pod.
 
@@ -135,9 +135,9 @@ Breed cosmic plants under sun and moon in **open meadows**, fill the **Bloomdex*
 
 | # | Plant | Fruit | Affinity | Collection | Planet delivery |
 |---|-------|-------|----------|------------|-----------------|
-| 1 | **Glow Mote** | Glow Berry | Moonbound | Little Slipper | Lumina |
+| 1 | **Glow Mote** | Glow Berry | Moonbound | Little Slipper | Lumina *(tutorial seed)* |
 | 2 | **Moon Melon** | Moon Melon | Moonbound | Little Slipper | Lumina |
-| 3 | **Nebula Sprout** | Nebula Pod | Moonbound | Little Slipper | Lumina *(tutorial seed)* |
+| 3 | **Nebula Sprout** | Nebula Pod | Moonbound | Little Slipper | Lumina |
 | 4 | **Sun Peach** | Sun Peach | Sunbound | Sun Rawr | Solara |
 | 5 | **Star Carrot** | Star Carrot | Sunbound | Sun Rawr | Solara |
 | 6 | **Blaze Blossom** | Blaze Blossom | Sunbound | Sun Rawr | Solara |
@@ -146,7 +146,7 @@ Breed cosmic plants under sun and moon in **open meadows**, fill the **Bloomdex*
 | 9 | **Twilight Pod** | Twilight Pod | Twilight | Silver Weaver | Glimmer |
 | 10 | **Eclipse Fern** | Eclipse Fern | Twilight | Silver Weaver | Glimmer |
 
-**Seed Broker (Cosmic Coins):** Glow Mote, Moon Melon, Nebula Sprout. Sunbound and twilight **bases** are **not** sold at Broker at launch — obtain via cross-breed chain, meteors, or Community Feed.
+**Seed Stand (Cosmic Coins):** Glow Mote, Moon Melon, Nebula Sprout. Sunbound and twilight **bases** are **not** sold at the Stand at launch — obtain via cross-breed chain, meteors, or Community Feed.
 
 ##### Signature map mutations *(10 + 1 prize star)*
 
@@ -168,7 +168,7 @@ Breed cosmic plants under sun and moon in **open meadows**, fill the **Bloomdex*
 
 ##### Cross-breed matrix *(12 primary outcomes)*
 
-*Splice luck may also roll duplicate pollen, off-table mutations, or rare specimens — primary deterministic outcomes:*
+*Splice luck may also roll duplicate pollen, off-table mutations, or rare Prize Blooms — primary deterministic outcomes:*
 
 **Tier A — Lumina × Lumina** *(first hour)*
 
@@ -176,31 +176,31 @@ Breed cosmic plants under sun and moon in **open meadows**, fill the **Bloomdex*
 |----|----------|----------|---------|---------|
 | C1 | Glow Mote | Moon Melon | **Starlace Vine** | Starlace Fruit |
 | C2 | Glow Mote | Nebula Sprout | **Comet Cap** | Comet Cap Fruit |
-| C3 | Moon Melon | Nebula Sprout | **Dreamer's Root** | Dreamer Fruit |
+| C3 | Moon Melon | Nebula Sprout | **Dreamroot** | Dream Fruit |
 
 **Tier B — Toward Solara** *(grow early / deliver later — Q52)*
 
 | ID | Pollen A | Pollen B | → Breed | → Fruit |
 |----|----------|----------|---------|---------|
 | C4 | Starlace Vine | Sun Peach | **Sunthread Moss** | Sunthread Fruit |
-| C5 | Comet Cap | Star Carrot | **Corona Sprig** | Corona Fruit |
-| C6 | Dreamer's Root | Blaze Blossom | **Dawn Petal** | Dawn Petal Fruit |
+| C5 | Comet Cap | Star Carrot | **Halo Sprig** | Halo Fruit |
+| C6 | Dreamroot | Blaze Blossom | **Dawn Petal** | Dawn Petal Fruit |
 | C7 | Flare Mint | Glow Mote | **Heat Shimmer** | Heat Shimmer Fruit |
 
 **Tier C — Toward Glimmer**
 
 | ID | Pollen A | Pollen B | → Breed | → Fruit |
 |----|----------|----------|---------|---------|
-| C8 | Sunthread Moss | Dusk Lace | **Gloaming Ivy** | Gloaming Fruit |
-| C9 | Corona Sprig | Twilight Pod | **Veilcap** | Veilcap Fruit |
+| C8 | Sunthread Moss | Dusk Lace | **Glimmer Ivy** | Glimmer Fruit |
+| C9 | Halo Sprig | Twilight Pod | **Veilcap** | Veilcap Fruit |
 | C10 | Dawn Petal | Eclipse Fern | **Nightglint** | Nightglint Fruit |
 
 **Tier D — Deep chain**
 
 | ID | Pollen A | Pollen B | → Breed | → Fruit |
 |----|----------|----------|---------|---------|
-| C11 | Starlace Vine | Gloaming Ivy | **Weaver's Knot** | Weaver Fruit |
-| C12 | Heat Shimmer | Nightglint | **Cosmic Knot** | Cosmic Knot Fruit *(specimen-leaning)* |
+| C11 | Starlace Vine | Glimmer Ivy | **Weaver Vine** | Weaver Fruit |
+| C12 | Heat Shimmer | Nightglint | **Skyknot Bloom** | Skyknot Fruit *(Prize Bloom-leaning)* |
 
 **Forward seed paths:** Tier A from Broker starters. Tier B requires sunbound pollen (cross chain or meteor). **Flare Mint** seeds from **Solara Supper** Community Feed tier 2+ or meteors. Tier C requires twilight bases from C8–C10 chain or meteors.
 
@@ -210,11 +210,11 @@ Breed cosmic plants under sun and moon in **open meadows**, fill the **Bloomdex*
 
 | Tier | Sources |
 |------|---------|
-| **Common starters** | Seed Broker: **Glow Mote, Moon Melon, Nebula Sprout**; tutorial; Keeper quests |
+| **Common starters** | Seed Stand: **Glow Mote, Moon Melon, Nebula Sprout**; tutorial; Keeper quests |
 | **Discovery seeds** | **Primary:** Stellar Nursery cross-breed + pollen swabs |
 | **Forward seeds / pollen** | **Secondary (earn-only):** meteor crate rare drops; Community Feed top-tier rewards; first discoverer |
 
-**Seed Broker never sells** twilight / cross-bred / planet-tier rare seeds at launch. No Robux seed packs for undiscovered breeds (Cozy Fair).
+**Seed Stand never sells** twilight / cross-bred / planet-tier rare seeds at launch. No Robux seed packs for undiscovered breeds (Cozy Fair).
 
 *Grow gate (Q52): any legitimately obtained seed can be planted anytime; deliver gate stays linear.*
 
@@ -222,7 +222,7 @@ Breed cosmic plants under sun and moon in **open meadows**, fill the **Bloomdex*
 
 | Currency | Earn | Spend |
 |----------|------|-------|
-| **Cosmic Coins** | Outpost deliveries, Community Feed tiers, quests, dailies, spin board (small), achievements | Seeds (Seed Broker), garden expansions, soil, nursery, tools, display cases, **buff decor** |
+| **Cosmic Coins** | Outpost deliveries, Community Feed tiers, quests, dailies, spin board (small), achievements | Seeds (Seed Stand), garden expansions, soil, nursery, tools, display cases, **buff decor** |
 | **Comet Shards** | Meteor crash crates, Community Feed top tier | Meteor Merchant — event seeds, decor, cosmetics |
 
 **Spin Tokens are not purchasable** with Robux or Cosmic Coins at launch.
@@ -276,7 +276,7 @@ More breeds, mutation stars, and collections via live ops.
 
 #### 1.3b Night sky — completed collections *(post-MVP)*
 
-When a collection is **100% complete**, those stars also appear in the **real night sky above your garden plot** (visible at night only). Visitors who walk onto your plot can **look up** and see your accomplishments. Bloomdex UI remains source of truth at launch; sky projection is a **visual flex layer** added after MVP.
+When a collection is **100% complete**, those stars also appear in the **game sky above your garden plot** (visible at night only). Visitors who walk onto your plot can **look up** and see your accomplishments. Bloomdex UI remains source of truth at launch; sky projection is a **visual flex layer** added after MVP.
 
 #### 1.3c First discoverer *(live ops + launch day races)*
 
@@ -323,7 +323,7 @@ Cross-breed flow:
 
 1. Collect **Pollen A** + **Pollen B** (your harvest or **swab** from friends’ gardens)
 2. Start splice in nursery — **splice luck** rolls on outcome table
-3. Outcome: known **seed**, **mutation** variant, duplicate pollen, or rare **specimen**
+3. Outcome: known **seed**, **mutation** variant, duplicate pollen, or rare **Prize Bloom**
 
 First-time breed or mutation → **Bloomdex** star + collection progress.
 
@@ -420,7 +420,7 @@ Every **base breed at launch** ships with **≥3 mutations** (visual + minor sta
 
 Each planet accepts **only its 3 bloom fruit types** — never substitutes.
 
-**Supply orders** (per round) are **multi-line manifests**:
+**Supply orders** (per round) are **multi-line planet orders**:
 
 | Lumina — Round 2 example |
 |--------------------------|
@@ -428,16 +428,15 @@ Each planet accepts **only its 3 bloom fruit types** — never substitutes.
 | 15 × Moon Melon |
 | 5 × Nebula Pod |
 
-UI at **Orbital Outpost**: pick planet → see round manifest → load capsule when inventory satisfies all lines.
+UI at **Orbital Outpost**: pick planet → see the planet order → load capsule when inventory satisfies all lines.
 
 #### Recurring delivery rounds (never “done”)
 
-| Round | Example manifest | Reward scale |
-|-------|------------------|--------------|
-| 1 | 10 × Glow Berry | Modest Cosmic Coins + lifeforms fed |
-| 2 | 20 × Glow Berry, 10 × Moon Melon | Higher coins + Stardust |
-| 3 | 30 / 20 / 10 mix + mutation fruit ask | Rare seed + Spin Token chance |
-| 4+ | Escalating quantities; later rounds mix **cross-bred** fruits | Per-planet streak multiplier |
+| Round band | Order pattern | Reward scale |
+|------------|---------------|--------------|
+| 1 | Single starter fruit line *(Lumina R1 = 10 × Glow Berry; see §5.3)* | Modest Cosmic Coins + planet friends fed |
+| 2–3 | Adds second / third planet fruit lines from the §5.3 table | Higher coins + Stardust via round milestones |
+| 4+ | Escalating quantities; later rounds may add **one cross-bred** fruit line *(§5.3)* | Formula-driven payouts + milestone bonuses |
 
 - **Per-player per-planet** round ladders — infinite depth
 - Later rounds may require **mutations** or **meteor-only** fruit types
@@ -457,24 +456,26 @@ UI at **Orbital Outpost**: pick planet → see round manifest → load capsule w
 
 Feeds **rotate focus** — not every feed asks for every planet’s fruit at once.
 
-| Feed theme | Manifest focus | Who can contribute |
+| Feed theme | Order focus | Who can contribute |
 |------------|----------------|-------------------|
 | **Lumina Luncheon** | Glow Berry, Moon Melon, Nebula Pod | **Everyone** — always reachable on loop |
 | **Solara Supper** | Sun Peach, Star Carrot, Blaze Blossom | Players who **grow** solara-tier fruit *(cross-breed / events)* |
-| **Weaver Watch** | Dusk Lace, Twilight Pod, Eclipse Fern | Players with twilight seeds; **feed slot gated** until server median **Solara R10+** |
+| **Glimmer Gathering** | Dusk Lace, Twilight Pod, Eclipse Fern | Players with twilight seeds; **feed slot gated** until the server is Glimmer-ready *(rule below)* |
 
-**Loop:** Lumina → Solara → Weaver → **Lumina again** …
+**Loop:** Lumina → Solara → Glimmer → **Lumina again** …
 
-- If you **don’t have seeds** for the current theme, you **can’t contribute** to that feed — personal tiers unavailable for fruit you don’t grow
+- If you **don’t have seeds** for the current theme, the Community Table explains what fruit is needed and when Lumina returns — personal tiers are unavailable for fruit you do not grow
 - **No one is permanently excluded:** the schedule **always loops back to Lumina Luncheon**, which every player can join
-- Prepared breeders shine on Solara / Weaver feeds; new players always get another Lumina feed soon
+- Prepared breeders shine on Solara / Glimmer feeds; new players always get another Lumina feed soon
+
+**Glimmer-ready gate:** The Glimmer slot enters rotation only when the server has enough progressed gardeners: at least **50% of active loaded profiles** have reached **Solara R10+**. In private servers or low-population servers with fewer than 4 active players, the VIP owner reaching **Solara R10+** is sufficient. If the gate is not met, the third slot becomes another **Lumina Luncheon** instead of Glimmer Gathering.
 
 **Flow:**
 
-1. **Announcement** — hub + UI: *“Community Feed: Lumina Luncheon — Lumina’s children are hungry!”*
+1. **Announcement** — hub + UI: *“Community Feed: Lumina Luncheon — moonfruit for the table!”*
 2. **Shared goal** — server-wide progress bar (quantities scale with **active player count**)
-3. **Manifest** — **theme-appropriate fruit lines only** (e.g. Lumina feed: 40k Glow Berry + 25k Moon Melon + 15k Nebula Pod)
-4. **Contribute** — dump eligible bloom fruit into **community hopper** *(invalid fruit types rejected)*
+3. **Order** — **theme-appropriate fruit lines only** generated from §5.7 (e.g. 12-player public Lumina goal = **7,800 Glow Berry + 3,900 Moon Melon + 1,300 Nebula Pod**)
+4. **Contribute** — add eligible bloom fruit to the **Community Table** *(invalid fruit types rejected with friendly copy)*
 5. **Personal tiers** — contribution thresholds on **eligible fruit only**:
 
 | Your contribution | Reward tier |
@@ -513,8 +514,8 @@ Stockpiling Glimmer fruit before Glimmer unlock is **intended** — rewards prep
 
 1. Harvest required **bloom fruit** types at your garden
 2. Walk to hub **Orbital Outpost**
-3. Fulfill **supply order** manifest → launch capsule
-4. Earn **Cosmic Coins** + **lifeforms fed**, **supply runs**, **highest round** stats
+3. Fulfill **supply order** planet order → launch capsule
+4. Earn **Cosmic Coins** + **planet friends fed**, **supply runs**, **highest round** stats
 5. Advance to next round
 
 ---
@@ -528,7 +529,7 @@ Stockpiling Glimmer fruit before Glimmer unlock is **intended** — rewards prep
 | **Stellar Nursery** | Splice slots, speed, **splice luck** | Cosmic Coins + Stardust |
 | **Tools** | Moon Lantern, Sun Scope, Twilight Lantern, pollen basket | Cosmic Coins |
 | **Display cases** | Slots, lighting, plaques | Cosmic Coins — **3 case slots max** at launch *(Q68)* |
-| **Meadow decor** | Meteor lantern, sunstone path, moth bath, glow fence | Comet Shards or Cosmic Coins |
+| **Meadow decor** | Meteor lantern, sunstone path, Pollen Basin, glow fence | Comet Shards or Cosmic Coins |
 
 #### Meadow decor — look good **and** do good
 
@@ -538,7 +539,7 @@ Decor is **not pure cosmetic** — placed items give **small plot buffs** (stack
 |---------------|-------------------------|
 | **Meteor lantern** | +5% night grow speed |
 | **Sunstone path** | +5% day harvest yield on adjacent plots |
-| **Moth bath** | +1 stud pollen gather radius |
+| **Pollen Basin** | +1 stud pollen gather radius |
 | **Glow fence** | +3% mutation roll on plants inside border |
 
 **Cap:** Max **3 active buff decor types** per garden — forces meaningful loadout choice.
@@ -554,21 +555,21 @@ Decor is **not pure cosmetic** — placed items give **small plot buffs** (stack
 | **Public server** | Up to **12** gardens; strangers may share the hub — meteors, Community Feed, Cosmic Spin |
 | **Private server** | **Invite-only** — friends & family, no random joiners. Same rules; **scaled** Community Feed goals *(§5.7)* — **does not** speed growth, deliveries, or spin |
 | **Same server** | Each player tends **own garden + nursery** |
-| **Visit base** | Stats board + **look up at night** *(post-MVP: completed collections in sky)* |
+| **Visit base** | Stats board *(privacy controls v1)* + **look up at night** *(post-MVP: completed collections in sky)* |
 | **Pollen gather** | **Player swab** — 3/day from others’ gardens; no automated collection |
 | **Meteor shower** | Shared event — run together, personal crates, no loot stealing |
 | **Trading** | **None in v1** — avoids scams and economy volatility |
 
 *Store copy for private servers: **“Your own cozy meadow — invite who you want.”** Co-op plot sharing still deferred post-launch.*
 
-**Private server fairness *(not a progression skip)*:** VIP meadows change **only** Community Feed contribution thresholds and server goal pool *(§5.7)*. Plant grow timers, nurture cooldowns, nursery splice speed, Outpost delivery payouts, Bloomdex gates, meteor schedules, and Cosmic Spin odds are **identical** to public servers. Time-skip convenience remains separate SKUs *(Bloom Rush, Infinite Nurture)* — not bundled with private servers.
+**Private server fairness *(not a progression skip)*:** VIP meadows change **only** the shared Community Feed server goal pool *(§5.7)*. Plant grow timers, nurture cooldowns, nursery splice speed, Outpost delivery payouts, Bloomdex gates, meteor schedules, Cosmic Spin odds, and personal Feed thresholds are **identical** to public servers. Time-skip convenience remains separate SKUs *(Bloom Rush, Infinite Nurture)* — not bundled with private servers.
 
 ---
 
 ### 1.10 Display cases (prized grows) *(Q68 locked)*
 
-- **Specimens** and **mutation trophies** go in cases at your garden — **only slot, no selling duplicates**
-- **Launch cap:** **3 display cases**, **1 specimen per case** — no extra slots at MVP
+- **Prize Blooms** and **mutation trophies** go in cases at your garden — **only slot, no selling duplicates**
+- **Launch cap:** **3 display cases**, **1 Prize Bloom per case** — no extra slots at MVP
 - **Unlock:** one case per **launch planet milestone** — Lumina → case 1, Solara → case 2, Glimmer → case 3
 - Persist until swapped; visitors see on base tours
 
@@ -614,7 +615,7 @@ The board shows **one Legendary prize** at a time. Rotation timing is the subtle
 
 | Event | What happens |
 |-------|----------------|
-| **Spin START** | Session records current legendary (e.g. *Nebula Moth Lantern*) + odds at that moment |
+| **Spin START** | Session records current legendary (e.g. *Nebula Glow Lantern*) + odds at that moment |
 | **In-flight overlap** | All sessions started **before** the first legendary **claim completes** keep the **same legendary** and **same odds** they started with |
 | **Legendary WIN + claim complete** | Winner gets item; server plays server-wide spectacle; board **rotates** to next legendary for **new** spin starts |
 | **Late resolves** | Sessions still in-flight from **before** that claim may **still hit that same legendary** — they were snapshotted fairly |
@@ -622,7 +623,7 @@ The board shows **one Legendary prize** at a time. Rotation timing is the subtle
 
 **Example:**
 
-1. Legendary on board: **Nebula Moth Lantern**
+1. Legendary on board: **Nebula Glow Lantern**
 2. Player 1 starts spin (snapshot: Lantern, odds X)
 3. Player 2 starts spin before P1 finishes (snapshot: Lantern, odds X)
 4. Player 1 resolves — **wins Legendary Lantern** → claim completes → board rotates to **Comet Wind Chime**
@@ -647,7 +648,7 @@ The board shows **one Legendary prize** at a time. Rotation timing is the subtle
 
 | Rule | Detail |
 |------|--------|
-| **Free spin** | **1 per calendar day** per player |
+| **Free spin** | **1 per rolling 24h** per player |
 | **Extra spins** | Spend **Spin Token** — **1 token = 1 session** |
 | **Not purchasable** | **No Robux spins. No Cosmic Coin spins.** |
 
@@ -656,7 +657,7 @@ The board shows **one Legendary prize** at a time. Rotation timing is the subtle
 | Tier | Audience experience |
 |------|---------------------|
 | Tiers 1–4 | Spinner sees result; hub toast for tiers 3–4 |
-| **Tier 5 — Legendary** | **Full server spectacle** on claim — *“@timmmmmmmmah won LEGENDARY: Nebula Moth Lantern!”* |
+| **Tier 5 — Legendary** | **Full server spectacle** on claim — *“@timmmmmmmmah won LEGENDARY: Nebula Glow Lantern!”* |
 
 Rewards grant to the **spinner’s inventory** only (server-authoritative).
 
@@ -668,7 +669,7 @@ Rewards grant to the **spinner’s inventory** only (server-authoritative).
 
 #### Spin Token earn sources
 
-Community Feed tier 3, server clear bonus, meteor rare roll (~8%), mutated harvest (~2%), first discoverer, achievements.
+Community Feed tier 3, server clear bonus, meteor epic roll, first discoverer, planet milestones, Daily Trio, achievements. Mutated harvests do **not** grant Spin Tokens at v1; they remain Bloomdex / Stardust moments.
 
 #### UX notes
 
@@ -686,9 +687,9 @@ Community Feed tier 3, server clear bonus, meteor rare roll (~8%), mutated harve
 
 | Booth | Name | Primary purpose |
 |-------|------|-----------------|
-| **Planet feed + coins** | **Orbital Outpost** *(locked)* | Personal **supply orders** + **Community Feed** hopper |
+| **Planet feed + coins** | **Orbital Outpost** *(locked)* | Personal **supply orders** + **Community Table** |
 | **Event shop** | **Meteor Merchant** | Comet Shards |
-| **Seed supply** | **Seed Broker** | Common seeds for Cosmic Coins |
+| **Seed supply** | **Seed Stand** | Common seeds for Cosmic Coins |
 | **Cosmic Spin** | **Cosmic Spin board** *(server-shared)* | Client-triggered sessions; legendary snapshot; public reveals |
 | **Rankings** | **Leaderboards** | Five uncapped boards (below) |
 | *Future* | **Launch Pad** | Interstellar auto-quests — returns planet-specific seeds after timer |
@@ -703,7 +704,7 @@ Community Feed tier 3, server clear bonus, meteor rare roll (~8%), mutated harve
 
 | Board *(launch)* | Stat | Why it works |
 |------------------|------|--------------|
-| **Lifeforms Fed** | Lifetime lifeforms nourished across all deliveries | Primary wholesome grind; always grows |
+| **Planet Friends Fed** | Lifetime planet friends nourished across all deliveries | Primary wholesome grind; always grows |
 | **Supply Runs** | Total capsules sent from Orbital Outpost | Rewards consistency; uncapped |
 | **Highest Round** | Best round reached on **any one** planet (e.g. Lumina R52) | Infinite round ladders → no tie ceiling |
 | **Biggest Bloom** | Largest single-plant size score recorded | Competitive flex; grows with upgrades/meta |
@@ -719,7 +720,7 @@ Community Feed tier 3, server clear bonus, meteor rare roll (~8%), mutated harve
 | Bloomdex % | Soft-caps at 100% until new breeds ship — use **Discoveries** count in achievements / visit board, not eternal rank |
 | Collection complete count | Caps at 3 — milestone badges, not grind board |
 
-**Visit-stats board** (at each player’s garden): shows lifeforms fed, supply runs, highest round, biggest bloom, Bloomdex **X/21 stars** (map progress) + index discoverable count, planets unlocked, display cases
+**Visit-stats board** (at each player’s garden): shows planet friends fed, supply runs, highest round, biggest bloom, Bloomdex **X/21 stars** (map progress) + index discoverable count, planets unlocked, display cases
 
 ---
 
@@ -767,11 +768,11 @@ upgrade garden / soil / nursery / tools / display cases →
 |------|-------|--------|------|
 | Nurture | Passive tick + optional active burst (correct phase) | Growth progress | Cozy AFK + engaged bonus |
 | Harvest | Ripe plant | Bloom fruit, pollen, maybe stardust | Burst VFX, inventory +1 |
-| Breed | 2 pollen in nursery | New seed / specimen | Anticipation → reveal |
+| Breed | 2 pollen in nursery | New seed / Prize Bloom | Anticipation → reveal |
 | Codex | First-time breed / mutation | Bloomdex star lit + collection progress |
-| Deliver | Multi-line supply order | Cosmic Coins + feed stats | Capsule launch VFX |
-| Community | Fruit into hopper | Tier rewards + Spin Tokens | Server bar fills |
-| Display | Rare specimen | Case slot at garden | Show-off permanence |
+| Deliver | Multi-line planet order | Cosmic Coins + feed stats | Capsule launch VFX |
+| Community | Fruit into Community Table | Tier rewards + Spin Tokens | Server bar fills |
+| Display | Rare Prize Bloom | Case slot at garden | Show-off permanence |
 
 ### Failure / friction model
 
@@ -788,14 +789,14 @@ upgrade garden / soil / nursery / tools / display cases →
 | Step | Action | Keeper / system |
 |------|--------|-----------------|
 | 1 | Spawn at **starter garden** — night meadow, Stellar Nursery beside **4 plots** | Welcome dialogue; waypoint to hub |
-| 2 | Meet Keeper at **Orbital Outpost** — receive **Nebula Sprout** seed | *“Every star needs food. Let’s grow some.”* |
-| 3 | Plant Nebula Sprout → **passive growth** explained | Growth bar visible |
+| 2 | Meet Keeper at **Orbital Outpost** — receive **Glow Mote** seed | *“Every star needs supper. Let’s grow something kind.”* |
+| 3 | Plant Glow Mote → **passive growth** explained | Growth bar visible |
 | 4 | **Active nurture** during moonlight *(moon lantern)* — bonus burst tutorial | Optional but prompted once |
-| 5 | Harvest **Nebula Pod** + pollen | Harvest VFX; inventory intro |
-| 6 | Walk to **Orbital Outpost** — load **Lumina Round 1** capsule | Multi-line manifest UI teaser |
-| 7 | Launch first delivery → Cosmic Coins + *“12 lifeforms fed on Lumina”* | **Story beat 1** turn-in → **Rank 2** |
-| 8 | Keeper grants **Glow Mote** + **Moon Melon** seeds — plant on plots 2 & 3 | Seed Broker intro *(visit later)* |
-| 9 | Harvest **Glow Berry** + **Moon Melon** pollen when ready *(tutorial growth accel)* | Affinity recap |
+| 5 | Harvest **Glow Berry** + Glow Mote pollen | Harvest VFX; inventory intro |
+| 6 | Walk to **Orbital Outpost** — load **Lumina Round 1** capsule *(10 × Glow Berry; §5.3)* | Planet order UI teaser |
+| 7 | Launch first delivery → Cosmic Coins + *“12 planet friends fed on Lumina”* | **Story beat 1** turn-in → **Rank 2** |
+| 8 | Keeper grants **Moon Melon** + **Nebula Sprout** seeds — plant on plots 2 & 3 | Seed Stand intro *(visit later)* |
+| 9 | Harvest **Moon Melon** + **Nebula Pod** pollen when ready *(tutorial growth accel)* | Affinity recap |
 | 10 | **Stellar Nursery** — splice **Glow Mote + Moon Melon** → **C1 Starlace Vine** | Splice wait (~3 min) skippable with **tutorial accel** *(one-time)* |
 | 11 | **Bloomdex** — **Little Slipper** star lit *(1/6)* | **Story beat 2** turn-in → **Rank 3** |
 | 12 | Keeper release — *“The meadow is yours. Feed the stars.”* | Waypoints off; daily triad + beats 3–5 unlocked |
@@ -805,7 +806,7 @@ upgrade garden / soil / nursery / tools / display cases →
 | Rule | Detail |
 |------|--------|
 | **Duration** | Target **~8 minutes** wall-clock *(tutorial splice accel shaves wait)* |
-| **Skip** | **Returning players** *(account flag)* may skip to step 12 — start at Rank 1, beats 1–2 auto-credited if skip chosen |
+| **Skip** | **Returning players** *(account flag)* may skip to step 12 — tutorial rewards granted and player starts at **Rank 3** if skip chosen |
 | **No monetization** | Zero Robux / pass prompts during tutorial |
 | **Failsafe** | **30s idle** → Keeper **waypoint** + soft reminder ping |
 | **Deferred** | Community Feed, Cosmic Spin, meteor shower — natural discovery after release *(~30 min / first night)* |
@@ -820,7 +821,7 @@ upgrade garden / soil / nursery / tools / display cases →
 
 | Track | Visible as | Drives |
 |-------|------------|--------|
-| **Keeper Rank** | Quest giver level *(1–5)* | Story beat access, **+5% Outpost Cosmic Coins per rank** (max +25%) |
+| **Keeper Rank** | Quest giver level *(1–5)* | Story beat access, explicit Outpost Cosmic Coin bonus lookup *(max +25%)* |
 | **Bloomdex** | Bloomdex UI + collection completion | Plot rows, nursery tiers, decor |
 | **Planet stats** | Personal + visit board | Achievements, titles, future planet unlocks |
 | **Upgrades** | Garden, soil, nursery, tools, cases | Power + expression sinks |
@@ -837,7 +838,7 @@ upgrade garden / soil / nursery / tools / display cases →
 | **2** | Story beat 1 complete | +5% |
 | **3** | Story beat 2 complete | +10% |
 | **4** | Story beat 3 complete | +15% |
-| **5** | Story beat 5 complete | +25% |
+| **5** | Story beat 4 complete | +25% |
 
 *Bonus applies to **Orbital Outpost** delivery payouts only — not Community Feed, spin board, or achievements.*
 
@@ -849,23 +850,23 @@ upgrade garden / soil / nursery / tools / display cases →
 | 2 | **Mix the Pollen** | Complete first cross-breed *(C1 Starlace Vine)* | Tutorial (~5 min) |
 | 3 | **Nursery Rising** | Upgrade Stellar Nursery to **tier 2** | ~30–60 min |
 | 4 | **Catch a Falling Star** | Claim first **meteor crate** | First night shower (~20–40 min) |
-| 5 | **Map the Meadow** | Light **6 Bloomdex stars** on any collection maps *(or complete Little Slipper)* | Mid-game |
+| 5 | **Map the Meadow** | Light **6 Bloomdex stars** on any collection maps *(or complete Little Slipper)* | Mid-game capstone |
 
-Each beat: Keeper dialogue → objective pin on HUD → turn-in at hub → **+1 Rank** + small Cosmic Coin bundle.
+Beats 1–4: Keeper dialogue → objective pin on HUD → turn-in at hub → **+1 Rank** + small Cosmic Coin bundle. Beat 5 is the Rank 5 capstone: title / plaque reward + larger Cosmic Coin bundle, but **no Rank 6**.
 
 **No endless quest log at launch** — only these five beats + dailies.
 
-#### Daily triad
+#### Daily Trio
 
-Three quests refresh **24h after first login of the day** *(per-player clock, not global midnight)*.
+Three quests refresh on a **rolling 24h per-account timer** from the player's first daily claim. Use the same reset model for Keeper dailies, free spins, and pollen swabs.
 
 | Slot | Verb | Rank 1 example | Rank 5 example |
 |------|------|----------------|----------------|
 | **Breed** | Splice | Complete **1** cross-breed | Complete **2** cross-breeds |
-| **Deliver** | Outpost | Feed **50** lifeforms | Feed **500** lifeforms |
+| **Deliver** | Outpost | Feed **50** planet friends | Feed **500** planet friends |
 | **Discover** | Harvest / Bloomdex | Harvest **2** fruit types | Register **1** new Bloomdex entry |
 
-**Triad bonus** *(all 3 complete):*
+**Daily Trio bonus** *(all 3 complete):*
 
 | Rank | Bonus |
 |------|-------|
@@ -909,7 +910,7 @@ Three quests refresh **24h after first login of the day** *(per-player clock, no
 |----------|------|-------|
 | **Cosmic Coins** | Outpost, Community Feed, quests, dailies, spin (small), achievements | Seeds, upgrades, decor |
 | **Comet Shards** | Meteors, Community Feed | Meteor Merchant |
-| **Spin Tokens** *(item)* | Community Feed, meteors, mutations, first discoverer, achievements | Extra Cosmic Spin pulls |
+| **Spin Tokens** *(item)* | Community Feed, meteors, planet milestones, Daily Trio, first discoverer, achievements | Extra Cosmic Spin pulls |
 | **Stardust** *(item)* | Harvest byproduct | Soil, nursery upgrades |
 | **Pollen** *(item)* | Player harvest, player swab | Cross-breed |
 | **Bloomdex entries** | First discovery per breed | Collection completion rewards |
@@ -938,7 +939,7 @@ Starter Garden (4 plots) + Nursery tier 1
 - **No player-to-player trading or exchange**
 - **No glass domes**
 - **No Robux / Cosmic Coin spin purchases**
-- **No specimen Outpost selling**
+- **No Prize Bloom Outpost selling**
 
 ---
 
@@ -954,18 +955,18 @@ Starter Garden (4 plots) + Nursery tier 1
 | Category | Focus |
 |----------|-------|
 | Breeding | Cross-breeds, unique breeds, collection completion |
-| Planetary | Lifeforms fed, supply runs, highest round, delivery streaks |
+| Planetary | Planet friends fed, supply runs, highest round, delivery streaks |
 | Codex | Bloomdex entries unlocked, full collections |
 | Garden | Upgrades, biggest plant, display cases filled |
 | Exploration | Meteors claimed, Meteor Merchant purchases |
-| Keeper | Daily triads, rank milestones |
+| Keeper | Daily Trio, rank milestones |
 | Social | Pollen swabs, Community Feed tiers, base visits, first discoverer |
 
 ### Tier rewards
 
 | Tier | Count toward | Example reward |
 |------|--------------|----------------|
-| Stardust | 5 | 100 Cosmic Coins |
+| Spark | 5 | 100 Cosmic Coins |
 | Nebula | 15 | Display case plaque cosmetic |
 | Galaxy | 30 | Nursery exterior cosmetic |
 | Cosmic | 50 | Nursery exterior cosmetic |
@@ -973,7 +974,7 @@ Starter Garden (4 plots) + Nursery tier 1
 
 ### Daily retention — Keeper triad *(see §3.1)*
 
-Three daily quests (Breed / Deliver / Discover); 24h personal reset; triad bonus = seed pack (R1–3) or Spin Token (R4–5). Full rank scaling in §3.1.
+Three daily quests (Breed / Deliver / Discover); rolling 24h personal reset; Daily Trio bonus = seed pack (R1–3) or Spin Token (R4–5). Full rank scaling in §3.1.
 
 ### Launch achievement samples (v1)
 
@@ -1038,17 +1039,17 @@ Full list: 40 achievements target for vertical slice scope.
 #### Payout formula
 
 ```
-coins = floor(baseCoins(planet, round) × planetMult × (1 + 0.05 × keeperRank))
+coins = floor(baseCoins(planet, round) × planetMult × (1 + keeperBonusByRank[rank]))
 lifeforms = floor(baseLifeforms(planet, round) × planetMult)
 ```
+
+`keeperBonusByRank` = `{ R1 = 0.00, R2 = 0.05, R3 = 0.10, R4 = 0.15, R5 = 0.25 }`. Rank 5 intentionally jumps to +25% as the capstone reward.
 
 | Planet | `planetMult` | Notes |
 |--------|--------------|-------|
 | **Lumina** | 1.0 | Tutorial planet |
 | **Solara** | 1.35 | Requires cross-bred prep |
 | **Glimmer** | 1.7 | Twilight stockpiling |
-
-`keeperRank` = 0–5 *(Rank 1 = 0 bonus … Rank 5 = +25%)*.
 
 #### Lumina manifest scaling *(rounds 1–15+)*
 
@@ -1081,13 +1082,13 @@ Same structure as Lumina with **planet fruit names swapped** and quantities × *
 
 ### 5.4 Cosmic Coin sinks *(launch catalog)*
 
-#### Seed Broker
+#### Seed Stand
 
 | Seed | Cost | Unlock |
 |------|------|--------|
 | **Glow Mote** | 80 | Always |
 | **Moon Melon** | 100 | Always |
-| **Nebula Sprout** | 120 | Always *(also tutorial free)* |
+| **Nebula Sprout** | 120 | Always *(also tutorial grant after first delivery)* |
 
 *No sunbound / twilight seeds at Broker.*
 
@@ -1129,7 +1130,7 @@ Same structure as Lumina with **planet fruit names swapped** and quantities × *
 
 #### Outcome roll *(pair in §1.2b matrix)*
 
-| Nursery tier | Primary seed *(matrix match)* | Duplicate pollen | Mutation *(any eligible)* | Specimen *(C12 only)* |
+| Nursery tier | Primary seed *(matrix match)* | Duplicate pollen | Mutation *(any eligible)* | Prize Bloom *(C12 only)* |
 |--------------|------------------------------|------------------|---------------------------|------------------------|
 | **1** | 70% | 25% | 5% | — |
 | **2** | 74% | 20% | 6% | — |
@@ -1160,23 +1161,23 @@ Same structure as Lumina with **planet fruit names swapped** and quantities × *
 **Server goal pool:**
 
 ```
-goalFruit = max(floor, 4000 + (750 × activePlayers))   // cap 14,000 at 12 public players
+goalFruit = min(cap, floor + (750 × activePlayers))
 ```
 
-| Server type | `floor` | `activePlayers` | Notes |
-|-------------|---------|-------------------|-------|
-| **Public** | 4,000 | 1–12 | Standard hub |
-| **Private / VIP** *(Q74)* | **2,500** | 1–6 *(owner + invites)* | Clears achievable with 2–4 friends |
+| Server type | `floor` | `cap` | `activePlayers` | Notes |
+|-------------|---------|-------|-----------------|-------|
+| **Public** | 4,000 | 14,000 | 1–12 | Standard hub; 12-player target = 13,000 fruit |
+| **Private / VIP** *(Q74)* | **2,500** | **8,000** | 1–6 *(owner + invites)* | Lower server goal for 2–4 friends |
 
 Split **60 / 30 / 10** across theme fruit lines *(Lumina example: Glow / Moon / Nebula)*.
 
-**Personal tiers** *(rewards identical; thresholds scale by server type):*
+**Personal tiers** *(rewards identical; thresholds do **not** scale by server type unless playtest proves small-group private feeds need it):*
 
-| Tier | Public threshold | Private threshold | Reward |
-|------|------------------|-------------------|--------|
-| 1 | 25+ fruit | **15+** | **120** coins + **3** Stardust |
-| 2 | 100+ | **60+** | **+1** Comet Shard |
-| 3 | 500+ | **300+** | **+1** Spin Token + **15%** forward seed roll |
+| Tier | Personal threshold | Reward |
+|------|--------------------|--------|
+| 1 | 25+ fruit | **120** coins + **3** Stardust |
+| 2 | 100+ | **+1** Comet Shard |
+| 3 | 500+ | **+1** Spin Token + **15%** forward seed roll |
 
 *Meteor showers, Cosmic Spin, and planet deliveries work identically — private servers just feel quieter and cozier.*
 
@@ -1194,10 +1195,10 @@ Private meadows are a **social comfort** SKU *(no strangers)*, **not** a hidden 
 | Meteor shower cadence & crate odds | **Same** |
 | Cosmic Spin odds & reward table | **Same** |
 | Community Feed **tier rewards** *(coins, shards, tokens)* | **Same** |
-| Community Feed **contribution thresholds** | **Lower on private** *(table above)* |
-| Community Feed **server goal pool** | **Lower floor on private** *(2,500 vs 4,000)* |
+| Community Feed **personal thresholds** | **Same** *(v1 default; protects Feed rewards from VIP efficiency)* |
+| Community Feed **server goal pool** | **Lower on private** *(2,500 floor / 8,000 cap)* |
 
-**Why this is balanced:** Fruit still grows at the same rate on the same plots. Lower thresholds exist so **2–4 friends** can hit tier 3 without needing 12 strangers in the hopper — reward **amounts** are not multiplied. A solo player on a private meadow gets modestly lower personal bars *(15 / 60 / 300 fruit)* but must still produce that fruit organically; this is **not** equivalent to Bloom Rush or Cosmic Coin packs.
+**Why this is balanced:** Fruit still grows at the same rate on the same plots. The **server goal** scales down so **2–4 friends** can clear the shared bar without needing 12 strangers; personal reward thresholds stay the same so VIP servers do not become a faster Spin Token / Comet Shard farm. This is **not** equivalent to Bloom Rush or Cosmic Coin packs.
 
 **Implementation:** Server reads `PrivateServerId`; **only** §5.7 formulas branch. No other gameplay multipliers on VIP instances.
 
@@ -1244,14 +1245,14 @@ Rotation resets **Monday 00:00 UTC**; same catalog all servers that week.
 
 | Source | Rate |
 |--------|------|
-| **Free daily spin** | 1 / account / 24h |
+| **Free daily spin** | 1 / account / rolling 24h |
 | **Community Feed** tier 3 | 1 |
 | **Meteor epic roll** | 1 |
 | **Planet R10 / R15 first time** | 2 / 3 |
-| **Keeper daily triad** *(R4–5)* | 1 |
+| **Keeper Daily Trio** *(R4–5)* | 1 |
 | **First discoverer** | 3 |
 
-**Spin payout tiers *(non-legendary)*:** coins **50–400**, Stardust **2–10**, decor shard **5%**, duplicate pollen **15%**.
+**Spin payout tiers *(non-legendary)*:** coins **50–400**, Stardust **2–10**, Comet Shard bundle **5%**, duplicate pollen **15%**.
 
 **Legendary pool *(Q66)*:** 7/week; snapshot odds **0.8%** per spin at board start; duplicate copies OK *(Q59)*.
 
@@ -1265,7 +1266,7 @@ Rotation resets **Monday 00:00 UTC**; same catalog all servers that week.
 | **P2P trading** | **No** |
 | **Co-op harvest** | **No** |
 | **Server events** | Meteors, Community Feed, Cosmic Spin — shared space, personal rewards |
-| **Private server scaling** | **Community Feed thresholds only** *(§5.7)* — all timers, payouts, and gates identical to public |
+| **Private server scaling** | **Community Feed server goal only** *(§5.7)* — all timers, personal thresholds, payouts, and gates identical to public |
 | **Social pollen** | **3 swabs/day** — player-initiated |
 
 *Optional 2P co-op deferred post-launch; economy assumes solo earn paths for all breeds (§1.2b forward paths).*
@@ -1277,7 +1278,9 @@ Rotation resets **Monday 00:00 UTC**; same catalog all servers that week.
 - [ ] Lumina R10 still ~60–90 min after fruit yield tweaks
 - [ ] Tier B cross **C4–C7** reachable before Solara R10 without meteor luck
 - [ ] Coin sink vs earn not stalling nursery T2
-- [ ] Community Feed clear rate **40–70%** per window at 6+ actives
+- [ ] Stardust earn/sink curve still gates nursery T2/T3 after Bloom Rush, Infinite Nurture, and Extra Garden Beds are considered
+- [ ] Spin Token weekly faucet does not exceed target after Feed tier 3, server clear, meteors, first discoverer, milestones, and Daily Trio are combined
+- [ ] Community Feed clear rate **40–70%** per window at 6+ public actives and **40–70%** at 2–4 private actives
 - [ ] Forward seed pity not flooding twilight before Glimmer gate
 
 *Spreadsheet clone: Producer to attach `economy-v1` sheet in Phase 09 if needed.*
@@ -1311,7 +1314,7 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 |------|-------|------|---------|
 | **Meadow Express** | 99 R$ | Game pass | Fast-travel between your garden and the hub — saves walk time during deliveries, feeds, and meteors. |
 | **Infinite Nurture** | 149 R$ | Game pass | Removes the **90s cooldown** on **Moon Lantern, Sun Scope, and Twilight Lantern** — still requires the **correct grow phase** for each plant. |
-| **Garden Row I** | 249 R$ | Game pass | **+2 permanent plant plots** on your meadow *(stacks with coin-unlocked rows)* — more crops at once. |
+| **Extra Garden Beds (+2)** | 249 R$ | Game pass | **+2 permanent plant plots** on your meadow *(stacks with coin-unlocked rows)* — more crops at once. |
 | **Bloom Rush 1h** | 49 R$ | Dev product | Advances **one selected crop’s** grow timer by **60 minutes** — deterministic; plots only. |
 | **Bloom Rush 4h** | 149 R$ | Dev product | Same, **4 hours** on one crop. |
 | **Bloom Rush 8h** | 249 R$ | Dev product | Same, **8 hours** on one crop. |
@@ -1324,7 +1327,7 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 | **Display plaques** | 29–49 R$ | Cosmetic | Case nameplate styles — earn path via coins. |
 | **Keeper hat / avatar flair** | 79 R$ | Cosmetic | Meadow/hub expression — earn via coins. |
 | **Hub emotes** | 49 R$ | Cosmetic | Social emotes at Outpost — some earn-only from Community Feed. |
-| **Private meadow** | **100 R$** / mo | VIP server | **Invite-only server** — play with friends & family, no strangers. Same game; scaled Community Feed for small groups *(§5.7)*. |
+| **Private meadow** | **100 R$** / mo | VIP server | **Invite-only server** — play with friends & family, no strangers. Same game; smaller shared Community Feed goal for small groups *(§5.7)*. |
 
 **Not sold for Robux at launch:** Spin Tokens · Cosmic Spin pulls · seeds *(random)* · splice luck · Comet Shards · breeds · biomes · legendaries · P2P trades.
 
@@ -1337,15 +1340,15 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 | Pass | Price | Value | Organic equivalent |
 |------|-------|-------|------------------|
 | **Infinite Nurture** | **149 R$** | Removes **90s active nurture cooldown** on **all three** nurture tools | Wait cooldowns free; still need correct phase |
-| **Garden Row I** | **249 R$** | **+2 permanent plant plots** *(stacks with row upgrades)* | Save **~1,200+** coins toward other sinks; not a substitute for Bloomdex-gated **+4 row** |
+| **Extra Garden Beds (+2)** | **249 R$** | **+2 permanent plant plots** *(stacks with row upgrades)* | Save **~1,200+** coins toward other sinks; not a substitute for Bloomdex-gated **+4 row** |
 | **Meadow Express** | **99 R$** | **Fast-travel** garden ↔ hub *(~2s load, no walk)* | Walk / run everywhere |
 
-**Implementation:** `MarketplaceService:UserOwnsGamePassAsync` on server before applying buffs. **+2 plots** granted once on first join after purchase.
+**Implementation:** `MarketplaceService:UserOwnsGamePassAsync` on server before applying buffs. **+2 plots** granted once on first join after purchase. Playtest must confirm this pass does not create a runaway advantage in Stardust, mutation rolls, or Community Feed tier access.
 
 **Value framing *(store copy)*:**
 
 - *Infinite Nurture* — “Nurture every plot on your schedule — moon, sun, or twilight.”
-- *Garden Row I* — “Two extra beds from day one.”
+- *Extra Garden Beds (+2)* — “Two extra beds from day one — same seeds, same gates.”
 - *Meadow Express* — “Hop to the Outpost when the feed bell rings.”
 
 ---
@@ -1357,10 +1360,10 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 | **Price** | **100 R$** / month *(Roblox VIP server subscription — tune at launch)* |
 | **Purpose** | **Invite-only meadow** for friends & family — **no strangers**. Warm, cozy, parent-friendly. |
 | **Game rules** | Identical to public servers — own gardens, same breeds, earn-only spins |
-| **Scaled co-op** | Community Feed **lower goals & tier thresholds** *(§5.7)* so 2–4 friends can clear the bar |
+| **Scaled co-op** | Community Feed **lower server goal** *(§5.7)* so 2–4 friends can clear the shared bar |
 | **Not included** | **No** faster growth, deliveries, spins, or gates — see §5.7 private-server fairness |
 | **Implementation** | Enable **VIP Servers** on experience; server detects `PrivateServerId` for Feed scaling only |
-| **UX copy** | *“Your own cozy meadow — invite who you want.”* · *“Best with 2–6 gardeners”* |
+| **UX copy** | *“Your own cozy meadow — invite who you want.”* · *“Same growth and rewards; cozier table goals.”* |
 
 *Not paywalled progression — optional social comfort layer.*
 
@@ -1376,7 +1379,7 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 | **Cosmic Coin Satchel** | **249 R$** | **2,800** | ~2.5 hr *(~12% bonus)* |
 | **Cosmic Coin Vault** | **499 R$** | **6,500** | ~6 hr *(~18% bonus)* |
 
-*At mid-game earn rate; not a progression skip — coins still spent on same sinks.*
+*At mid-game earn rate; not a progression skip — coins still spent on the same sinks and cannot bypass Stardust, Bloomdex, planet gates, or unlock requirements.*
 
 **Cap:** max **3 Coin pack purchases / 7 days / account** *(anti-whale inflation; tune in live ops)*.
 
@@ -1391,7 +1394,7 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 **Rules:**
 
 - Cannot target **Stellar Nursery splice queue** — plots only
-- Cannot bypass **planet unlock** or **Bloomdex gates**
+- Cannot bypass **planet unlock**, **Bloomdex gates**, Stardust costs, or nursery queue rules
 - Offline buffer rules unchanged *(§5.2)*
 - Prompt copy: *“Help this plant along — everything else still grows while you play.”*
 
@@ -1404,7 +1407,7 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 | **1×** deterministic **Glow Mote** seed *(not random)* | |
 | **1×** cosmetic **Starter Lantern** skin *(Moon lantern reskin, zero stats)* | |
 
-*Shown once after tutorial complete; never repeats. Earn path: same items obtainable organically in first session.*
+*Shown once after tutorial complete; never repeats. Earn path: same items obtainable organically in early play. Copy must say “optional starter shortcut,” never “limited-time power.”*
 
 **Excluded at launch:** random seed packs, gacha, Robux spin wheels, paid cross-breed rolls.
 
@@ -1433,7 +1436,7 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 | Trigger | Offer |
 |---------|-------|
 | Active nurture on **cooldown** *(3rd+ use in 10 min)* | Infinite Nurture |
-| **All plots full** + player has seed in hand | Garden Row I **or** Coin pack |
+| **All plots full** + player has seed in hand | Extra Garden Beds (+2) **or** Coin pack |
 | Walk **>12s** to hub with ripe fruit notification | Meadow Express |
 | Crop **>75%** grown + player opens shop | Bloom Rush 1h |
 
@@ -1455,6 +1458,12 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 | Refund policy | Standard Roblox marketplace |
 
 **Cosmic Spin disclosure *(earn-only)*:** hub board UI shows non-legendary tier table + current legendary name & snapshot odds *(e.g. 0.8%)* before spin confirm.
+
+#### 6.7b Parent-facing summary
+
+- **Robux buys convenience or looks:** faster travel, one-plant Bloom Rush, coin shortcuts, cosmetics, and optional invite-only Private Meadow.
+- **Robux does not buy random spins, exclusive breeds, Comet Shards, Spin Tokens, planet unlocks, Bloomdex gates, or nursery luck.**
+- **Private Meadow** is for comfort and friend/family play: same growth, same payouts, same odds; only the shared Community Feed server goal is smaller for small groups.
 
 ---
 
@@ -1493,7 +1502,7 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 │  @PlayerName's Meadow       │
 │  Keeper Rank ★★★☆☆         │
 ├─────────────────────────────┤
-│  Lifeforms Fed      12,450 │
+│  Planet Friends     12,450 │
 │  Supply Runs              87 │
 │  Highest Round      Lumina R42│
 │  Biggest Bloom        14.2m │
@@ -1506,17 +1515,17 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 
 | Field | Source stat | Visitor sees? |
 |-------|-------------|---------------|
-| Lifeforms Fed | Cumulative Outpost | ✅ |
+| Planet Friends Fed | Cumulative Outpost | ✅ |
 | Supply Runs | Capsule count | ✅ |
 | Highest Round | Best round any planet | ✅ |
 | Biggest Bloom | Max plant height record | ✅ |
 | Bloomdex stars | Map progress **X/21** | ✅ |
 | Discoveries | Full index count | ✅ |
 | Planets unlocked | Names + lock icons | ✅ |
-| Display cases | Count + specimen names | ✅ *(3D case visible nearby)* |
+| Display cases | Count + Prize Bloom names | ✅ *(3D case visible nearby)* |
 | Keeper Rank | 1–5 stars | ✅ |
 
-**Own garden:** **Edit plaque** *(cosmetic, 400 coins)* · **Privacy** toggle *(post-MVP: hide board — not v1)*.
+**Own garden:** **Edit plaque** *(cosmetic, 400 coins)* · **Privacy** toggle *(v1): Public / Friends only / Private*. Default for under-13-friendly positioning: **Friends only** on public servers, visible to invitees in Private Meadows.
 
 ---
 
@@ -1530,7 +1539,7 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 4. **Pollen swab** — see §7.4  
 5. **Post-MVP:** look up at **night sky collections** above plot  
 
-**No:** harvesting, decor edit, nursery access, or inventory peek.
+**No:** harvesting, decor edit, nursery access, inventory peek, or reducing the owner’s resources.
 
 **Empty/offline garden:** board still readable; plants show offline growth state; toast *“Gardener is away — plants still growing.”*
 
@@ -1547,12 +1556,12 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 
 | Feedback | Detail |
 |----------|--------|
-| **Success** | Sparkle + *“+1 Moon Melon pollen”* · daily counter updates |
+| **Success** | Sparkle + *“+1 Moon Melon pollen — nothing taken from this garden”* · daily counter updates |
 | **Already swabbed this plant** | *“You already sampled this plant today.”* |
 | **Daily cap** | *“Come back tomorrow for more swabs (3/day).”* |
 | **Owner benefit** | None — no notification spam *(optional subtle “Someone admired your bloom” — off by default v1)* |
 
-**Swab budget HUD:** persistent chip **`Pollen swabs: 2/3`** near inventory when basket equipped.
+**Swab budget HUD:** persistent chip **`Friendly samples: 2/3`** near inventory when basket equipped.
 
 ---
 
@@ -1560,7 +1569,7 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 
 - Case **plaque** shows breed/mutation name + discover date  
 - **Inspect** opens read-only Bloomdex card *(art, lore snippet)*  
-- Empty case: *“Awaiting a prized specimen”*
+- Empty case: *“Awaiting a Prize Bloom”*
 
 ---
 
@@ -1570,11 +1579,26 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 |---------|----------|
 | **Player nametags** | Above avatar in hub + garden gates |
 | **Cosmic Spin banner** | *“@name is spinning…”* *(§1.11)* |
-| **Community Feed bar** | Shared world UI — see §8.5 |
+| **Community Table bar** | Shared world UI — see §8.5 |
 | **Leaderboard kiosk** | Interact → full-screen board pager *(§1.12)* |
 | **Private server badge** | Small **“Invite meadow”** chip in corner for VIP instances |
 
 **Friends:** Roblox native party/follow — no custom friend list v1.
+
+---
+
+### 7.7 Trust & Safety baseline *(v1)*
+
+| Surface | v1 policy |
+|---------|-----------|
+| **Custom text** | None in v1 beyond Roblox-native display names and system-generated messages |
+| **Chat** | Use Roblox platform chat / filtering only; no custom chat surface |
+| **Reports / blocks** | Respect Roblox native reporting and blocking; blocked users should not receive custom follow prompts or swab encouragement |
+| **Public recognition** | System UI toasts only; keep first-discoverer and Legendary messages short, positive, and non-repeat-spammy |
+| **Visit privacy** | Visit board defaults to Friends only on public servers; player can set Public / Friends only / Private |
+| **Pollen swabs** | Friendly sample copy must state no fruit, pollen, or progress is removed from the owner |
+| **Community Feed pressure** | Always show next eligible Lumina window; avoid guilt copy and “hurry or lose” language |
+| **Private Meadow** | Marketed as invite-only comfort, not progression advantage |
 
 ---
 
@@ -1643,7 +1667,7 @@ Spin Tokens · Cosmic Spin pulls · random seed packs · paid splice luck · Rob
 - Locked planets show **requirement** + gray fruit icons  
 - Tap planet → **Screen 2**
 
-**Screen 2 — Round manifest**
+**Screen 2 — Planet order**
 
 ```
 Lumina — Round 12
@@ -1673,7 +1697,7 @@ Lumina — Round 12
 2. **Slot B** — pick second pollen  
 3. **Preview:** *“Possible: Starlace Vine (C1)”* if known pair; else *“Unknown cross — discovery chance!”*  
 4. **Start Splice** — **180s** timer *(tier 1)*; offline continues  
-5. **Reveal screen:** seed/mutation/duplicate/specimen + Bloomdex new-entry fanfare if first time  
+5. **Reveal screen:** seed/mutation/duplicate/Prize Bloom + Bloomdex new-entry fanfare if first time
 
 **Queue:** tier 2–3 = parallel slots shown as **side-by-side benches**.
 
@@ -1693,24 +1717,26 @@ Lumina — Round 12
 
 ### 8.5 Community Feed UI
 
-**World element:** **Community Hopper** beside Outpost — always visible; **inactive** between windows.
+**World element:** **Community Table** beside Outpost — always visible; **inactive** between windows.
 
 **Active window *(12 min)*:**
 
 ```
 ┌─ Community Feed: Solara Supper ─────────┐
 │  SERVER ████████████░░░░  78%          │
-│  Glow Berry line (you: 12 / tier1: 15) │
+│  Sun Peach line (you: 12 / tier1: 25)  │
 │  [ Contribute Fruit ▼ ]                 │
 │  Your tiers: ✓1  ✓2  ○3               │
 └─────────────────────────────────────────┘
 ```
 
 - **Contribute:** opens inventory filtered to **eligible fruit only**  
-- **Reject ineligible:** *“Solara Supper doesn’t take Glow Berry”*  
+- **Reject ineligible:** *“This table needs sunfruit. Lumina Luncheon returns soon.”*
 - **Tier pips** update live; **server clear** confetti + toast  
 
-**Private server:** same UI; lower thresholds *(§5.7)* — show *“Cozy meadow goal”* subtitle.
+**Inactive / ineligible state:** show next eligible Lumina window and a grow hint, e.g. *“Solara Supper needs sunfruit. Grow tips: unlock Solara seeds, or bring moonfruit when Lumina Luncheon returns in ~32m.”*
+
+**Private server:** same UI and personal thresholds; lower shared server goal *(§5.7)* — show *“Cozy meadow goal”* subtitle.
 
 ---
 
@@ -1721,7 +1747,7 @@ Lumina — Round 12
 **Pre-spin panel:**
 
 ```
-Current Legendary: Nebula Moth Lantern (0.8%)
+Current Legendary: Nebula Glow Lantern (0.8%)
 [ Free daily spin available ]  or  [ Use Spin Token (3) ]
 Tier odds ▼ (expand table)
 [ SPIN ]
@@ -1738,22 +1764,22 @@ Recent: @a won Rare · @b won Coins ...
 
 | Merchant | UI pattern |
 |----------|------------|
-| **Seed Broker** | 3-column seed cards · coin price · *“Owned: 2”* · buy ×1/×5 |
+| **Seed Stand** | 3-column seed cards · coin price · *“Owned: 2”* · buy ×1/×5 |
 | **Meteor Merchant** | Weekly rotation countdown · **shard prices only** · sold-out gray |
 | **Upgrade kiosk** *(garden/nursery)* | Tree of upgrades · red = unmet gate · green = affordable |
 
 ---
 
-### 8.8 Keeper — story beats & daily triad
+### 8.8 Keeper — story beats & Daily Trio
 
 **Keeper interact** at hub → **two tabs:**
 
 | Tab | Content |
 |-----|---------|
 | **Story** | 5 beats checklist · turn-in button when complete |
-| **Today** | Breed / Deliver / Discover with progress bars · **Triad bonus** chest |
+| **Today** | Breed / Deliver / Discover with progress bars · **Daily Trio** chest |
 
-**Daily reset:** *“New day in 4h 12m”* per-player clock.
+**Daily reset:** rolling 24h per-account timer, shown as *“New Daily Trio in 4h 12m.”*
 
 **Waypoint:** golden trail to objective target *(garden plot, Outpost, nursery)*.
 
@@ -1773,17 +1799,17 @@ Recent: @a won Rare · @b won Coins ...
 | Check | Target |
 |-------|--------|
 | Min tap target | **44×44 pt** on all primary actions |
-| Text size | Body **≥16pt** mobile; manifest numbers **≥20pt** |
+| Text size | Body **≥16pt** mobile; planet order numbers **≥20pt** |
 | Color-only phase cue | **Icon + text** *(“Night — moon plants growing”)* |
-| Red/green colorblind | ✓/✗ icons on manifest lines, not color alone |
+| Red/green colorblind | ✓/✗ icons on planet order lines, not color alone |
 | Hold vs tap | **Toggle** for harvest hold in settings |
 | Camera | Default **third-person**; pinch zoom plots; reset button |
 | Audio cues | Optional chime on harvest ready · feed start · meteor warning |
 | Tutorial | Completable **without voiceover** — all steps text + arrows |
-
-*v1: English only; Roblox locale for numbers/currency.*
-
----
+| Reduced motion | Toggle to soften spin, meteor, Feed clear, and Bloomdex starburst effects |
+| UI scale | 90–125% slider for mobile/tablet comfort |
+| Star-map alternative | List view for Bloomdex stars so hover/pan precision is not required |
+| Reminder frequency | Setting to reduce Keeper idle pings / objective nudges |
 
 *v1: English only; Roblox locale for numbers/currency.*
 
@@ -1830,10 +1856,10 @@ Recent: @a won Rare · @b won Coins ...
     │         ╭──────────────────────────╮            │
     │         │  Orbital Outpost (center)│            │
     │         │  · Supply console        │            │
-    │         │  · Community Hopper      │            │
+    │         │  · Community Table       │            │
     │         │  · Constellation Keeper  │            │
     │         ╰──────────────────────────╯            │
-    │   [Cosmic Spin]  [Leaderboards]  [Seed Broker] │
+    │   [Cosmic Spin]  [Leaderboards]  [Seed Stand]  │
     │   [Meteor Merchant*]  (*after showers)          │
     │         Stellar Nursery at each player's plot  │
     └─────────────────────────────────────────────────┘
@@ -1845,7 +1871,7 @@ Recent: @a won Rare · @b won Coins ...
 | **Personal plot** | *Home* — your soil, your cases, your sky |
 | **Outpost center** | *Giving* — where harvest becomes help |
 | **Spin board plaza** | *Celebration* — whole meadow cheers luck |
-| **Hopper** | *Potluck* — everyone brings what they grew |
+| **Community Table** | *Potluck* — everyone brings what they grew |
 | **Merchant tent** | *Gift from the sky* — meteors leave surprises |
 
 **Private meadows:** same layout, softer lighting, **“Invite meadow”** banner — *“A little corner of the ring, just for your people.”*
@@ -1874,9 +1900,9 @@ Recent: @a won Rare · @b won Coins ...
 | First delivery | *“Twelve little lives on Lumina ate tonight. You did that.”* |
 | First splice | *“Two pollens met — and something new whispered yes.”* |
 | Release | *“The meadow is yours now. Feed the stars whenever you’re ready.”* |
-| Daily triad | *“Three small kindnesses today — breed, deliver, discover.”* |
+| Daily Trio | *“Three small kindnesses today — breed, deliver, discover.”* |
 | Meteor warning | *“Skies are sparkling — gifts are falling. Gentle run!”* |
-| Feed start | *“Community table’s open. Bring what you’ve grown.”* |
+| Feed start | *“Community Table’s open. Bring what you’ve grown.”* |
 
 **Story beat turn-ins:** Keeper **claps once**, small star burst — no lengthy cutscenes.
 
@@ -1886,11 +1912,11 @@ Recent: @a won Rare · @b won Coins ...
 
 | Planet | Personality | Feed line *(Outpost)* | Unlock whisper |
 |--------|-------------|----------------------|----------------|
-| **Lumina** | Soft, moonlit world of **glow-dwellers** | *“Lumina’s children are hungry for moonfruit.”* | *(start)* |
+| **Lumina** | Soft, moonlit world of **glow-dwellers** | *“Lumina’s table is open for moonfruit.”* | *(start)* |
 | **Solara** | Bright, **sun-happy** valleys | *“Solara’s orchards are calling for daylight harvest.”* | *“Solara heard about your meadow. They’re ready for sunfruit.”* |
-| **Glimmer** | **Twilight** realm between dusk and dream | *“Glimmer’s weavers need twilight fruit before the sky fades.”* | *“The weavers of Glimmer are listening. Bring them duskfruit when you can.”* |
+| **Glimmer** | **Twilight** realm between dusk and dream | *“Glimmer’s weavers are setting the table for twilight fruit.”* | *“The weavers of Glimmer are listening. Bring them duskfruit when you can.”* |
 
-**Lifeforms fed** stat = aggregate of tiny friendly creatures on each planet — never shown starving; always **grateful**.
+**Planet Friends Fed** stat = aggregate of tiny friendly creatures on each planet — never shown starving; always **grateful**.
 
 ---
 
@@ -1910,11 +1936,11 @@ Recent: @a won Rare · @b won Coins ...
 
 ### 9.7 Community Feed theme copy
 
-| Theme | Announcement | Hopper label |
+| Theme | Announcement | Table label |
 |-------|--------------|--------------|
 | **Lumina Luncheon** | *“Lumina Luncheon — moonfruit for everyone!”* | *“Shared table: Lumina”* |
 | **Solara Supper** | *“Solara Supper — sunfruit potluck!”* | *“Shared table: Solara”* |
-| **Weaver Watch** | *“Weaver Watch — twilight fruit for the stitchers!”* | *“Shared table: Glimmer”* |
+| **Glimmer Gathering** | *“Glimmer Gathering — twilight fruit for the stitchers!”* | *“Shared table: Glimmer”* |
 
 **Server clear:** *“The table is full! The whole meadow ate well tonight.”*
 
@@ -1926,7 +1952,7 @@ Recent: @a won Rare · @b won Coins ...
 
 | NPC | Role | Voice | Sample |
 |-----|------|-------|--------|
-| **Seed Broker** | Coin seed shop | Cheerful shopkeeper | *“Starter seeds — good roots for kind keepers.”* |
+| **Seed Stand** | Coin seed shop | Cheerful shopkeeper | *“Starter seeds — good roots for kind keepers.”* |
 | **Meteor Merchant** | Shard shop | Wandering stargazer | *“Shower gifts! Trade shards, grow something rare.”* |
 | **Leaderboard clerk** | Kiosk | Quiet archivist | *“The meadow remembers who fed the most stars.”* |
 
@@ -1939,11 +1965,11 @@ No voiced lines v1 — **text bubbles** only.
 | Breed | Lore blurb *(index card)* |
 |-------|---------------------------|
 | **Glow Mote** | *A shy bush of berry-lanterns. Glows when the moon is kind.* |
-| **Nebula Sprout** | *First sprout many keepers grow. Humble pod, honest star-food.* |
+| **Nebula Sprout** | *A humble pod, honest star-food. Many keepers grow it after their first Glow Mote.* |
 | **Sun Peach** | *Warm as a sunrise hug. Solara’s favorite dessert.* |
-| **Flare Mint** | *Too spicy for planet plates — but Community Feed chefs love the zing.* |
+| **Flare Mint** | *Too spicy for planet plates — but Community Table cooks love the zing.* |
 | **Dusk Lace** | *Petals like lace at the edge of night. Handle with twilight hands.* |
-| **Starlace Vine** *(C1)* | *When moonfruit and sunfruit shake hands, lace grows between them.* |
+| **Starlace Vine** *(C1)* | *When moonfruit and moonfruit trade pollen, lace grows between them.* |
 
 *Full index: Game Designer + Art Director fill remaining entries in Phase 04 bible.*
 
@@ -1955,7 +1981,7 @@ No voiced lines v1 — **text bubbles** only.
 |--------|------------|
 | **Achievements** | Past-tense pride — *“First Delivery,” “Galaxy Gardener”* |
 | **First discoverer** | *“@Player was first to meet Starlace Vine on this meadow!”* |
-| **Legendary spin** | *“LEGENDARY! @Player caught the Nebula Moth Lantern!”* |
+| **Legendary spin** | *“LEGENDARY! @Player caught the Nebula Glow Lantern!”* |
 | **Cosmic Spin (small win)** | *“@Player found stardust on the wheel.”* |
 
 ---
@@ -1969,20 +1995,56 @@ No voiced lines v1 — **text bubbles** only.
 
 ---
 
-## 10. v1 vertical slice scope
+## 10. v1 vertical slice acceptance matrix
 
-- Starter garden + Nebula Ridge; Stellar Nursery tiers 1–2
-- **10 base breeds**, **12 cross-breds** *(§1.2b)*, signature mutations on 3 collection maps (21 stars); full Bloomdex index ≥3 mutations/breed
-- **3 planets** (3 fruits each); planet unlock chain; infinite round ladders
-- **Community Feed** (~**30 min**) — **MVP required**
-- Hub: Orbital Outpost, Meteor Merchant, Seed Broker, **Cosmic Spin** (snapshot sessions, concurrent in-flight), Leaderboards
-- Meteor shower (~20 min, night) + merchant window
-- Pollen swabs (player-initiated); visit stats; display cases; buff decor (3-type cap)
-- **Cut MVP:** moth/firefly collectors; automated pollen
-- **Cosmic Spin:** client-triggered / server-authoritative; legendary snapshot on start; rotate on claim
-- Spin Tokens earn-only; 1 free spin/day
-- **Private meadows** *(VIP servers, 100 R$/mo)* — invite-only family/friend play *(Q74)*
-- **Post-MVP:** night-sky collection display on plots; Launch Pad; P2P still out
+This matrix is the Producer / QA source for Step 7 GitHub Issues. §1–§9 remain the design source; this section turns scope into testable gates.
+
+| Feature | In v1 slice? | Acceptance criteria | Owner |
+|---------|--------------|---------------------|-------|
+| First-session tutorial | ✅ | New player completes Glow Mote → Glow Berry → Lumina R1 delivery → C1 splice → Bloomdex star in **≤10 min** with tutorial accel; ends at **Keeper Rank 3**; no Robux prompts | Game Designer / UX / QA |
+| Starter garden | ✅ | 4 starter plots; Garden, Stellar Nursery, display-case area, and visit board visible; no shared plots | Lead Engineer / Art |
+| Plant growth & nurture | ✅ | Moon / sun / twilight affinities follow §5.2 timing; wrong phase slows but does not kill plants; active nurture respects cooldown / Infinite Nurture rules | Systems / Engineering |
+| Inventory & harvest | ✅ | Harvest grants correct bloom fruit, pollen, and Stardust; no generic fruit bucket; server owns grants | Engineering / QA |
+| Stellar Nursery tiers 1–2 | ✅ | Tier 1 supports one splice; tier 2 unlock uses §5.4 cost/gate; C1 deterministic tutorial splice works; duplicate/off-table rolls are server-resolved | Systems / Engineering |
+| Launch roster | ✅ | 10 base breeds and 12 cross-breds from §1.2b exist in data; renamed entries (**Dreamroot**, **Halo Sprig**, **Glimmer Ivy**, **Weaver Vine**, **Skyknot Bloom**) are reflected in UI | Game Designer / Art |
+| Bloomdex star maps | ✅ | 3 collection maps, 21 star slots, tooltips, reward preview, and list-view alternative; full index tracks ≥3 mutations per base but only signature mutations light map stars | UX / Game Designer |
+| Mutations | ✅ | At least 3 mutation entries per base in the index; 10 signature mutations flagged for map stars; pity rules in §5.6 testable | Game Designer / Systems |
+| Orbital Outpost | ✅ | Planet picker, locked-world requirements, planet order UI, inventory auto-load, capsule launch, round advance, and `keeperBonusByRank` payout formula match §5.3 | Systems / Engineering / QA |
+| Planet unlock chain | ✅ | Lumina start; Solara unlocks at Lumina R10; Glimmer unlocks at Solara R15; Launch Pad visible as post-MVP tease only | Game Designer / QA |
+| Community Table / Feed | ✅ | ~30 min cadence; Lumina / Solara / Glimmer rotation with Glimmer gate fallback; §5.7 server goals; identical personal thresholds; friendly ineligible copy | Systems / UX / QA |
+| Private Meadow | ✅ | Roblox VIP server enabled; invite-only copy present; only Community Feed server goal branches on `PrivateServerId`; growth, payouts, spin odds, gates, and personal thresholds identical | Producer / Engineering / Compliance |
+| Meteor shower + Merchant | ✅ | Night shower cadence ~20 min; personal crate claims; 10 min Merchant window; Comet Shard costs and rare pity follow §5.8 | Systems / Engineering |
+| Cosmic Spin | ✅ | Server-authoritative RequestSpin / ResolveSpin; rolling 24h free spin; Spin Tokens earn-only; legendary snapshot fairness; duplicate snapshotted winners receive item | Engineering / Security / QA |
+| Pollen swabs | ✅ | 3 rolling-24h friendly samples; once per foreign plant per window; no owner resource loss; clear reassurance copy | UX / Engineering / Trust & Safety |
+| Visit privacy | ✅ | Visit board supports Public / Friends only / Private; default family posture is Friends only on public servers | UX / Trust & Safety |
+| Display cases | ✅ | 3 cases max; one Prize Bloom per case; unlock per planet milestone; read-only inspection for visitors | Game Designer / UX |
+| Buff decor | ✅ | 3 active buff-type cap; Pollen Basin, Meteor lantern, Sunstone path, Glow fence examples work without automated collectors | Systems / Art |
+| Achievements | ✅ Draft / Step 7 issue | Launch samples in §4 remain valid; Producer issue must either complete the 40-entry target or explicitly reduce v1 achievement scope before implementation | Game Designer / Producer / QA |
+| Legendary catalog | ✅ Draft / Step 7 issue | Cosmic Spin supports 7/week rotation; Producer issue must name the 7 launch Legendary decor/skin items before art lock | Game Designer / Art / Economy |
+| Monetization | ✅ | No paid random; Extra Garden Beds (+2), Infinite Nurture, Meadow Express, Bloom Rush, coin packs, starter kit, cosmetics follow §6; all server-validated | Economy / Compliance / Engineering |
+| Leaderboards | ✅ | Planet Friends Fed, Supply Runs, Highest Round, Biggest Bloom, Meteor Crates; no capped “planets unlocked” board | Producer / Engineering |
+| Accessibility | ✅ | Reduced motion, UI scale, harvest tap/hold, audio toggles, camera reset, Bloomdex list view, text+icon phase cues | UX / QA |
+| Trust & Safety | ✅ | No P2P trading, no shared plots, no custom text UGC; public recognition uses system UI / filtered system messages only | Compliance / Trust & Safety |
+| GitHub Issues | Step 7 | Producer creates one issue per matrix row or grouped milestone, each with acceptance criteria copied from this table | Producer |
+
+### Explicitly out of v1 slice
+
+- Night-sky collection projection above plots
+- Launch Pad auto-quests
+- P2P trading or shared-plot co-op
+- Moth/firefly collectors or automated pollen
+- Robux spins, random seed packs, paid splice luck, Robux Comet Shards, exclusive paid breeds/biomes
+
+### Phase 06 implementation addendum outline
+
+Before code bootstrap, create a short engineering addendum covering:
+
+1. Remote contracts and validation checks for plant, harvest, nurture, splice, delivery, Feed, swab, spin, meteor, and marketplace flows.
+2. Persistence schema for profile inventory, plots, plant state, Bloomdex, ranks, clocks, purchases, and migration version.
+3. Clock policy: rolling 24h for free spin, Daily Trio, and pollen swabs; server timestamps only.
+4. Transaction semantics: atomic debits/grants, idempotent `ProcessReceipt`, duplicate resolve protection.
+5. Event scheduler: Community Table, meteors, Cosmic Spin board state, and private-server goal config.
+6. Telemetry hooks: tutorial funnel, Lumina R10 time, Stardust earn/spend, Spin Token faucet, Feed clear rate, Robux prompt exposure.
 
 ---
 
@@ -1990,7 +2052,11 @@ No voiced lines v1 — **text bubbles** only.
 
 | # | Question |
 |---|----------|
-| — | *(Steps 1–6 complete — Step 7 EP sign-off pending)* |
+| 1 | Confirm the safer v1 default: **Private Meadow scales only the shared Community Feed server goal**, not personal tier thresholds. |
+| 2 | Confirm **Extra Garden Beds (+2)** remains a v1 pass after playtest specifically checks Stardust, mutation, and Feed contribution acceleration. |
+| 3 | Confirm renamed player-facing labels: **Glimmer Gathering**, **Community Table**, **Seed Stand**, **Prize Bloom**, **Pollen Basin**, **Halo Sprig**, **Glimmer Ivy**, **Extra Garden Beds (+2)**. |
+| 4 | Confirm whether v1 ships the full 40-achievement target or a smaller implementation set with the rest deferred to Phase 09. |
+| 5 | Confirm the seven launch Cosmic Spin Legendary item names before Phase 04 art lock. |
 
 ---
 
@@ -2018,7 +2084,7 @@ No voiced lines v1 — **text bubbles** only.
 | 2026-06-28 | EP grill Q65 | **Community Feed every ~30 min** |
 | 2026-06-28 | EP grill Q66 | **7 legendaries** in weekly Cosmic Spin pool |
 | 2026-06-28 | EP grill Q67 | **Cut moth collectors**; pollen player-initiated only |
-| 2026-06-28 | EP grill Q68 | **3 display cases**, 1 specimen each; unlock per planet milestone |
+| 2026-06-28 | EP grill Q68 | **3 display cases**, 1 Prize Bloom each; unlock per planet milestone |
 | 2026-06-28 | EP grill Q69 | **R10 → Solara; R15 → Glimmer; R20 → Launch Pad** (post-MVP) |
 | 2026-06-28 | EP grill Q70 | **Launch roster locked** — 10 bases, 12 crosses, signature mutations (§1.2b) |
 | 2026-06-28 | EP grill Q71 | **Keeper light** — Rank 1–5, 5 story beats, daily triad (§3.1) |
@@ -2028,7 +2094,7 @@ No voiced lines v1 — **text bubbles** only.
 | 2026-06-28 | EP grill Q73 | **Three nurture tools**; **Infinite Nurture** pass rename |
 | 2026-06-28 | EP grill Q74 | **Private servers at v1** — invite-only meadows; scaled Community Feed |
 | 2026-06-28 | EP alignment | **Cosmic Coin Pouch / Satchel / Vault** — Robux coin pack SKU names |
-| 2026-06-28 | EP alignment | **Private server fairness** — Feed thresholds only; no timer or payout acceleration |
+| 2026-06-28 | EP alignment | **Private server fairness** — Feed server goal only; no timer, payout, personal-threshold, or gate acceleration |
 | 2026-06-28 | UX Designer | **Step 4** — §7 social/visit flows, §8 UX + accessibility |
 | 2026-06-28 | Narrative Designer | **Step 5** — §9 world, Keeper voice, planet/collection lore |
 | 2026-06-28 | Technical Writer | **Step 6** — studio GDD index, CONTEXT, ADR-002 amend |

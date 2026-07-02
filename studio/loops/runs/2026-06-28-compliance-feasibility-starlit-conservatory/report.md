@@ -1,5 +1,7 @@
 # Compliance & Feasibility Run Report — 2026-06-28-compliance-feasibility-starlit-conservatory
 
+> **Historical note (2026-07-01):** This Phase 02 report screened the earlier Starlit Conservatory concept. Cosmic Bloom supersedes domes, Star Counter, moth/firefly collectors, and old slug language. Use `games/cosmic-bloom/docs/gdd.md` and `studio/docs/compliance/concept-compliance-checklist.md` for current implementation guidance.
+
 **Loop:** compliance.feasibility  
 **Game slug:** starlit-conservatory  
 **Status:** WAITING_ON_EP  

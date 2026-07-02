@@ -1,5 +1,7 @@
 # Research 003 — Monetization Model Recommendation
 
+> **Historical note (2026-07-01):** This monetization pass predates the Cosmic Bloom Phase 03 GDD. Use GDD §6 for current SKU names, Cosmic Coin packs, Private Meadow fairness, and no-paid-random constraints.
+
 **Agent:** Economy/Monetization Designer  
 **Date:** 2026-06-28  
 **Run:** `2026-06-28-compliance-feasibility-starlit-conservatory`

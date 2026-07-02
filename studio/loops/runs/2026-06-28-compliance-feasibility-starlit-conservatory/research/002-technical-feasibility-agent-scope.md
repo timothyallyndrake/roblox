@@ -1,5 +1,7 @@
 # Research 002 — Technical Feasibility: Agent-Only Implementation Scope
 
+> **Historical note (2026-07-01):** This feasibility pass references the earlier Starlit Conservatory asset/system plan. Cosmic Bloom supersedes domes, Star Counter, and moth collectors; use GDD §10 and the Phase 06 implementation addendum outline for current scope.
+
 **Agent:** Technical Director  
 **Date:** 2026-06-28  
 **Run:** `2026-06-28-compliance-feasibility-starlit-conservatory`

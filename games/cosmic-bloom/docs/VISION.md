@@ -10,7 +10,7 @@ Breed cosmic plants in **open starlit meadows**, fill the **Bloomdex**, deliver 
 ## Core loop
 
 ```
-Plant → nurture (sun / moon) → harvest distinct bloom fruits & pollen →
+Plant → nurture (sun / moon) → harvest distinct bloom fruits, pollen & Stardust →
 cross-breed / mutations in Stellar Nursery → Bloomdex stars →
 personal supply orders + Community Feed at Orbital Outpost →
 earn Cosmic Coins → upgrade → repeat
@@ -42,16 +42,20 @@ Invented constellation-*like* names; **literal collection shapes** with **21 sta
 | Event | Schedule |
 |-------|----------|
 | **Meteor shower** | ~20 min, night |
-| **Community Feed** | ~**30 min**, **MVP** — rotating Lumina / Solara / Weaver themes; Lumina ~every 90 min |
+| **Community Feed** | ~**30 min**, **MVP** — rotating Lumina / Solara / Glimmer themes; Lumina ~every 90 min |
 | **Cosmic Spin** | Shared hub board — client spin, server resolves; **legendary snapshot** for in-flight spins |
 
 ## Currencies
 
-**Cosmic Coins** · **Comet Shards** · **Spin Tokens** *(item)*
+**Cosmic Coins** · **Stardust** *(upgrade item)* · **Comet Shards** · **Spin Tokens** *(item)*
+
+## Private Meadows
+
+Invite-only VIP servers for family/friends at v1. Same growth, payouts, gates, spin odds, and personal Feed thresholds as public servers; only the shared Community Feed server goal is smaller for small groups.
 
 ## Leaderboards
 
-Lifeforms Fed · Supply Runs · Highest Round · Biggest Bloom · Meteor Crates
+Planet Friends Fed · Supply Runs · Highest Round · Biggest Bloom · Meteor Crates
 
 ## Full pitch
 

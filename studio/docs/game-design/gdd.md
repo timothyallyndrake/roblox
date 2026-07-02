@@ -35,7 +35,7 @@ This studio file is an **index and gate tracker**. Do not duplicate balance tabl
 | 7 | Social & visit flows | 4 | UX Designer | ✅ |
 | 8 | UX flows + accessibility | 4 | UX Designer | ✅ |
 | 9 | Narrative & world | 5 | Narrative Designer | ✅ |
-| 10 | v1 vertical slice scope | 1 | Game Designer | ✅ |
+| 10 | v1 vertical slice acceptance matrix | Step 7 prep | Producer / QA | ✅ Drafted |
 
 ---
 
@@ -76,13 +76,13 @@ This studio file is an **index and gate tracker**. Do not duplicate balance tabl
 |-------|----------|
 | **World** | Open starlit meadows — **no glass domes** |
 | **Core verbs** | Breed & complete · Feed the planets |
-| **Currency** | Cosmic Coins · Comet Shards · Spin Tokens *(earn-only)* |
+| **Currency** | Cosmic Coins · Stardust *(upgrade item)* · Comet Shards · Spin Tokens *(earn-only)* |
 | **Bloomdex** | 21 star-map slots; 10 bases + 12 crosses + mutations *(§1.2b)* |
 | **Planets** | Lumina → Solara *(R10)* → Glimmer *(R15)* |
-| **Community Feed** | ~30 min; Lumina / Solara / Weaver rotation — **MVP** |
+| **Community Feed** | ~30 min; Lumina / Solara / Glimmer rotation — **MVP** |
 | **Cosmic Spin** | Server-shared; legendary snapshot; 7/week pool |
 | **Pollen** | Player-only harvest + swab *(3/day)* — **no moth collectors** |
-| **Monetization** | Passes + deterministic dev products + cosmetics; **Cosmic Coin Pouch/Satchel/Vault**; **private meadows 100 R$/mo** *(Feed thresholds only — §5.7)* |
+| **Monetization** | Passes + deterministic dev products + cosmetics; **Cosmic Coin Pouch/Satchel/Vault**; **private meadows 100 R$/mo** *(Feed server goal only — §5.7)* |
 | **Tutorial** | ~8 min guided; Keeper → Rank 3 |
 | **Nurture tools** | Moon Lantern · Sun Scope · Twilight Lantern |
 
@@ -97,6 +97,7 @@ This studio file is an **index and gate tracker**. Do not duplicate balance tabl
 | Compliance checklist sync | ✅ Cosmic Coins naming · ⏳ domes — Phase 04 gate |
 | Full Bloomdex lore blurbs | ⏳ Phase 04 creative bible |
 | Economy spreadsheet | ⏳ Optional Phase 09 |
+| Step 7 acceptance matrix | ✅ Drafted in game GDD §10 |
 
 ---
 

@@ -78,7 +78,7 @@ _Creative Director leads. One question at a time._
 |---|----------|--------|
 | Q51 | Bloomdex content scope — 21 stars vs 21 base breeds × 3 mutations? | **A — 21 star-map slots:** ~10 base breeds + ~10 signature mutation stars + 1 prize star. Full Bloomdex index can list ≥3 mutations/breed; collections highlight signature mutations only. |
 | Q52 | Glimmer fruits before Glimmer planet unlock? | **A — Grow early, deliver later.** Stockpile OK; Outpost delivery linearly gated. |
-| Q53 | How do players obtain early-tier seeds? | **B — Cross-breed primary; meteors + Community Feed secondary.** Seed Broker = common starters only. |
+| Q53 | How do players obtain early-tier seeds? | **B — Cross-breed primary; meteors + Community Feed secondary.** Seed Stand = common starters only. |
 | Q54 | Community Feed manifest — include fruits most players can't grow yet? | **C — Rotating themes.** Lumina → Solara → Weaver loop; Weaver gated; Lumina always returns. |
 | Q55 | Moonlight / sunlight nurture — active click or passive? | **C — Hybrid.** Passive slow growth + active phase bonus burst. |
 | Q56 | What can Robux buy at launch? | **B — Convenience + cosmetics.** 3 passes, Coin packs, Bloom Rush; cosmetic skins with earn paths. |
@@ -92,13 +92,14 @@ _Creative Director leads. One question at a time._
 | Q65 | Community Feed cadence? | **B — Every ~30 min; Lumina ~every 90 min.** |
 | Q66 | Legendary spin pool size? | **B — 7 per server weekly rotation.** |
 | Q67 | Moth / firefly collectors? | **Cut from MVP.** No companion collectors. **Pollen is player-initiated only** — harvest (own) or swab (others, 3/day). No automated/NPC pollen. |
-| Q68 | Display case cap at launch? | **B — 3 cases, 1 specimen each.** One case unlock per launch planet milestone (Lumina → Solara → Glimmer). |
+| Q68 | Display case cap at launch? | **B — 3 cases, 1 Prize Bloom each.** One case unlock per launch planet milestone (Lumina → Solara → Glimmer). |
 | Q69 | Planet unlock round gates? | **R10 / R15.** Solara @ Lumina R10; Glimmer @ Solara R15. **Launch Pad** @ Glimmer R20 *(post-MVP; +5 pattern)*. |
 | Q70 | Exact launch breed roster + cross-breed pairs? | **Approved as drafted.** 10 base breeds, 12 cross-breds, 10 signature map mutations + 1 prize star. See GDD §1.2b. |
-| Q71 | Keeper Rank + daily quest structure? | **A — Light.** Rank 1–5; 5 one-time Keeper story beats; daily triad; +5% Outpost coins per rank (max +25%). See GDD §3.1. |
+| Q71 | Keeper Rank + daily quest structure? | **A — Light.** Rank 1–5; 5 one-time Keeper story beats; Daily Trio; explicit Outpost coin bonus lookup (max +25%). See GDD §3.1. |
 | Q72 | Tutorial length & experience? | **A — Guided ~8 min.** Full plant → nurture → deliver → C1 splice; skippable for veterans; Keeper beats 1–2 → Rank 3. See GDD §2.1. |
 | Q73 | Nurture tools — sun / twilight parity? | **Three tools:** Moon Lantern, Sun Scope, Twilight Lantern. Active burst in **correct phase only** (twilight: day or night, −20% burst). **Infinite Nurture** pass (renamed) removes cooldown on all three. See §1.5, §6.3. |
 | Q74 | Private servers at launch? | **Yes — v1.** Roblox VIP servers for invite-only family/friend meadows. Community Feed scaled for small servers (§5.7). **100 R$/mo** target price. |
 | Q75 | Robux Cosmic Coin pack SKU names? | **Cosmic Coin Pouch / Satchel / Vault** (99 / 249 / 499 R$). Spelled out for Roblox shop clarity; matches **Cosmic Coins** currency. |
-| Q76 | Can private servers speed up progression? | **No.** VIP meadows scale **Community Feed contribution thresholds only** — grow timers, Outpost payouts, nursery, spin, and gates **identical** to public. Time-skip remains Bloom Rush / Infinite Nurture SKUs. See GDD §5.7. |
+| Q76 | Can private servers speed up progression? | **No.** VIP meadows scale the **shared Community Feed server goal only** — grow timers, personal Feed thresholds, Outpost payouts, nursery, spin, and gates **identical** to public. Time-skip remains Bloom Rush / Infinite Nurture SKUs. See GDD §5.7. |
+| Q77 | Phase 03 naming cleanup after staff review? | **Adopted defaults pending EP final sign-off:** Glimmer Gathering, Community Table, Seed Stand, Prize Bloom, Pollen Basin, Halo Sprig, Glimmer Ivy, Extra Garden Beds (+2). See GDD §1, §5–§10. |
 | Q63 | 9 planet fruits vs total plant count? | **9 = delivery menu only.** ~10 base breeds + **~12 cross-breds** at launch + mutations (Option B). |
