@@ -2,14 +2,22 @@
 
 **Game:** Cosmic Bloom (`cosmic-bloom`)  
 **Phase:** 03 — Game Design Document  
-**Status:** Draft — GDD Steps 1–6 complete · Step 7 (EP sign-off) pending  
-**Last updated:** 2026-06-28
+**Status:** Draft hardened — GDD Steps 1–6 complete · pre-build hardening complete · Step 7 (EP sign-off) pending
+**Last updated:** 2026-07-01
 
 | Doc | Path |
 |-----|------|
 | Vision | [VISION.md](./VISION.md) |
+| Market scan | [market/2026-07-01-targeted-market-scan.md](./market/2026-07-01-targeted-market-scan.md) |
+| Economy proof | [economy/economy-v1.md](./economy/economy-v1.md) |
+| Content catalog | [content/v1-content-catalog.md](./content/v1-content-catalog.md) |
+| Family audio overview | [reviews/notebooklm-family-overview.md](./reviews/notebooklm-family-overview.md) |
+| Producer Step 7 issue plan | [reviews/2026-07-01-producer-step7-issue-plan.md](./reviews/2026-07-01-producer-step7-issue-plan.md) |
+| Creative bible | [creative/phase04-creative-bible.md](./creative/phase04-creative-bible.md) |
+| Engineering addendum | [engineering/phase06-implementation-addendum.md](./engineering/phase06-implementation-addendum.md) |
 | Pitch | [studio/docs/discovery/pitch-sells-cosmic-bloom.md](../../../studio/docs/discovery/pitch-sells-cosmic-bloom.md) |
 | ADR-002 | [studio/docs/decisions/002-game-direction-cosmic-bloom.md](../../../studio/docs/decisions/002-game-direction-cosmic-bloom.md) |
+| ADR-003–008 | [studio/docs/decisions/](../../../studio/docs/decisions/) |
 | Compliance | [studio/docs/compliance/concept-compliance-checklist.md](../../../studio/docs/compliance/concept-compliance-checklist.md) |
 
 ## Locked constraints (Phase 02)
@@ -202,7 +210,7 @@ Breed cosmic plants under sun and moon in **open meadows**, fill the **Bloomdex*
 | C11 | Starlace Vine | Glimmer Ivy | **Weaver Vine** | Weaver Fruit |
 | C12 | Heat Shimmer | Nightglint | **Skyknot Bloom** | Skyknot Fruit *(Prize Bloom-leaning)* |
 
-**Forward seed paths:** Tier A from Broker starters. Tier B requires sunbound pollen (cross chain or meteor). **Flare Mint** seeds from **Solara Supper** Community Feed tier 2+ or meteors. Tier C requires twilight bases from C8–C10 chain or meteors.
+**Forward seed paths:** Tier A from Seed Stand starters. Tier B requires sunbound pollen (cross chain or meteor). **Flare Mint** seeds from **Solara Supper** Community Feed tier 2+ or meteors. Tier C requires twilight bases from C8–C10 chain or meteors.
 
 *Splice luck %, duplicate pollen rates, and meteor drop weights — **§5.5–5.8**.*
 
@@ -887,7 +895,7 @@ Three quests refresh on a **rolling 24h per-account timer** from the player's fi
 | Time | Unlock |
 |------|--------|
 | ~15 min | **Second plot row** after first collection milestone |
-| ~60–90 min | Nursery tier 2; **Solara** unlocks at Lumina **R10**; first **Community Feed** |
+| ~105–180 min | Nursery tier 2; **Solara** unlocks at Lumina **R10**; first **Community Feed** likely discovered earlier |
 | ~45 min | **Nebula Ridge** garden extension — affinity soil slot |
 | ~20–40 min | First **meteor shower** (if night) + Meteor Merchant window |
 
@@ -1002,7 +1010,7 @@ Full list: 40 achievements target for vertical slice scope.
 | Target | v1 goal |
 |--------|---------|
 | **Tutorial → Rank 3** | ~8 min |
-| **Lumina R10** (Solara unlock) | ~60–90 min engaged solo |
+| **Lumina R10** (Solara unlock) | ~105–180 min engaged solo *(hardening proof, 2026-07-01)* |
 | **First cross-bred (C1)** | ~15–25 min post-tutorial |
 | **First meteor crate** | ~20–40 min *(night)* |
 | **Glimmer unlock (Solara R15)** | ~3–6 hr engaged |
@@ -1167,7 +1175,7 @@ goalFruit = min(cap, floor + (750 × activePlayers))
 | Server type | `floor` | `cap` | `activePlayers` | Notes |
 |-------------|---------|-------|-----------------|-------|
 | **Public** | 4,000 | 14,000 | 1–12 | Standard hub; 12-player target = 13,000 fruit |
-| **Private / VIP** *(Q74)* | **2,500** | **8,000** | 1–6 *(owner + invites)* | Lower server goal for 2–4 friends |
+| **Private / VIP** *(Q74)* | **2,000** | **8,000** | 1–6 *(owner + invites)* | Lower server goal for 2–4 friends |
 
 Split **60 / 30 / 10** across theme fruit lines *(Lumina example: Glow / Moon / Nebula)*.
 
@@ -1196,7 +1204,7 @@ Private meadows are a **social comfort** SKU *(no strangers)*, **not** a hidden 
 | Cosmic Spin odds & reward table | **Same** |
 | Community Feed **tier rewards** *(coins, shards, tokens)* | **Same** |
 | Community Feed **personal thresholds** | **Same** *(v1 default; protects Feed rewards from VIP efficiency)* |
-| Community Feed **server goal pool** | **Lower on private** *(2,500 floor / 8,000 cap)* |
+| Community Feed **server goal pool** | **Lower on private** *(2,000 floor / 8,000 cap)* |
 
 **Why this is balanced:** Fruit still grows at the same rate on the same plots. The **server goal** scales down so **2–4 friends** can clear the shared bar without needing 12 strangers; personal reward thresholds stay the same so VIP servers do not become a faster Spin Token / Comet Shard farm. This is **not** equivalent to Bloom Rush or Cosmic Coin packs.
 
@@ -1275,7 +1283,7 @@ Rotation resets **Monday 00:00 UTC**; same catalog all servers that week.
 
 ### 5.11 Economy tuning checklist *(playtest)*
 
-- [ ] Lumina R10 still ~60–90 min after fruit yield tweaks
+- [ ] Lumina R10 stays **~105–180 min engaged solo** after fruit yield tweaks
 - [ ] Tier B cross **C4–C7** reachable before Solara R10 without meteor luck
 - [ ] Coin sink vs earn not stalling nursery T2
 - [ ] Stardust earn/sink curve still gates nursery T2/T3 after Bloom Rush, Infinite Nurture, and Extra Garden Beds are considered
@@ -1283,7 +1291,7 @@ Rotation resets **Monday 00:00 UTC**; same catalog all servers that week.
 - [ ] Community Feed clear rate **40–70%** per window at 6+ public actives and **40–70%** at 2–4 private actives
 - [ ] Forward seed pity not flooding twilight before Glimmer gate
 
-*Spreadsheet clone: Producer to attach `economy-v1` sheet in Phase 09 if needed.*
+*Hardening artifact: [`economy/economy-v1.md`](./economy/economy-v1.md) + generated scenario CSV. Producer may attach a fuller spreadsheet clone in Phase 09 if needed.*
 
 ---
 
@@ -2019,8 +2027,8 @@ This matrix is the Producer / QA source for Step 7 GitHub Issues. §1–§9 rema
 | Visit privacy | ✅ | Visit board supports Public / Friends only / Private; default family posture is Friends only on public servers | UX / Trust & Safety |
 | Display cases | ✅ | 3 cases max; one Prize Bloom per case; unlock per planet milestone; read-only inspection for visitors | Game Designer / UX |
 | Buff decor | ✅ | 3 active buff-type cap; Pollen Basin, Meteor lantern, Sunstone path, Glow fence examples work without automated collectors | Systems / Art |
-| Achievements | ✅ Draft / Step 7 issue | Launch samples in §4 remain valid; Producer issue must either complete the 40-entry target or explicitly reduce v1 achievement scope before implementation | Game Designer / Producer / QA |
-| Legendary catalog | ✅ Draft / Step 7 issue | Cosmic Spin supports 7/week rotation; Producer issue must name the 7 launch Legendary decor/skin items before art lock | Game Designer / Art / Economy |
+| Achievements | ✅ Cataloged | 40 named launch achievements exist in [`content/v1-content-catalog.md`](./content/v1-content-catalog.md); Producer issue may reduce Roblox Badge subset, but in-game Chronicle keeps the 40-entry target | Game Designer / Producer / QA |
+| Legendary catalog | ✅ Cataloged | 7 named launch Legendary decor/skin items exist in [`content/v1-content-catalog.md`](./content/v1-content-catalog.md); all are cosmetic or standard-strength decor skins | Game Designer / Art / Economy |
 | Monetization | ✅ | No paid random; Extra Garden Beds (+2), Infinite Nurture, Meadow Express, Bloom Rush, coin packs, starter kit, cosmetics follow §6; all server-validated | Economy / Compliance / Engineering |
 | Leaderboards | ✅ | Planet Friends Fed, Supply Runs, Highest Round, Biggest Bloom, Meteor Crates; no capped “planets unlocked” board | Producer / Engineering |
 | Accessibility | ✅ | Reduced motion, UI scale, harvest tap/hold, audio toggles, camera reset, Bloomdex list view, text+icon phase cues | UX / QA |
@@ -2035,16 +2043,16 @@ This matrix is the Producer / QA source for Step 7 GitHub Issues. §1–§9 rema
 - Moth/firefly collectors or automated pollen
 - Robux spins, random seed packs, paid splice luck, Robux Comet Shards, exclusive paid breeds/biomes
 
-### Phase 06 implementation addendum outline
+### Phase 06 implementation addendum
 
-Before code bootstrap, create a short engineering addendum covering:
+Engineering handoff is now captured in [`engineering/phase06-implementation-addendum.md`](./engineering/phase06-implementation-addendum.md), with accepted technical ADRs:
 
-1. Remote contracts and validation checks for plant, harvest, nurture, splice, delivery, Feed, swab, spin, meteor, and marketplace flows.
-2. Persistence schema for profile inventory, plots, plant state, Bloomdex, ranks, clocks, purchases, and migration version.
-3. Clock policy: rolling 24h for free spin, Daily Trio, and pollen swabs; server timestamps only.
-4. Transaction semantics: atomic debits/grants, idempotent `ProcessReceipt`, duplicate resolve protection.
-5. Event scheduler: Community Table, meteors, Cosmic Spin board state, and private-server goal config.
-6. Telemetry hooks: tutorial funnel, Lumina R10 time, Stardust earn/spend, Spin Token faucet, Feed clear rate, Robux prompt exposure.
+1. ADR-003 — Persistence architecture and schema ownership.
+2. ADR-004 — Cosmic Spin finite-state machine and snapshot fairness.
+3. ADR-005 — Unified rolling 24h clock policy.
+4. ADR-006 — Server remotes and validation matrix.
+5. ADR-007 — Marketplace receipt idempotency and purchase caps.
+6. ADR-008 — Event scheduler and Private Meadow audit rule.
 
 ---
 
@@ -2052,11 +2060,11 @@ Before code bootstrap, create a short engineering addendum covering:
 
 | # | Question |
 |---|----------|
-| 1 | Confirm the safer v1 default: **Private Meadow scales only the shared Community Feed server goal**, not personal tier thresholds. |
-| 2 | Confirm **Extra Garden Beds (+2)** remains a v1 pass after playtest specifically checks Stardust, mutation, and Feed contribution acceleration. |
-| 3 | Confirm renamed player-facing labels: **Glimmer Gathering**, **Community Table**, **Seed Stand**, **Prize Bloom**, **Pollen Basin**, **Halo Sprig**, **Glimmer Ivy**, **Extra Garden Beds (+2)**. |
-| 4 | Confirm whether v1 ships the full 40-achievement target or a smaller implementation set with the rest deferred to Phase 09. |
-| 5 | Confirm the seven launch Cosmic Spin Legendary item names before Phase 04 art lock. |
+| 1 | Confirm hardening change: **Lumina R10 target becomes ~105–180 min engaged solo** instead of the earlier 60–90 min target. |
+| 2 | Confirm hardening change: **Private Meadow Community Table floor = 2,000** while personal thresholds, timers, payouts, gates, and odds stay identical to public servers. |
+| 3 | Confirm **Extra Garden Beds (+2)** remains a v1 pass after playtest specifically checks Stardust, mutation, and Feed contribution acceleration. |
+| 4 | Run or waive live family feedback from [`reviews/2026-07-01-family-read-aloud-test.md`](./reviews/2026-07-01-family-read-aloud-test.md), especially **Sun Rawr**, **Extra Garden Beds (+2)**, and **Cosmic Spin**. |
+| 5 | Confirm Phase 04 art lock can use [`creative/phase04-creative-bible.md`](./creative/phase04-creative-bible.md) and [`content/v1-content-catalog.md`](./content/v1-content-catalog.md) as source docs. |
 
 ---
 
@@ -2097,4 +2105,5 @@ Before code bootstrap, create a short engineering addendum covering:
 | 2026-06-28 | EP alignment | **Private server fairness** — Feed server goal only; no timer, payout, personal-threshold, or gate acceleration |
 | 2026-06-28 | UX Designer | **Step 4** — §7 social/visit flows, §8 UX + accessibility |
 | 2026-06-28 | Narrative Designer | **Step 5** — §9 world, Keeper voice, planet/collection lore |
+| 2026-07-01 | Producer / cross-discipline hardening | Pre-build hardening artifacts: market scan, economy proof, content catalog, NotebookLM family overview, family-test packet, creative bible, engineering addendum, ADR-003–008 |
 | 2026-06-28 | Technical Writer | **Step 6** — studio GDD index, CONTEXT, ADR-002 amend |
