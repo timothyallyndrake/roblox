@@ -8,17 +8,22 @@ Inbound:  bot polls channel for EP replies when a run is WAITING_ON_EP
 Setup:
   cp studio/loops/config/config.example.json studio/loops/config/local.json
   # Fill in webhook URL, bot token, channel ID (never commit local.json)
+  # In Discord Developer Portal → Bot → enable **Message Content Intent**
+  # (required for the bot to read EP reply text)
 
 Usage:
   python3 scripts/studio-discord-bridge.py notify --event waiting_on_ep --run-id ID --loop discovery.game-ideas --message "Question here"
-  python3 scripts/studio-discord-bridge.py listen   # poll for EP replies (run in background during loops)
+  python3 scripts/studio-discord-bridge.py listen   # poll EP replies + auto-dispatch loop continue
 """
 from __future__ import annotations
 
 import argparse
+import os
 import json
 import re
+import subprocess
 import sys
+import threading
 import time
 import urllib.error
 import urllib.request
@@ -28,6 +33,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = ROOT / "studio" / "loops" / "config" / "local.json"
 RUNS_DIR = ROOT / "studio" / "loops" / "runs"
+DISPATCH_TIMEOUT = 600  # seconds — agent turns can run several minutes
+DISPATCH_LOG = Path("/tmp/rgs-discord-dispatch.log")
 
 EVENT_COLORS = {
     "step_complete": 3447003,
@@ -44,6 +51,16 @@ EVENT_TITLES = {
     "blocked": "Loop Blocked",
     "error": "Loop Error",
 }
+
+# Discord blocks urllib's default User-Agent (Cloudflare 1010). Required format:
+# https://discord.com/developers/docs/reference#user-agent
+DISCORD_USER_AGENT = "DiscordBot (https://github.com/timothyallyndrake/roblox, 1.0)"
+
+
+def discord_headers(**extra: str) -> dict:
+    headers = {"User-Agent": DISCORD_USER_AGENT}
+    headers.update(extra)
+    return headers
 
 
 def load_config() -> dict:
@@ -65,8 +82,8 @@ def post_webhook(cfg: dict, event: str, run_id: str, loop_id: str, message: str,
     reply_hint = ""
     if event == "waiting_on_ep":
         reply_hint = (
-            "\n\n_Reply in this channel to answer. Start with "
-            f"`run:{run_id}` or reply to this message._"
+            "\n\n_Reply in this channel — the loop **resumes automatically**. "
+            f"Include `run:{run_id}` if multiple runs are active._"
         )
 
     payload = {
@@ -83,7 +100,7 @@ def post_webhook(cfg: dict, event: str, run_id: str, loop_id: str, message: str,
     req = urllib.request.Request(
         url,
         data=json.dumps(payload).encode(),
-        headers={"Content-Type": "application/json"},
+        headers=discord_headers(**{"Content-Type": "application/json"}),
         method="POST",
     )
     with urllib.request.urlopen(req, timeout=15) as resp:
@@ -92,8 +109,8 @@ def post_webhook(cfg: dict, event: str, run_id: str, loop_id: str, message: str,
 
 
 def api_get_messages(cfg: dict, after: str | None = None) -> list:
-    token = cfg.get("discord_bot_token", "")
-    channel = cfg.get("discord_channel_id", "")
+    token = cfg.get("discord_bot_token", "").strip()
+    channel = cfg.get("discord_channel_id", "").strip()
     if not token or "REPLACE_ME" in token:
         return []
 
@@ -103,20 +120,43 @@ def api_get_messages(cfg: dict, after: str | None = None) -> list:
 
     req = urllib.request.Request(
         url,
-        headers={"Authorization": f"Bot {token}"},
+        headers=discord_headers(Authorization=f"Bot {token}"),
     )
     with urllib.request.urlopen(req, timeout=15) as resp:
         return json.loads(resp.read().decode())
 
 
 def api_get_me(cfg: dict) -> dict:
-    token = cfg.get("discord_bot_token", "")
+    token = cfg.get("discord_bot_token", "").strip()
     req = urllib.request.Request(
         "https://discord.com/api/v10/users/@me",
-        headers={"Authorization": f"Bot {token}"},
+        headers=discord_headers(Authorization=f"Bot {token}"),
     )
     with urllib.request.urlopen(req, timeout=15) as resp:
         return json.loads(resp.read().decode())
+
+
+def run_status(run_dir: Path) -> str | None:
+    """Read status from state.json; fall back to state.md if missing or stale."""
+    state_json = run_dir / "state.json"
+    state_md = run_dir / "state.md"
+
+    md_status: str | None = None
+    if state_md.exists():
+        text = state_md.read_text()
+        for status in ("WAITING_ON_EP", "RUNNING", "FINISHED", "BLOCKED", "ERROR"):
+            if f"**Status:** {status}" in text:
+                md_status = status
+                break
+
+    if state_json.exists():
+        json_status = json.loads(state_json.read_text()).get("status")
+        # Agent updates can desync files; prefer WAITING_ON_EP from either source.
+        if json_status == "WAITING_ON_EP" or md_status == "WAITING_ON_EP":
+            return "WAITING_ON_EP"
+        return json_status or md_status
+
+    return md_status
 
 
 def find_waiting_runs() -> list[Path]:
@@ -126,15 +166,8 @@ def find_waiting_runs() -> list[Path]:
     for run_dir in RUNS_DIR.iterdir():
         if not run_dir.is_dir():
             continue
-        state_json = run_dir / "state.json"
-        if state_json.exists():
-            state = json.loads(state_json.read_text())
-            if state.get("status") == "WAITING_ON_EP":
-                waiting.append(run_dir)
-        else:
-            state_md = run_dir / "state.md"
-            if state_md.exists() and "WAITING_ON_EP" in state_md.read_text():
-                waiting.append(run_dir)
+        if run_status(run_dir) == "WAITING_ON_EP":
+            waiting.append(run_dir)
     return waiting
 
 
@@ -148,7 +181,56 @@ def extract_run_id(content: str, footer_text: str = "") -> str | None:
     return None
 
 
-def record_ep_reply(run_dir: Path, content: str) -> None:
+def sync_state_md_status(run_dir: Path, status: str) -> None:
+    state_md = run_dir / "state.md"
+    if not state_md.exists():
+        return
+    text = state_md.read_text()
+    new_text = re.sub(r"\*\*Status:\*\* \S+", f"**Status:** {status}", text, count=1)
+    if new_text != text:
+        state_md.write_text(new_text)
+
+
+def load_run_state(run_dir: Path) -> dict:
+    state_json = run_dir / "state.json"
+    if state_json.exists():
+        return json.loads(state_json.read_text())
+    return {}
+
+
+def save_run_state(run_dir: Path, state: dict) -> None:
+    state["updated"] = datetime.now(timezone.utc).isoformat()
+    (run_dir / "state.json").write_text(json.dumps(state, indent=2))
+
+
+def clear_dispatch_lock(run_dir: Path) -> None:
+    state = load_run_state(run_dir)
+    if not state:
+        return
+    state.pop("dispatch_in_flight", None)
+    state.pop("dispatch_source", None)
+    state.pop("dispatch_started", None)
+    save_run_state(run_dir, state)
+
+
+def dispatch_in_flight(run_dir: Path) -> bool:
+    return bool(load_run_state(run_dir).get("dispatch_in_flight"))
+
+
+def record_ep_reply(run_dir: Path, content: str, message_id: str) -> bool:
+    """Record EP reply. Returns True when loop continue should be dispatched."""
+    if dispatch_in_flight(run_dir):
+        print(f"Dispatch already in flight for {run_dir.name}, skipping", file=sys.stderr)
+        return False
+
+    state = load_run_state(run_dir)
+    if state.get("last_discord_message_id") == message_id:
+        return False
+
+    if run_status(run_dir) != "WAITING_ON_EP":
+        print(f"Run {run_dir.name} is not WAITING_ON_EP, skipping", file=sys.stderr)
+        return False
+
     log = run_dir / "grilling-log.md"
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     entry = f"\n| EP (Discord) | {ts} | {content.strip()} |\n"
@@ -157,21 +239,95 @@ def record_ep_reply(run_dir: Path, content: str) -> None:
     else:
         log.write_text(f"# Grilling log\n\n| Source | Time | Answer |\n|--------|------|--------|\n{entry}")
 
-    state_json = run_dir / "state.json"
-    if state_json.exists():
-        state = json.loads(state_json.read_text())
-        state["status"] = "RUNNING"
-        state["ep_reply"] = content.strip()
-        state["updated"] = ts
-        state_json.write_text(json.dumps(state, indent=2))
-
-    state_md = run_dir / "state.md"
-    if state_md.exists():
-        text = state_md.read_text()
-        text = text.replace("WAITING_ON_EP", "RUNNING")
-        state_md.write_text(text)
+    state["status"] = "RUNNING"
+    state["ep_reply"] = content.strip()
+    state["last_discord_message_id"] = message_id
+    state["dispatch_in_flight"] = True
+    state["dispatch_source"] = "discord"
+    state["dispatch_started"] = datetime.now(timezone.utc).isoformat()
+    save_run_state(run_dir, state)
+    sync_state_md_status(run_dir, "RUNNING")
 
     print(f"Recorded EP reply for run {run_dir.name}")
+    return True
+
+
+def _dispatch_event_for_status(status: str | None) -> str:
+    if status == "WAITING_ON_EP":
+        return "waiting_on_ep"
+    if status == "FINISHED":
+        return "finished"
+    if status == "BLOCKED":
+        return "blocked"
+    if status == "ERROR":
+        return "error"
+    return "step_complete"
+
+
+def spawn_loop_continue(run_id: str, cfg: dict) -> None:
+    """Background thread: run `rgs.py loop continue` and notify Discord on result."""
+    run_dir = RUNS_DIR / run_id
+    loop_id = load_run_state(run_dir).get("loop_id", "unknown")
+
+    def worker() -> None:
+        log_line = f"\n=== dispatch {run_id} {datetime.now(timezone.utc).isoformat()} ===\n"
+        try:
+            post_webhook(
+                cfg,
+                "step_complete",
+                run_id,
+                loop_id,
+                "Reply received — resuming loop autonomously (this may take 1–3 minutes)…",
+            )
+            with DISPATCH_LOG.open("a") as logf:
+                logf.write(log_line)
+                proc = subprocess.run(
+                    [sys.executable, str(ROOT / "scripts" / "rgs.py"), "loop", "continue", run_id],
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                    timeout=DISPATCH_TIMEOUT,
+                    env=os.environ.copy(),
+                )
+                logf.write(f"exit={proc.returncode}\n")
+                if proc.stdout:
+                    logf.write("--- stdout ---\n")
+                    logf.write(proc.stdout[-8000:])
+                    logf.write("\n")
+                if proc.stderr:
+                    logf.write("--- stderr ---\n")
+                    logf.write(proc.stderr[-4000:])
+                    logf.write("\n")
+            status = run_status(run_dir)
+            if proc.returncode == 0:
+                tail = "\n".join(proc.stdout.strip().splitlines()[-8:])[:1500]
+                event = _dispatch_event_for_status(status)
+                if event == "waiting_on_ep":
+                    msg = f"Agent turn complete — waiting on you again.\n\n{tail}"
+                elif event == "finished":
+                    msg = f"Loop finished.\n\n{tail}"
+                else:
+                    msg = f"Agent turn complete.\n\n{tail}"
+                post_webhook(cfg, event, run_id, loop_id, msg)
+            else:
+                clear_dispatch_lock(run_dir)
+                sync_state_md_status(run_dir, "ERROR")
+                err = (proc.stderr or proc.stdout or "unknown error").strip()[:500]
+                post_webhook(cfg, "error", run_id, loop_id, f"Loop continue failed:\n```\n{err}\n```")
+        except subprocess.TimeoutExpired:
+            clear_dispatch_lock(run_dir)
+            sync_state_md_status(run_dir, "ERROR")
+            post_webhook(cfg, "error", run_id, loop_id, "Loop continue timed out after 10 minutes.")
+        except Exception as exc:  # noqa: BLE001
+            clear_dispatch_lock(run_dir)
+            sync_state_md_status(run_dir, "ERROR")
+            post_webhook(cfg, "error", run_id, loop_id, f"Dispatch error: {exc}")
+
+    threading.Thread(
+        target=worker,
+        daemon=True,
+        name=f"loop-continue-{run_id}",
+    ).start()
 
 
 def listen_loop(poll_seconds: int = 5) -> None:
@@ -179,7 +335,7 @@ def listen_loop(poll_seconds: int = 5) -> None:
     bot = api_get_me(cfg)
     bot_id = bot["id"]
     last_id: str | None = None
-    print(f"Listening as {bot.get('username')} — poll every {poll_seconds}s (Ctrl+C to stop)")
+    print(f"Listening as {bot.get('username')} — poll every {poll_seconds}s (auto-dispatch ON, Ctrl+C to stop)")
 
     while True:
         try:
@@ -211,14 +367,8 @@ def listen_loop(poll_seconds: int = 5) -> None:
                     run_dir = waiting[0]
 
                 if run_dir:
-                    record_ep_reply(run_dir, content)
-                    post_webhook(
-                        cfg,
-                        "step_complete",
-                        run_dir.name,
-                        "discord-bridge",
-                        f"EP reply recorded: {content[:200]}",
-                    )
+                    if record_ep_reply(run_dir, content, msg["id"]):
+                        spawn_loop_continue(run_dir.name, cfg)
         except urllib.error.HTTPError as e:
             print(f"Discord API error: {e.code} {e.reason}", file=sys.stderr)
         except Exception as e:

@@ -92,10 +92,10 @@ See [agent-providers.md](agent-providers.md).
 
 | Skill | Purpose |
 |-------|---------|
-| `/rgs-discord-listen` | Background listener for EP replies |
+| `/rgs-discord-listen` | Background listener — **auto-dispatches `loop continue`** on EP reply |
 | `/rgs-discord-notify` | Post step notification |
 
-Config: `studio/loops/config/local.json` (gitignored)
+Config: `studio/loops/config/local.json` (gitignored). See [discord-bridge.md](discord-bridge.md) for always-on setup.
 
 ---
 
@@ -113,11 +113,10 @@ Used inside loops when EP taste input required.
 
 1. `/rgs-status` — where are we?
 2. `/rgs-loop-discovery <your goals in plain English>`
-3. `/rgs-discord-listen` (once, background)
-4. `/rgs-loop-continue` — agent researches, notifies Discord
-5. Answer in Discord or chat when `/rgs-grill` fires
-6. `/rgs-loop-status` — check progress
-7. When finished → pick game → `/rgs-loop-compliance`
+3. `/rgs-discord-listen` (once — keep running; replies auto-resume loops)
+4. Answer in Discord when a grill question appears — **no Cursor step needed**
+5. `/rgs-loop-status` — optional progress check from Cursor
+6. When finished → pick game → `/rgs-loop-compliance`
 
 ---
 

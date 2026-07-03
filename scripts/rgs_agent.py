@@ -45,7 +45,24 @@ def load_run_state(run_dir: Path) -> dict:
     return {}
 
 
+def read_status_from_md(run_dir: Path) -> str | None:
+    state_md = run_dir / "state.md"
+    if not state_md.exists():
+        return None
+    text = state_md.read_text()
+    for status in ("WAITING_ON_EP", "FINISHED", "BLOCKED", "ERROR", "RUNNING"):
+        if f"**Status:** {status}" in text:
+            return status
+    return None
+
+
 def save_run_state(run_dir: Path, state: dict) -> None:
+    state.pop("dispatch_in_flight", None)
+    state.pop("dispatch_source", None)
+    state.pop("dispatch_started", None)
+    md_status = read_status_from_md(run_dir)
+    if md_status:
+        state["status"] = md_status
     state["updated"] = datetime.now(timezone.utc).isoformat()
     (run_dir / "state.json").write_text(json.dumps(state, indent=2))
 

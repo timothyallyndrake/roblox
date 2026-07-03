@@ -1,0 +1,15 @@
+{
+  "goals_nl": "Front-runner locked: cosmic greenhouse plant breeder (Grow a Garden Cosmic Edition). Working slug starlit-conservatory; display name TBD. Phase 02 compliance + feasibility + monetization recommendation + security screen.",
+  "overrides": {},
+  "constraints": [
+    "cosmic plant breeding sim",
+    "floating glass domes",
+    "constellation codex",
+    "Star Counter polish-and-sell",
+    "solo + optional 2P co-op",
+    "no PvP theft",
+    "everything earnable in-game"
+  ],
+  "game_slug": "starlit-conservatory",
+  "source_pitch": "studio/docs/discovery/pitch-sells-starlit-conservatory.md"
+}

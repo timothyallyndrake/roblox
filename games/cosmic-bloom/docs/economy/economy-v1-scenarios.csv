@@ -1,0 +1,8 @@
+scenario,plots,target,minutes_est,coins_est,stardust_est,pass,notes
+f2p-solo-4-to-8-plots,4->8,Lumina R10,151.1,7464,145,YES,Baseline engaged solo; assumes second plot row around Lumina R5.
+active-solo-4-to-8-plots,4->8,Lumina R10,119.1,7464,129,YES,Higher active nurture uptime and stronger harvest average.
+extra-garden-beds-6-to-10-plots,6->10,Lumina R10,114.7,7464,145,YES,Tests +2 paid beds plus coin row; should accelerate but not erase pacing.
+private-2p-feed,,Community Table clear,12,,,YES,goal=3500; modeled_contribution=1500; clear_rate=43%
+private-4p-feed,,Community Table clear,12,,,YES,goal=5000; modeled_contribution=3000; clear_rate=60%
+public-6p-feed,,Community Table clear,12,,,YES,goal=8500; modeled_contribution=4500; clear_rate=53%
+public-12p-feed,,Community Table clear,12,,,YES,goal=13000; modeled_contribution=9000; clear_rate=69%

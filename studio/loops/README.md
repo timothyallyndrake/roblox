@@ -88,7 +88,7 @@ Or `./scripts/studio-notify-discord.sh` (webhook-only wrapper).
 
 ### Inbound (bot — EP replies in channel)
 
-Webhooks are **one-way**. For EP to **answer grill questions in Discord**, run the bridge listener:
+Webhooks are **one-way**. Run the bridge listener once (keep it running while loops are active):
 
 ```bash
 python3 scripts/studio-discord-bridge.py listen
@@ -97,9 +97,14 @@ python3 scripts/studio-discord-bridge.py listen
 When a run is `WAITING_ON_EP`:
 
 1. Bot posts question embed (footer contains `run:<run-id>`)
-2. EP replies in channel (include `run:<run-id>` or reply when only one run is waiting)
-3. Listener writes answer to `runs/<run-id>/grilling-log.md`, sets status → `RUNNING`
-4. Loop Runner resumes on next agent session
+2. EP replies in channel (include `run:<run-id>` if multiple runs are waiting)
+3. Listener writes answer to `runs/<run-id>/grilling-log.md`
+4. Listener **auto-dispatches** `python3 scripts/rgs.py loop continue <run-id>` (background thread)
+5. Discord notifies when the agent turn completes or pauses again for EP input
+
+**Backyard mode:** leave `listen` running on your Mac (Terminal, tmux, or launchd). You only need Discord — no Cursor session required while a loop is active.
+
+See [discord-bridge.md](../docs/company/discord-bridge.md) for always-on setup.
 
 ### Config (gitignored)
 
